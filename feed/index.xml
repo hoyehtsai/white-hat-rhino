@@ -12,7 +12,7 @@
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
 	<description>Between Attack And Defense</description>
-	<lastBuildDate>Sun, 06 Aug 2017 13:29:55 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 06 Aug 2017 15:04:01 +0000</lastBuildDate>
 	<language>zh-TW</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -31,7 +31,7 @@
 		<comments>/2017/08/05/broken-access-control/#respond</comments>
 		<pubDate>Sat, 05 Aug 2017 14:18:26 +0000</pubDate>
 		<dc:creator><![CDATA[tsai hank]]></dc:creator>
-				<category><![CDATA[vulnerability]]></category>
+				<category><![CDATA[Vulnerability]]></category>
 
 		<guid isPermaLink="false">/?p=249</guid>
 		<description><![CDATA[8/3於 HITCON ZeroDay平台發現一個影響重大的弱點被公佈，這個弱點是由nacopark所提交。  <a href="/2017/08/05/broken-access-control/" rel="nofollow"><span class="sr-only">Read more about 學習系統的Broken Access Control</span>[&#8230;]</a>]]></description>
@@ -39,7 +39,8 @@
 <p>影響範圍很深，只要在該學習平台註冊的帳號、密碼都會被列舉出來，造成學生、老師等個人資料外洩。</p>
 <p>此弱點也可取得管理者權限，與上傳webshell。</p>
 <p>&nbsp;</p>
-<p>目前正與20餘家學校與醫療單位聯繫，協助問題找尋與協助修正。</p>
+<p>由於此弱點很簡單，影響又很深，我們決定主動與這20餘家學校與醫療單位聯繫，協助盡快修正問題。</p>
+<p>如果您也有相似問題，歡迎與我們連繫，我們樂於協助您解決正面臨的問題。</p>
 ]]></content:encoded>
 			<wfw:commentRss>/2017/08/05/broken-access-control/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>

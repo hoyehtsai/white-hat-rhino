@@ -6,11 +6,11 @@
 	
 	>
 <channel>
-	<title>「White Hat Rhino」的迴響</title>
-	<atom:link href="/comments/feed/" rel="self" type="application/rss+xml" />
-	<link></link>
+	<title>「學習系統的Broken Access Control」的迴響</title>
+	<atom:link href="/2017/08/05/%E5%AD%B8%E7%BF%92%E7%B3%BB%E7%B5%B1%E7%9A%84broken-access-control/feed/" rel="self" type="application/rss+xml" />
+	<link>/2017/08/05/%e5%ad%b8%e7%bf%92%e7%b3%bb%e7%b5%b1%e7%9a%84broken-access-control/</link>
 	<description>Between Attack And Defense</description>
-	<lastBuildDate>Sun, 06 Aug 2017 13:24:12 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 06 Aug 2017 13:24:19 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.8.1</generator>

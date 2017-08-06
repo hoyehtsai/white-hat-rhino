@@ -8,8 +8,8 @@
 	>
 
 <channel>
-	<title>White Hat Rhino</title>
-	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
+	<title>tsai hank &#8211; White Hat Rhino</title>
+	<atom:link href="/author/hank/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
 	<description>Between Attack And Defense</description>
 	<lastBuildDate>Sun, 06 Aug 2017 13:13:03 +0000</lastBuildDate>
@@ -20,7 +20,7 @@
 
 <image>
 	<url>/wp-content/uploads/2017/06/cropped-rhino_words_9-1-32x32.jpg</url>
-	<title>White Hat Rhino</title>
+	<title>tsai hank &#8211; White Hat Rhino</title>
 	<link></link>
 	<width>32</width>
 	<height>32</height>

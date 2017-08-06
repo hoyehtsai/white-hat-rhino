@@ -12,7 +12,7 @@
 	<atom:link href="/author/hoyeh/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
 	<description>Between Attack And Defense</description>
-	<lastBuildDate>Fri, 04 Aug 2017 13:32:09 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 06 Aug 2017 13:13:03 +0000</lastBuildDate>
 	<language>zh-TW</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -25,20 +25,5 @@
 	<width>32</width>
 	<height>32</height>
 </image> 
-	<item>
-		<title>Hello world! 哈囉！</title>
-		<link>/2017/06/13/hello-world/</link>
-		<comments>/2017/06/13/hello-world/#comments</comments>
-		<pubDate>Tue, 13 Jun 2017 07:19:28 +0000</pubDate>
-		<dc:creator><![CDATA[hoyeh]]></dc:creator>
-				<category><![CDATA[未分類]]></category>
-
-		<guid isPermaLink="false">/?p=1</guid>
-		<description><![CDATA[歡迎來到 WordPress。這是你的第一篇文章。編輯或者刪除本篇文章，然後開始你的部落客生活！]]></description>
-				<content:encoded><![CDATA[<p>歡迎來到 WordPress。這是你的第一篇文章。編輯或者刪除本篇文章，然後開始你的部落客生活！</p>
-]]></content:encoded>
-			<wfw:commentRss>/2017/06/13/hello-world/feed/</wfw:commentRss>
-		<slash:comments>1</slash:comments>
-		</item>
-	</channel>
+</channel>
 </rss>

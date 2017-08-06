@@ -28,7 +28,6 @@
 	<item>
 		<title>學習系統的Broken Access Control</title>
 		<link>/2017/08/05/broken-access-control/</link>
-		<comments>/2017/08/05/broken-access-control/#respond</comments>
 		<pubDate>Sat, 05 Aug 2017 14:18:26 +0000</pubDate>
 		<dc:creator><![CDATA[tsai hank]]></dc:creator>
 				<category><![CDATA[Vulnerability]]></category>
@@ -42,8 +41,6 @@
 <p>由於此弱點很簡單，影響又很深，我們決定主動與這20餘家學校與醫療單位聯繫，協助盡快修正問題。</p>
 <p>如果您也有相似問題，歡迎與我們連繫，我們樂於協助您解決正面臨的問題。</p>
 ]]></content:encoded>
-			<wfw:commentRss>/2017/08/05/broken-access-control/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
+			</item>
 	</channel>
 </rss>

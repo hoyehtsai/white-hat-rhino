@@ -12,7 +12,7 @@
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
 	<description>Between Attack And Defense</description>
-	<lastBuildDate>Mon, 07 Aug 2017 15:32:56 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 07 Aug 2017 15:37:54 +0000</lastBuildDate>
 	<language>zh-TW</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -61,7 +61,7 @@
 <li><strong>流灠器快取</strong>(<b>Client Side Caching</b>)-解法就是要按&#8221;登出&#8221;，或必免在公用場所使用私資資源。</li>
 </ul>
 <p>以上，幫助大家了解Broken Access Control，也了解到發現這問題(弱點)的技術深度較淺，但影響的深度卻相當深，</p>
-<p>所以是需要面對與正式的問題。</p>
+<p>所以是需要面對與正視的問題。</p>
 ]]></content:encoded>
 			</item>
 	</channel>

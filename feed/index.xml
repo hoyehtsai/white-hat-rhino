@@ -11,8 +11,8 @@
 	<title>White Hat Rhino</title>
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
-	<description>Between Attack And Defense</description>
-	<lastBuildDate>Mon, 07 Aug 2017 15:37:54 +0000</lastBuildDate>
+	<description>Trusted CyberSecurity Partner</description>
+	<lastBuildDate>Tue, 22 Aug 2017 15:49:52 +0000</lastBuildDate>
 	<language>zh-TW</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -40,7 +40,7 @@
 <p>在OWASP TOP10 中，這一直是榜中名單，原因於被利用很簡單而且一但被利用往往可以直接存取重要資源，但要完整的防護卻不是那麼容易的事，往往是邏輯上無法思慮的那麼全面。</p>
 <p>&nbsp;</p>
 <p>我們試著用另一種方法來解說這是怎麼一回事。如下圖:</p>
-<p><img class=" wp-image-277 aligncenter" src="/wp-content/uploads/2017/08/door-300x225.jpg" alt="" width="352" height="264" srcset="/wp-content/uploads/2017/08/door-300x225.jpg 300w, /wp-content/uploads/2017/08/door-768x576.jpg 768w, /wp-content/uploads/2017/08/door-1024x768.jpg 1024w, /wp-content/uploads/2017/08/door-285x214.jpg 285w" sizes="(max-width: 352px) 100vw, 352px" /></p>
+<p><img class=" wp-image-277 aligncenter" src="/wp-content/uploads/2017/08/door-300x225.jpg" alt="" width="352" height="264" /></p>
 <p>您是否有經驗，在全班去上體育課時把教室上鎖，就在大家都離開後卻發現…錢包忘在教室面!!而我們總能發現一個可以回到教室的窗戶，把自已的錢包拿出來，這就是Broken Access Control。</p>
 <p>&nbsp;</p>
 <p>在OWASP的解說中也提到，最常發生的幾個狀況:</p>

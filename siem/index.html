@@ -9,7 +9,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="/xmlrpc.php">
 
-<title>八月 2017 &#8211; White Hat Rhino</title>
+<title>資安監控 &#8211; White Hat Rhino</title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="訂閱 White Hat Rhino &raquo;" href="/feed/" />
@@ -50,6 +50,10 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.8.1" />
+<link rel="canonical" href="/siem/" />
+<link rel='shortlink' href='/?p=350' />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=%2Fsiem%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=%2Fsiem%2F&#038;format=xml" />
 <style type="text/css" id="custom-background-css">
 body.custom-background { background-image: url("/wp-content/uploads/2017/08/black-rhino4.jpg"); background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; }
 </style>
@@ -61,7 +65,7 @@ body.custom-background { background-image: url("/wp-content/uploads/2017/08/blac
 </head>
 
 
-	<body class="archive date wp-custom-logo" >
+	<body class="page-template page-template-template-fullwidth page-template-template-fullwidth-php page page-id-350 wp-custom-logo" >
 
 
 
@@ -111,12 +115,12 @@ body.custom-background { background-image: url("/wp-content/uploads/2017/08/blac
 	<li id="menu-item-341" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-341"><a href="/red-team/">Red Team</a></li>
 </ul>
 </li>
-<li id="menu-item-385" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-385"><a href="/vulscan/">偵測</a>
+<li id="menu-item-385" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-385"><a href="/vulscan/">偵測</a>
 <ul  class="sub-menu">
 	<li id="menu-item-161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-161"><a href="/vulscan/">弱點掃描</a></li>
 	<li id="menu-item-200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-200"><a href="/codereview/">原始碼檢測</a></li>
 	<li id="menu-item-358" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-358"><a href="/honypot/">蜜罐</a></li>
-	<li id="menu-item-357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-357"><a href="/siem/">資安監控</a></li>
+	<li id="menu-item-357" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-350 current_page_item menu-item-357"><a href="/siem/">資安監控</a></li>
 	<li id="menu-item-356" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-356"><a href="/hunting/">威脅獵捕</a></li>
 </ul>
 </li>
@@ -141,73 +145,67 @@ body.custom-background { background-image: url("/wp-content/uploads/2017/08/blac
 
 		
 	</div> <!-- /#main-nav -->
-	<!-- / END TOP BAR --><div class="clear"></div></header> <!-- / END HOME SECTION  --><div id="content" class="site-content"><div class="container">		<div class="content-left-wrap col-md-9">				<div id="primary" class="content-area">			<main id="main" class="site-main">							<header class="page-header">					<h1 class="page-title">月份：八月 2017</h1>				</header><!-- .page-header -->				<article id="post-249" class="post-249 post type-post status-publish format-standard hentry category-vulnerability tag-vulnerability" itemtype="http://schema.org/BlogPosting">
+	<!-- / END TOP BAR -->
+<div class="clear"></div>
 
-	
+</header> <!-- / END HOME SECTION  -->
+<div id="content" class="site-content">
 
-
-		
-		<div class="listpost-content-wrap-full">
-
-		
-	
-	<div class="list-post-top">
-
-	<header class="entry-header">
-
-		<h1 class="entry-title"><a href="/2017/08/05/broken-access-control/" rel="bookmark">Broken Access Control 存取控制的破解</a></h1>
+	<div class="container">
 
 		
-		<div class="entry-meta">
-
-			<span class="posted-on">Posted on <a href="/2017/08/05/broken-access-control/" rel="bookmark"><time class="entry-date published" datetime="2017-08-05T22:18:26+00:00">2017-08-05</time><time class="updated" datetime="2017-08-07T23:37:54+00:00">2017-08-07</time></a></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="/author/hank/">tsai hank</a></span></span>
-		</div><!-- .entry-meta -->
-
-		
-	</header><!-- .entry-header -->
-
-	
-	<div class="entry-content">
-
-		<p>什麼是Broken Access Control? &nbsp; 這裡可以看到wiki對於access con <a href="/2017/08/05/broken-access-control/" rel="nofollow"><span class="sr-only">Read more about Broken Access Control 存取控制的破解</span>[&hellip;]</a></p>
-
-	<footer class="entry-footer">
-
-		
-			
-			
-			<span class="tags-links">
-
-				Tagged <a href="/tag/vulnerability/" rel="tag">Vulnerability</a>
-			</span>
+		<div class="content-left-wrap col-md-12">
 
 			
+			<div id="primary" class="content-area">
+
+				<main id="main" class="site-main">
+
+					<article id="post-350" class="post-350 page type-page status-publish hentry">	<header class="entry-header">		<span class="date updated published">2017-08-16</span>		<span class="vcard author byline"><a href="/author/hoyeh/" class="fn">hoyeh</a></span>		<h1 class="entry-title" itemprop="headline">資安監控</h1>	</header><!-- .entry-header -->	<div class="entry-content">		<p>資安監控服務監控貴單位所有的安全事件，並提供相關人員通知與告警服務。</p>
+<ul>
+<li><strong>我們的作法</strong></li>
+</ul>
+<p>透過Sensor收取環境內資安系統所產生的事件資訊，並傳送到我們的中央監控中心，分析環境所面臨的威脅情況，並提供定期報告與即時告警服務。</p>
+<p>&nbsp;</p>
+<ul>
+<li><strong>服務流程</strong></li>
+</ul>
+<p>流程如下:</p>
+<ol>
+<li><strong>服務需求討論與授權:</strong><br />
+服務的一開始我們會與您確認服務的標的與範圍，如IP與URL等資訊，並訂定出服務的開始與結整時間 ，提供我們服務的IP，確認ISP、GSN等的安全機制、付款時間與條件、雙方聯絡窗口與緊急聯絡方式、與授權書簽立。</li>
+<li><strong>系統建置:</strong><br />
+將我們的Sensor置於貴單位中，並開始接收相關安全系統事件，回傳至中控中心，並測試整個系統通報流程。</li>
+<li><strong>維運與告警:</strong><br />
+系統於收到警急安全事件時，會透過郵件、簡訊、電話等方式通知相關必要人員，以協助事件應變。</li>
+<li><strong>定期報告:</strong><br />
+依據合約定期提供維運報告，包含發現、建議、與問題討論。</li>
+</ol>
+<p>&nbsp;</p>
+<p>資安監控服務目的在協助單位即時發現安全事件，並做所需通報與應變，降低可能的災害與風險。</p>
+<p>&nbsp;</p>
+<ul>
+<li><strong>服務期間</strong></li>
+</ul>
+<p>採一年一約方式進行，服務期間可依單位會計年度、或維護年度進行。</p>
+<p>&nbsp;</p>
+<ul>
+<li><strong>服務的費用</strong></li>
+</ul>
+<p>依據不同的標與監控數量有不同的計費方式，實際報價請與我們連絡以取得正式報價。</p>
+<p>info[at]whrhino.com</p>
+	</div><!-- .entry-content -->	</article><!-- #post-## -->
+				</main><!-- #main -->
+
+			</div><!-- #primary -->
+
+			
+		</div><!-- .content-left-wrap -->
+
 		
-		
-		
-	</footer><!-- .entry-footer -->
+	</div><!-- .container -->
 
-	</div><!-- .entry-content --><!-- .entry-summary -->
 
-	</div><!-- .list-post-top -->
-
-</div><!-- .listpost-content-wrap -->
-
-</article><!-- #post-## -->			</main><!-- #main -->		</div><!-- #primary -->			</div><!-- .content-left-wrap -->			<div class="sidebar-wrap col-md-3 content-left-wrap">
-			<div id="secondary" class="widget-area" role="complementary">						<aside id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widget-title">近期文章</h2>		<ul>
-					<li>
-				<a href="/2017/08/05/broken-access-control/">Broken Access Control 存取控制的破解</a>
-						</li>
-				</ul>
-		</aside>		<aside id="archives-2" class="widget widget_archive"><h2 class="widget-title">彙整</h2>		<ul>
-			<li><a href='/2017/08/'>2017 年 八月</a></li>
-		</ul>
-		</aside><aside id="categories-2" class="widget widget_categories"><h2 class="widget-title">分類</h2>		<ul>
-	<li class="cat-item cat-item-4"><a href="/category/vulnerability/" >Vulnerability</a>
-</li>
-		</ul>
-</aside>			</div><!-- #secondary -->		</div><!-- .sidebar-wrap -->
-	</div><!-- .container -->
 </div><!-- .site-content -->
 
 

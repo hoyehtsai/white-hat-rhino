@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Table of Content
+==================================================
+	1.0  -  Donutchart
+	2.0  -  DT Responsive*/
+	
+	/*--------------------------------------------------------------
+	1.0 - Donutchart
+	--------------------------------------------------------------*/
+	.dt-sc-donutchart { text-align:center; margin:0px auto 30px; }
+	h5.dt-sc-donutchart-title { text-align:center; width:100%; font-size:16px; margin-bottom:0px; font-weight:600; }
+	
+	.dt-sc-donutchart-small { width:100px; margin:0px auto; }
+	.dt-sc-donutchart-medium { width:200px; margin:0px auto; }
+	.dt-sc-donutchart-large { width:300px; margin:0px auto; }
+	
+	.donutchart-text { font-weight:300 !important; }		
+	.dt-sc-donutchart-small .donutchart-text { font-size:24px !important; }	
+	.dt-sc-donutchart-medium .donutchart-text { font-size:40px !important; }	
+	.dt-sc-donutchart-large .donutchart-text { font-size:50px !important; }	
+	
+	.dark-bg .donutchart-text { color:#ffffff; }
+	
+	
+	/*--------------------------------------------------------------
+	2.0 - DT Responsive
+	--------------------------------------------------------------*/
+	/* Note: Design for a width of 960px */	
+    @media only screen and (min-width:992px) and (max-width:1199px) {
+
+		/** Medical **/
+		.dt-sc-one-fifth .dt-sc-donutchart-medium { width:160px; }
+		.dt-sc-one-fifth .dt-sc-donutchart, .dt-sc-donutchart-medium canvas { width: 150px !important; height: 150px !important; }
+		.dt-sc-one-fifth .dt-sc-donutchart-medium .donutchart-text { width: 150px !important; line-height: 150px !important; }
+	
+	}
+	
+	
+	/* Note: Design for a width of 768px */
+    @media only screen and (min-width:768px) and (max-width:991px) {
+		
+		.dt-sc-one-fifth .dt-sc-donutchart-medium { width:120px; }
+		.dt-sc-one-fifth .dt-sc-donutchart, .dt-sc-donutchart-medium canvas { width: 110px !important; height: 110px !important; }
+		.dt-sc-one-fifth .dt-sc-donutchart-medium .donutchart-text { width: 110px !important; line-height: 110px !important; }
+		.dt-sc-one-fifth  h5.dt-sc-donutchart-title { font-size:15px; }
+		.dt-sc-donutchart-medium .donutchart-text { font-size:30px !important; }
+	
+	}

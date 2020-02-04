@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* Table of Content
+==================================================
+	1.0 - Transition
+	1.1 - Event Shortcodes
+	1.2 - Default Color
+	1.3 - Responsive
+	1.4 - Skin Color*/
+	
+	
+
+	/*--------------------------------------------------------------
+	1.0 - Transition
+	--------------------------------------------------------------*/
+	 .dt-sc-event-image-caption,  .dt-sc-event-image-caption .dt-sc-image-content:before, .dt-sc-event-image-caption .dt-sc-image-wrapper .overlay-text { -webkit-transition:all 0.3s linear; -moz-transition:all 0.3s linear; -o-transition:all 0.3s linear; -ms-transition:all 0.3s linear; transition:all 0.3s linear; }	
+
+
+
+
+	/*--------------------------------------------------------------
+	1.1 - Event Shortcodes
+	--------------------------------------------------------------*/
+	.dt-sc-event-image-caption { float:left; clear:both; width:100%; margin:0px; padding:0px; border-left:1px solid; border-right:1px solid; }
+	.dt-sc-event-image-caption .dt-sc-image-content { width:50%; padding:40px 30px; margin:0px; float:left; position:relative; }
+	.dt-sc-event-image-caption .dt-sc-image-content h3 { font-size:18px; line-height:28px; text-transform:uppercase; }
+	.dt-sc-event-image-caption .dt-sc-image-wrapper { width:50%; margin:0px; float:left; position:relative; }
+	.dt-sc-event-image-caption .dt-sc-image-wrapper .overlay-text { position:absolute; left:0px; top:0px; width:100%; height:100%; text-align:center; }
+	.dt-sc-event-image-caption .dt-sc-image-wrapper { border-left:1px solid; }
+	
+	.dt-sc-event-image-caption .dt-sc-image-content:before { content:""; position:absolute; right:-15px; top:35px; height:0px; border-top:15px solid transparent; border-bottom:15px solid transparent; border-left:15px solid; z-index:1; } 
+	.dt-sc-event-image-caption .dt-sc-image-wrapper .overlay-text h3 { position:absolute; top:0px; bottom:0px; left:0px; right:0px; margin:auto; height:180px; text-align:center; width: 75%; }
+	.dt-sc-event-image-caption .dt-sc-image-wrapper .overlay-text h3 span { font-size:50px; display:block; }
+	
+	
+	
+	
+	/*--------------------------------------------------------------
+	1.2 - Default Colors
+	--------------------------------------------------------------*/	
+	.dt-sc-event-image-caption:hover .dt-sc-image-content h3, .dt-sc-event-image-caption:hover .dt-sc-image-content p, .dt-sc-event-image-caption:hover .dt-sc-image-content ul, .dt-sc-event-image-caption .dt-sc-image-wrapper .overlay-text h3 { color:#ffffff; }
+	
+	
+	.dt-sc-event-image-caption { background:#ffffff; }
+	.dt-sc-event-image-caption .dt-sc-image-wrapper .overlay-text { background:rgba(0, 0, 0, 0.8); }
+	
+	.dt-sc-event-image-caption .dt-sc-image-content:before { border-left-color:#ffffff; }
+	.dt-sc-event-image-caption, .dt-sc-event-image-caption .dt-sc-image-wrapper { border-color:#ffffff; }	
+	
+	
+	
+	/*--------------------------------------------------------------
+	1.3 - Responsive
+	--------------------------------------------------------------*/
+	
+	/*----*****---- << Desktop >> ----*****----*/
+	 @media only screen and (min-width:1200px) and (max-width:1280px) {
+		
+		.dt-sc-event-image-caption .dt-sc-image-content, .dt-sc-event-image-caption .dt-sc-image-wrapper { width:100%; }
+		.dt-sc-event-image-caption .dt-sc-image-wrapper img { width:100%; }
+		
+	 }
+		
+	/* Note: Design for a width of 960px */	
+    @media only screen and (min-width:992px) and (max-width:1199px) {
+		
+		/** Event Shortcodes **/
+		.dt-sc-event-image-caption .dt-sc-image-content, .dt-sc-event-image-caption .dt-sc-image-wrapper { width:100%; }
+		.dt-sc-event-image-caption .dt-sc-image-content::before { bottom:-22px; top:auto; transform: rotate(90deg); border-left-width:16px; right:30px; }
+		.dt-sc-event-image-caption .dt-sc-image-wrapper img { width:100%; }
+	
+	}
+	
+	
+	 /* Note: Design for a width of 768px */
+    @media only screen and (min-width:768px) and (max-width:991px) {
+ 		
+		/** Event Shortcodes **/
+		.dt-sc-event-image-caption .dt-sc-image-content, .dt-sc-event-image-caption .dt-sc-image-wrapper { width:100%; }
+		.dt-sc-event-image-caption .dt-sc-image-content::before { bottom:-22px; top:auto; transform: rotate(90deg); border-left-width:16px; right:30px; }
+	
+	}
+	
+	
+	/*----*****---- << Mobile (Landscape) >> ----*****----*/	
+	
+	/* Common Styles for the devices below 767px width */
+	@media only screen and (max-width: 767px) {
+	
+		/** Event Shortcodes **/
+		.dt-sc-event-image-caption .dt-sc-image-content, .dt-sc-event-image-caption .dt-sc-image-wrapper { width:100%; }
+		.dt-sc-event-image-caption .dt-sc-image-content::before { bottom:-22px; top:auto; transform: rotate(90deg); border-left-width:16px; right:30px; }
+		.dt-sc-event-image-caption .dt-sc-image-wrapper > img { width:100%; }
+		
+	}  

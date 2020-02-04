@@ -1,0 +1,291 @@
+
+/* Table of Content
+==================================================
+	1.0 - Title
+	1.1 - Default Colors
+	1.2 - Responsive*/	
+	
+
+	/*--------------------------------------------------------------
+	1.0 - Title
+	--------------------------------------------------------------*/
+	.dt-sc-title { position:relative; clear:both; float:left; }
+	.aligncenter .dt-sc-title { text-align:center; width:100%; }
+	
+	.dt-sc-title.with-two-color-bg { margin-bottom:60px; }
+	.dt-sc-title.with-two-color-bg:before { content:""; position:absolute; left:-20px; top:0px; width:100%; height:100%; -webkit-transform:skewX(-30deg); transform:skewX(-30deg); -ms-transform:skewX(-30deg); }
+	
+	.dt-sc-title.with-two-color-bg:after { content: ""; height: 100%; top: 0; right: 100%; position: absolute; -ms-transform: skewX(-30deg) translateX(-30px); -webkit-transform: skewX(-30deg) translateX(-30px); transform: skewX(-30deg) translateX(-30px); width: 9000px; }	
+
+	.dt-sc-title.script-with-sub-title { width: 100%; }
+
+	.dt-sc-title.with-two-color-bg h2 { padding:25px 30px 23px 10px; position:relative; z-index:1; margin:0px; left:10px; }
+
+	.dt-sc-title.script-with-sub-title h2 { font-weight:normal; margin-bottom:15px; letter-spacing:normal; font-size: 36px; }
+	
+	.dt-sc-title.script-with-sub-title h4 { font-weight:normal; margin-bottom:5px; letter-spacing:normal; font-size: 18px; }
+
+	.dt-sc-title.with-two-border h2 { position:relative; display:inline-block; }
+	.dt-sc-title.with-two-border h2:before, .dt-sc-title.with-two-border h2:after { content: ""; position: absolute; top: 50%; width: 80px; height: 2px; transform: translateY(-50%); -moz-transform: translateY(-50%); -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); }
+	.dt-sc-title.with-two-border h2:before { left:-100px; }
+	.dt-sc-title.with-two-border h2:after { right:-99px; }
+
+	.dt-sc-title.with-sub-title h2 { margin-bottom:10px; }
+	.dt-sc-title.with-sub-title h3 { font-size:14px; letter-spacing:1px; }
+
+	.dt-sc-title.with-two-color-stripe { position:relative; width:100%; margin:0px 0px 50px; }
+	.dt-sc-title.with-two-color-stripe:before, .dt-sc-title.with-two-color-stripe:after { content:""; height:100%; position:absolute; top: 0; width:9000px; }
+	.dt-sc-title.with-two-color-stripe:before { right: 100%; transform:skewX(-30deg) translateX(-30px); -webkit-transform: skewX(-30deg) translateX(-30px); -ms-transform: skewX(-30deg) translateX(-30px); }
+	.dt-sc-title.with-two-color-stripe:after { left: 100%; transform:skewX(-30deg) translateX(30px); -webkit-transform:skewX(-30deg) translateX(30px); -ms-transform:skewX(-30deg) translateX(30px); }
+	.dt-sc-title.with-two-color-stripe h3 { font-size:20px; margin:40px 0px -5px; letter-spacing:1px; float:left; }
+	.dt-sc-title.with-two-color-stripe h2 { font-size:34px; font-weight:900; letter-spacing:2px; float:left; clear:both; margin-bottom:0px; }
+	.dt-sc-title.with-two-color-stripe h5 { float:left; position:relative; padding:50px 0px 40px 100px; margin:-50px 0px 0px; font-size: 14px; }
+	.dt-sc-title.with-two-color-stripe h5:before { content:""; position:absolute; left:57px; height:100%; width:1px; top:-5px; -webkit-transform:skewX(-30deg); transform:skewX(-30deg); -ms-transform:skewX(-30deg); }
+	
+	.dt-sc-title.with-right-border-decor { float:left; clear:both; width:100%; margin: 0; padding: 0  0 20px 70px; }
+	.dt-sc-title.with-right-border-decor:before { content:""; position:absolute; bottom: 0; left:21px; top: 35px; height: auto; width:1px; }
+	.dt-sc-title.with-right-border-decor:after { content:""; position:absolute; left:15px; bottom: 0; width:13px; height:13px; -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg);  transform:rotate(45deg); border-radius:2px; }
+	.dt-sc-title.with-right-border-decor h2 { margin:-7px 0 40px; line-height:40px; position:relative; }
+	.dt-sc-title.with-right-border-decor p { font-size:14px; }
+	.dt-sc-title.with-right-border-decor .dt-sc-button { margin-top:30px; clear:both; }
+	
+	.dt-sc-title.with-right-border-decor h2:before { content:""; position:absolute; left:-62px; top: 10px; width:28px; height:28px; border:4px solid; -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); transform:rotate(45deg); border-radius:3px; }
+	
+	.dt-sc-title.with-right-border-decor > h4:first-child { color: #cacaca; margin-bottom: 10px; font-weight: 300; font-size: 20px; text-transform: uppercase; padding-bottom: 20px; }
+	.dt-sc-title.with-right-border-decor > h5:first-child { color: #cacaca; margin-bottom: 5px; font-weight: 400; font-size: 18px; text-transform: uppercase; padding-bottom: 10px; } 
+	.dt-sc-title.with-right-border-decor > h6:first-child { color: #cacaca; margin-bottom: 0; font-weight: 400; font-size: 16px; text-transform: uppercase; padding-bottom: 10px; }
+		
+	.aligncenter .dt-sc-title.with-right-border-decor > *:first-child:after, .dt-sc-title.with-right-border-decor.aligncenter > *:first-child:after { right: 0; margin: 0 auto; }
+	.alignright .dt-sc-title.with-right-border-decor > *:first-child:after, .dt-sc-title.with-right-border-decor.alignright > *:first-child:after { left: auto; right: 0; }
+	
+	.dt-sc-title.with-right-border-decor.alignright > * { text-align: right; float: right; }
+	.dt-sc-title.with-right-border-decor.aligncenter > * { text-align: center; float: none; display: inline-block; }
+	
+	.dt-sc-title.with-boxed { width:100%; height:100%; text-align:center; text-transform:uppercase; }
+	.dt-sc-title.with-boxed h2 span { font-size:48px; display:block; padding-bottom:20px; margin-bottom:0px; }
+	.dt-sc-title.with-boxed h2 { position:absolute; left:0px; right:0px; bottom:0px; top:0px; margin:auto; height:120px; }
+	
+	.dt-sc-photography-style:before { content:""; position:absolute; left:-20px; top:-20px; width:100%; height:100%; z-index:-1; }
+	.dt-sc-photography-style.alter:before { left:inherit; right:-20px; bottom:-20px; top:inherit; }
+	
+	.dt-sc-triangle-title { float:left; clear:both; width:370px; height:500px; text-align:center; position:relative; } 
+	.dt-sc-triangle-title:before { content:""; position:absolute; left:0px; right:0px; margin:auto; top:100px; width:310px; height:310px; transform:rotate3d(1, 1, 5, 47deg) skew(10deg, 10deg); -webkit-transform:rotate3d(1, 1, 5, 47deg) skew(10deg, 10deg); -ms-transform:rotate3d(1, 1, 5, 47deg) skew(10deg, 10deg); }
+	.dt-sc-triangle-title:after { content:""; position:absolute; left:0px; right:0px; margin:auto; top:111px; width:290px; height:290px; transform:rotate3d(1, 1, 5, 47deg) skew(10deg, 10deg); -webkit-transform:rotate3d(1, 1, 5, 47deg) skew(10deg, 10deg); -ms-transform:rotate3d(1, 1, 5, 47deg) skew(10deg, 10deg); }
+	.dt-sc-triangle-title h2 { margin:215px 0px 10px; position:relative; z-index:9; }
+	.dt-sc-triangle-title p { font-size:12px; line-height:24px; position:relative; z-index:9; }
+	.dt-sc-triangle-title h2, .dt-sc-triangle-title p { color:#fff; }
+	
+	.dt-sc-ribbon-title { display:inline-block; text-align:center; font-size:30px; background:url(./../../images/ribbon.png) no-repeat; width:500px; height:106px; letter-spacing:1px; text-transform:uppercase; line-height:55px; }
+	
+	
+	.mz-title { overflow: hidden; float: left; width: 100%; }
+	.mz-title .mz-title-content { margin-bottom: 30px; position: relative; clear: both; float: left; }
+	.mz-title .mz-title-content:before { content:""; position:absolute; right:-16px; top:0px; width:100%; height:100%; -webkit-transform:skewX(30deg); transform:skewX(30deg); -ms-transform:skewX(30deg); }
+	.mz-title .mz-title-content:after { content:""; height:100%; top:0px; left:114%; left:-webkit-calc(100% - -26px); left:-moz-calc(100% - -26px); left:calc(100% - -26px); position:absolute; -ms-transform:skewX(30deg); -webkit-transform:skewX(30deg); transform:skewX(30deg); width:9000px; background:#f3f3f3; }
+	.dt-sc-title.mz-title .mz-title-content h2 { padding:17px 10px 15px 20px; position:relative; z-index:1; margin:0px; left:0px; font-size:16px; text-transform:uppercase; }
+	.dt-sc-title.mz-title .mz-title-content h2 { color:#fff; }
+	
+	.dt-sc-title.split2-title { overflow: hidden; float: left; width: 100%; }
+	.dt-sc-title.split2-title .split2-title-content { margin-bottom:30px; position: relative; clear: both; float: left; }
+	.dt-sc-title.split2-title .split2-title-content:after { background:url(./../../images/title-pattern.png) repeat; content:""; height:100%; top:0px; left:100%; position:absolute; width:9000px; }	
+	.dt-sc-title.split2-title .split2-title-content h2 { background:#000; padding:12px 15px; position:relative; z-index:1; margin:0px; left:0px; font-size:16px; text-transform:uppercase; }
+	.dt-sc-title.split2-title .split2-title-content * { color:#fff; }
+			
+	/*--------------------------------------------------------------
+	1.1 - Default Colors
+	--------------------------------------------------------------*/	
+	.dt-sc-title.with-two-color-stripe h5 { color:rgba(0, 0, 0, 0.3); }
+	.dt-sc-dark-bg.skin-color .dt-sc-title.script-with-sub-title h2, .dt-sc-title.with-two-color-bg h2, .dt-sc-title.with-boxed h2, .dt-sc-title.with-boxed h2 a { color:#ffffff; }	
+	.dt-sc-title.with-boxed h2 a:hover { color:rgba(0, 0, 0, 0.2); }
+	
+	.dt-sc-title.with-two-color-stripe:after { background:rgba(0, 0, 0, 0.1); }
+	.dt-sc-title.with-two-color-stripe h5:before { background:rgba(0, 0, 0, 0.2); }
+	.dt-sc-title.with-two-color-stripe:after { background:#e6e6e8; }
+	
+	.dt-sc-title.with-two-border h2:before, .dt-sc-title.with-two-border h2:after { background:#000000; }
+	.dt-sc-dark-bg .dt-sc-title.with-two-border h2:before, .dt-sc-dark-bg .dt-sc-title.with-two-border h2:after { background:#ffffff; }
+	
+	.dt-sc-title.with-two-color-bg:before, .dt-sc-title.with-two-color-bg h2 { background:#000000; }
+	
+	.dt-sc-photography-style:before { background:#000000; }
+	
+	
+	@media all and (min-width:0\0) and (min-resolution:.001dpcm) {
+		.dt-sc-triangle-title::before, .dt-sc-triangle-title::after { transform: rotate(45deg) skew(10deg, 10deg); -ms-transform: rotate(45deg) skew(10deg, 10deg); }
+	}
+	
+	
+	
+	
+	/*--------------------------------------------------------------
+	1.2 - Responsive
+	--------------------------------------------------------------*/
+	@media only screen and (min-width:992px) and (max-width:1199px) {
+	
+		/** Headings - Titles **/
+		.dt-sc-title.with-two-color-stripe:before { transform:skewX(-30deg) translateX(-45px); -webkit-transform: skewX(-30deg) translateX(-45px); -ms-transform: skewX(-30deg) translateX(-45px); }
+.dt-sc-title.with-two-color-stripe:after { transform:skewX(-30deg) translateX(45px); -webkit-transform:skewX(-30deg) translateX(45px); -ms-transform:skewX(-30deg) translateX(45px); }		
+		.dt-sc-title.with-two-color-stripe h5 { padding: 50px 0px 40px 70px; }
+		.dt-sc-title.with-two-color-stripe h5:before { left: 50px; }
+		
+		.dt-sc-triangle-title { height: 450px; width: 100%; }
+		.dt-sc-triangle-title:before { height: 250px; top: 100px; width: 250px; }
+		.dt-sc-triangle-title:after { height: 230px; top: 110px; width: 230px; }
+		.dt-sc-triangle-title h2 { margin: 155px 0 0; font-size: 20px; }		
+		
+		.dt-sc-photography-style.vc_col-md-12 { padding-bottom: 0; }
+		
+		.dt-sc-title.with-two-color-stripe h1, .dt-sc-title.with-two-color-stripe h2, .dt-sc-title.with-two-color-stripe h3, .dt-sc-title.with-two-color-stripe h4, .dt-sc-title.with-two-color-stripe h5, .dt-sc-title.with-two-color-stripe h6 { float: none; }
+		.dt-sc-title.with-two-color-stripe { text-align: center; }
+		.dt-sc-title.with-two-color-stripe h5 { margin: 0; padding-left: 0; }
+		.dt-sc-title.with-two-color-stripe h5 { padding: 50px 0px 40px 70px; padding-left: 70px; }
+		.dt-sc-title.with-two-color-stripe h5::before { height: 1px; left: 0; top: 25px; width: 100%; -webkit-transform: none; -moz-transform: none; -ms-transform: none; -o-transform: none; transform: none; }
+
+	}
+
+	/*----*****---- << Tablet (Portrait) >> ----*****----*/	
+	
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width:768px) and (max-width:991px) {
+	 /** Headings - Titles **/
+		.dt-sc-title.with-two-color-bg::before { left: 0; }
+		.dt-sc-title.with-two-color-bg::after { -webkit-transform: skewX(-30deg) translateX(-10px); transform: skewX(-30deg) translateX(-10px); }
+		
+		.dt-sc-title.with-two-color-bg h2 { left: 35px; }
+		
+		.dt-sc-title.with-two-color-stripe { text-align: center; }
+		.dt-sc-title.with-two-color-stripe:before { transform:skewX(-30deg) translateX(-45px); -webkit-transform: skewX(-30deg) translateX(-45px); -ms-transform: skewX(-30deg) translateX(-45px); }
+.dt-sc-title.with-two-color-stripe:after { transform:skewX(-30deg) translateX(45px); -webkit-transform:skewX(-30deg) translateX(45px); -ms-transform:skewX(-30deg) translateX(45px); }		
+		
+		.dt-sc-title.with-two-color-stripe h1, .dt-sc-title.with-two-color-stripe h2, 
+		.dt-sc-title.with-two-color-stripe h3, .dt-sc-title.with-two-color-stripe h4,
+		.dt-sc-title.with-two-color-stripe h5, .dt-sc-title.with-two-color-stripe h6 { float: none; }
+		
+		.dt-sc-title.with-two-color-stripe h5 { margin: 0; padding-left: 0; }	
+		.dt-sc-title.with-two-color-stripe h5::before { height: 1px; left: 0; top: 25px; width: 100%; -webkit-transform: none; -moz-transform: none; -ms-transform: none; -o-transform: none; transform: none; }
+		
+		.dt-sc-triangle-title { height: 390px; width: 100%; }
+		.dt-sc-triangle-title:before { height: 195px; top: 100px; width: 195px; }
+		.dt-sc-triangle-title:after { height: 175px; top: 110px; width: 175px; }
+		.dt-sc-triangle-title h2 { font-size: 18px; margin: 135px 0 0; }			
+		.dt-sc-triangle-title p { font-size: 9px; line-height: 20px; }	
+		
+		.dt-sc-title.with-boxed h2 { font-size: 24px; }
+		
+		.dt-sc-photography-style.rs_col-sm-12 { padding-bottom: 0; }
+	}
+	
+	/*----*****---- << Mobile (Landscape) >> ----*****----*/	
+	
+	/* Common Styles for the devices below 767px width */
+	@media only screen and (max-width: 767px) {
+		
+		/** Headings - Titles **/
+		.dt-sc-title.with-two-color-bg { display: block; float: none; margin: 0 15px; text-align: center; width: auto; }
+		.dt-sc-title.with-two-color-bg:before { left: -7px; }
+		.dt-sc-title.with-two-color-bg:after { -webkit-transform: skewX(-30deg) translateX(-15px); transform: skewX(-30deg) translateX(-15px); }
+		.dt-sc-title.with-two-color-bg h2 { padding: 15px 10px 15px 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }		
+		
+		.dt-sc-title.with-two-color-stripe { text-align: center; }
+		.dt-sc-title.with-two-color-stripe:before { transform:skewX(-30deg) translateX(-45px); -webkit-transform: skewX(-30deg) translateX(-45px); -ms-transform: skewX(-30deg) translateX(-45px); }
+.dt-sc-title.with-two-color-stripe:after { transform:skewX(-30deg) translateX(45px); -webkit-transform:skewX(-30deg) translateX(45px); -ms-transform:skewX(-30deg) translateX(45px); }
+		
+		.dt-sc-title.with-two-color-stripe h1, .dt-sc-title.with-two-color-stripe h2, 
+		.dt-sc-title.with-two-color-stripe h3, .dt-sc-title.with-two-color-stripe h4,
+		.dt-sc-title.with-two-color-stripe h5, .dt-sc-title.with-two-color-stripe h6 { float: none; }
+		
+		.dt-sc-title.with-right-border-decor.aligncenter > * { line-height: normal; }
+		
+		.dt-sc-title.with-two-color-stripe h5 { margin: 0; padding-left: 0; }	
+		.dt-sc-title.with-two-color-stripe h5::before { height: 1px; left: 0; top: 25px; width: 100%; -webkit-transform: none; -moz-transform: none; -ms-transform: none; -o-transform: none; transform: none; }	
+
+		.dt-sc-title.with-boxed { display: block; float: none; margin: 0 auto; width: calc(100% - 30px); }
+		.icon-link-title .vc_column-inner { padding: 0; }		
+		
+		.dt-sc-title.with-two-border h2 { font-size: 22px; padding: 0 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; }
+		.dt-sc-title.with-two-border h2::before, .dt-sc-title.with-two-border h2::after { top: 50%; width: calc(100% - 85%); }
+		.dt-sc-title.with-two-border h2::before { left: 100%; }
+		.dt-sc-title.with-two-border h2::after { right: 100%; }	
+
+		.dt-sc-triangle-title { width: 100%; }
+		.dt-sc-ribbon-title { background-size: 100% auto; width: 100%; }
+		
+	}
+	
+		/*----*****---- << Mobile (Landscape) >> ----*****----*/	
+	
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+		
+		/** Headings - Titles **/
+	    .dt-sc-ribbon-title { line-height: 50px; }	
+		.dt-sc-triangle-title { height: 510px; margin: 0 0 35px; }
+		
+	}
+	
+	/* Common Styles for the devices below 479px width */
+    @media only screen and (max-width: 479px) {
+			
+	/** Headings - Titles **/
+	.dt-sc-title.with-two-color-bg h2 { font-size: 22px; }
+	.dt-sc-ribbon-title { font-size: 20px; height: auto; line-height: 32px; padding: 0 0 30px; }	
+	
+	}
+	
+	/*----*****---- << Mobile >> ----*****----*/	
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (min-width: 320px) and (max-width: 479px) {
+		/** Headings - Titles **/
+		.dt-sc-title.with-two-border h2 { font-size: 20px; }
+		.dt-sc-title.with-right-border-decor .dt-sc-button.large { font-size: 15px; }
+		
+		.dt-sc-title.with-boxed h2 { font-size: 24px; height: 100px; }
+		.dt-sc-title.with-boxed h2 span { font-size: 40px; }		
+		
+		.dt-sc-triangle-title { height: 450px; }
+		.dt-sc-triangle-title:before { height: 250px; top: 100px; width: 250px; }
+		.dt-sc-triangle-title:after { height: 230px; top: 110px; width: 230px; }
+		.dt-sc-triangle-title h2 { margin: 170px 0 0; }	
+	}
+	
+	/*----*****---- << Mobile >> ----*****----*/	
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 319px) {
+		
+		/** Headings - Titles **/
+		.dt-sc-title.with-two-color-bg { margin: 0 -15px; }
+
+		.dt-sc-title.with-two-color-bg h2 { background: none; font-size: 18px; left: auto; padding: 15px 10px; }	
+		
+		.dt-sc-title.with-two-color-stripe:before { transform:skewX(-30deg) translateX(-120px); -webkit-transform: skewX(-30deg) translateX(-120px); -ms-transform: skewX(-30deg) translateX(-120px); }
+		.dt-sc-title.with-two-color-stripe:after { transform:skewX(-30deg) translateX(120px); -webkit-transform:skewX(-30deg) translateX(120px); -ms-transform:skewX(-30deg) translateX(120px); }
+						
+		.dt-sc-title.with-boxed h2 { font-size: 17px; height: 80px; }
+		.dt-sc-title.with-boxed h2 span { font-size: 34px; }
+		
+		.dt-sc-photography-style:before { left: -15px; top: -15px; }
+		.dt-sc-photography-style.alter:before { bottom: -15px; right: -15px; }
+		
+		.dt-sc-title.with-two-border h2 { font-size: 18px; padding: 0 6px; }
+		.dt-sc-title.with-two-border.with-sub-title h3 { font-size: 13px; }
+		
+		.dt-sc-ribbon-title { font-size: 14px; line-height: 24px; }
+		
+		.dt-sc-title.with-right-border-decor { padding: 0 0 20px 40px; }
+		.dt-sc-title.with-right-border-decor::before { left: 11px; top: 36px; }
+		.dt-sc-title.with-right-border-decor::after { height: 11px; left: 6px; width: 11px; }
+		.dt-sc-title.with-right-border-decor h2 { font-size: 22px; }
+		.dt-sc-title.with-right-border-decor h2::before { border-width: 3px; height: 20px; left: -42px; width: 20px; }
+		.dt-sc-title.with-right-border-decor .dt-sc-button.large { font-size: 11px; padding: 20px 30px 18px; }
+
+		.dt-sc-triangle-title { height: 390px; }
+		.dt-sc-triangle-title:before { height: 195px; top: 100px; width: 195px; }
+		.dt-sc-triangle-title:after { height: 175px; top: 110px; width: 175px; }
+		.dt-sc-triangle-title h2 { font-size: 18px; margin: 145px 0 0; }			
+		.dt-sc-triangle-title p { font-size: 9px; }
+		
+	} 

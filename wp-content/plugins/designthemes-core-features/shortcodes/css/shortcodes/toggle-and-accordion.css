@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* Table of Content
+==================================================
+	1.0 - Toggle & Accordion
+	1.1 - Default Color
+	1.2 - Responsive
+	1.3 - Skin Color*/
+
+	/*--------------------------------------------------------------
+	1.0 - Toggle & Accordion
+	--------------------------------------------------------------*/
+	h5.dt-sc-toggle-accordion, h5.dt-sc-toggle { position:relative; margin:0px 0px 10px; clear:both; font-size:18px; font-weight:500; }
+	h5.dt-sc-toggle-accordion a, h5.dt-sc-toggle a { line-height:35px; padding:5px 0px 5px 50px; display:inline-block; width:100%; position:relative; }		
+	h5.dt-sc-toggle-accordion a:before, h5.dt-sc-toggle a:before { content:""; position:absolute; left:0px; top:0px; width:35px; height:100%; }
+	h5.dt-sc-toggle-accordion:before, h5.dt-sc-toggle-accordion:after, h5.dt-sc-toggle:before, h5.dt-sc-toggle:after { content:""; position:absolute; top:0px; bottom:0px; margin:auto; }
+	h5.dt-sc-toggle-accordion:before, h5.dt-sc-toggle:before { width:2px; height:16px; left:17px; }
+	h5.dt-sc-toggle-accordion:after, h5.dt-sc-toggle:after { height:2px; width:16px; left:10px; }	
+	h5.dt-sc-toggle-accordion.active:before, h5.dt-sc-toggle.active:before { background:none; }
+	.dt-sc-toggle-content { clear:both; padding:15px 0px 25px 50px; margin:0px; display:none; }	
+	
+	.dt-sc-dark-bg h5.dt-sc-toggle-accordion.active:before, .dt-sc-dark-bg h5.dt-sc-toggle.active:before { background:none; }
+	
+	.type2 h5.dt-sc-toggle-accordion, .type2 h5.dt-sc-toggle { font-size:24px; }
+	.type2 h5.dt-sc-toggle-accordion a:before, .type2 h5.dt-sc-toggle-accordion.active a:before, .type2 h5.dt-sc-toggle a:before, .type2 h5.dt-sc-toggle.active a:before { background:none; }
+	.type2 h5.dt-sc-toggle-accordion:before, .type2 h5.dt-sc-toggle:before { width:3px; height:30px; left:14px; }
+	.type2 h5.dt-sc-toggle-accordion:after, .type2 h5.dt-sc-toggle:after { height:3px; width:30px; left:0px; }
+	
+	.alignright h5.dt-sc-toggle-accordion a:before, .alignright h5.dt-sc-toggle a:before { left:inherit; right:0px; }
+	.alignright h5.dt-sc-toggle-accordion:before, .alignright h5.dt-sc-toggle:before { right:17px; left:inherit; }
+	.alignright h5.dt-sc-toggle-accordion:after, .alignright h5.dt-sc-toggle:after { right:10px; left:inherit; }
+	.alignright h5.dt-sc-toggle-accordion a, .alignright h5.dt-sc-toggle a { padding:0px 50px 0px 0px; }	
+	.alignright .dt-sc-toggle-content { padding-right:30px; }	
+	
+	.type2.alignright h5.dt-sc-toggle-accordion:before, .type2.alignright h5.dt-sc-toggle:before { right:14px; }
+	.type2.alignright h5.dt-sc-toggle-accordion:after, .type2.alignright h5.dt-sc-toggle:after { right:0px; }
+	.type2.alignright h5.dt-sc-toggle-accordion a, .type2.alignright h5.dt-sc-toggle a { padding:5px 50px 5px 0px; }	
+	.type2.alignright .dt-sc-toggle-content { padding-right:50px; }		
+	
+	.dt-sc-toggle-frame h5.dt-sc-toggle-accordion, .dt-sc-toggle-frame h5.dt-sc-toggle { border-bottom:1px solid; font-weight:normal; margin-bottom: 0; }
+	.dt-sc-toggle-frame h5.dt-sc-toggle-accordion a, .dt-sc-toggle-frame h5.dt-sc-toggle a { padding:20px 0px 20px 80px; line-height:normal; }	
+	.dt-sc-toggle-frame h5.dt-sc-toggle-accordion a:before, .dt-sc-toggle-frame h5.dt-sc-toggle a:before { content:""; position:absolute; left:0px; top:0px; width:60px; height:100%; border: none; }	
+	.dt-sc-toggle-frame h5.dt-sc-toggle-accordion:before, .dt-sc-toggle-frame h5.dt-sc-toggle-accordion:after, .dt-sc-toggle-frame h5.dt-sc-toggle:before, .dt-sc-toggle-frame h5.dt-sc-toggle:after { content:""; position:absolute; top:0px; bottom:0px; margin:auto; }
+	.dt-sc-toggle-frame h5.dt-sc-toggle-accordion:before, .dt-sc-toggle-frame h5.dt-sc-toggle:before { left:29px; width:2px; height:16px; }
+	.dt-sc-toggle-frame h5.dt-sc-toggle-accordion:after, .dt-sc-toggle-frame h5.dt-sc-toggle:after { left:22px; width:16px; height:2px; }	
+	.dt-sc-toggle-frame h5.dt-sc-toggle-accordion.active:before, .dt-sc-toggle-frame h5.dt-sc-toggle.active:before { background:none; }	
+	.dt-sc-toggle-frame .dt-sc-toggle-content { padding:15px 0px 25px 20px; margin:0px; border-bottom:1px solid; }
+	
+	
+	.type2 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion, .type2 .dt-sc-toggle-frame h5.dt-sc-toggle { border:1px solid; border-radius:5px; font-size:16px; margin-bottom:15px; }
+	.type2 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion:after, .type2 .dt-sc-toggle-frame h5.dt-sc-toggle:after { width:26px; height:1px; right:20px; left:inherit; }
+	.type2 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion:before, .type2 .dt-sc-toggle-frame h5.dt-sc-toggle:before { height:26px; width:1px; right:33px; left:inherit; }
+	.type2 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion a:before, .type2 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion.active a:before, .type2 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion.active:before, .type2 .dt-sc-toggle-frame h5.dt-sc-toggle a:before, .type2 .dt-sc-toggle-frame h5.dt-sc-toggle.active a:before, .type2 .dt-sc-toggle-frame h5.dt-sc-toggle.active:before { background:none; }
+	.type2 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion a, .type2 .dt-sc-toggle-frame h5.dt-sc-toggle a { padding-left:20px; }
+	.type2 .dt-sc-toggle-frame .dt-sc-toggle-content { padding:15px 0px 35px; border:0px; margin-bottom:0px; }
+	
+	.type3 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion, .type3 .dt-sc-toggle-frame h5.dt-sc-toggle { border:1px solid rgba(0, 0, 0, 0.1); border-bottom:0px; font-size:18px; text-transform: capitalize; margin-bottom:-1px; }
+	.type3 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion a, .type3 .dt-sc-toggle-frame h5.dt-sc-toggle a { padding-left:20px; }
+	.type3 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion:after, .type3 .dt-sc-toggle-frame h5.dt-sc-toggle:after, .type3 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion:before, .type3 .dt-sc-toggle-frame h5.dt-sc-toggle:before, .type3 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion.active:after, .type3 .dt-sc-toggle-frame h5.dt-sc-toggle.active:after, .type3 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion.active:before, .type3 .dt-sc-toggle-frame h5.dt-sc-toggle.active:before { background:none; }
+	.type3 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion a:before, .type3 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion.active a:before, .type3 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion.active:before, .type3 .dt-sc-toggle-frame h5.dt-sc-toggle a:before, .type3 .dt-sc-toggle-frame h5.dt-sc-toggle.active a:before, .type3 .dt-sc-toggle-frame h5.dt-sc-toggle.active:before { background:none; }
+	.type3 .dt-sc-toggle-frame .dt-sc-toggle-content {  border:1px solid rgba(0, 0, 0, 0.1); border-bottom:0px; margin-bottom:0px; padding:20px 20px 25px 25px; margin-top:1px; border-left-width: 2px; }
+	
+	.dt-sc-toggle-frame-set.type3 .dt-sc-toggle-frame:last-child h5.dt-sc-toggle-accordion.active { border-bottom-color: rgba(0,0,0,0); }
+	
+	
+	/*--------------------------------------------------------------
+	1.1 - Default Colors
+	--------------------------------------------------------------*/
+	
+	.type3 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion.active a, .type3 .dt-sc-toggle-frame h5.dt-sc-toggle.active a { color:#000000; }
+	.dt-sc-toggle-frame-set.type3 .dt-sc-toggle-frame:last-child h5.dt-sc-toggle-accordion,
+	.dt-sc-toggle-frame-set.type3 .dt-sc-toggle-frame:last-child .dt-sc-toggle-content { border-bottom:1px solid rgba(0, 0, 0, 0.1); }
+	.dt-sc-toggle-frame-set.type3 .dt-sc-toggle-frame:last-child .dt-sc-toggle-content { border-bottom:1px solid rgba(0, 0, 0, 0.1); }
+	
+		
+	.type2 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion.active a, .type2 .dt-sc-toggle-frame h5.dt-sc-toggle.active a { color:#ffffff; }
+	.dt-sc-dark-bg h5.dt-sc-toggle-accordion a, .dt-sc-dark-bg h5.dt-sc-toggle a  { color:#ffffff; }	
+	
+	.dt-sc-toggle-frame h5.dt-sc-toggle-accordion.active:after, .dt-sc-dark-bg h5.dt-sc-toggle-accordion:after, .dt-sc-dark-bg h5.dt-sc-toggle-accordion:before, h5.dt-sc-toggle-accordion.active:after, h5.dt-sc-toggle.active:after, .dt-sc-dark-bg h5.dt-sc-toggle:after, .dt-sc-dark-bg h5.dt-sc-toggle:before, .dt-sc-dark-bg .type2 h5.dt-sc-toggle-accordion:after, .type2 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion.active:after, .type2 .dt-sc-toggle-frame h5.dt-sc-toggle.active:after, .dt-sc-toggle-frame h5.dt-sc-toggle-accordion { background:#ffffff; }	
+	
+	h5.dt-sc-toggle-accordion:before, h5.dt-sc-toggle-accordion:after, .type2 h5.dt-sc-toggle-accordion:after, h5.dt-sc-toggle:before, h5.dt-sc-toggle:after { background:rgba(0, 0, 0, 0.1); }
+	h5.dt-sc-toggle-accordion a:before, .dt-sc-toggle-frame h5.dt-sc-toggle-accordion a:before, h5.dt-sc-toggle a:before, .dt-sc-toggle-frame h5.dt-sc-toggle a:before { background:rgba(0, 0, 0, 0.05); }	
+	.type2 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion:after, .type2 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion:before, .type2 .dt-sc-toggle-frame h5.dt-sc-toggle:after, .type2 .dt-sc-toggle-frame h5.dt-sc-toggle:before { background:rgba(0, 0, 0, 0.8); }
+	
+	.dt-sc-toggle-frame h5.dt-sc-toggle-accordion, .dt-sc-toggle-frame h5.dt-sc-toggle { border-bottom-color:rgba(0, 0, 0, 0.1); }	
+	.type2 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion, .type2 .dt-sc-toggle-frame h5.dt-sc-toggle { border-color:rgba(0, 0, 0, 0.1); }	
+	.dt-sc-toggle-frame .dt-sc-toggle-content  { border-bottom-color:rgba(0, 0, 0, 0.1); }
+
+	
+	
+	/*--------------------------------------------------------------
+	1.2 - Responsive
+	--------------------------------------------------------------*/
+	
+	/* Note: Design for a width of 960px */	
+    @media only screen and (min-width:992px) and (max-width:1199px) {
+		
+		/** Toggles **/
+		h5.dt-sc-toggle-accordion, h5.dt-sc-toggle, .dt-sc-toggle-frame h5.dt-sc-toggle-accordion, .dt-sc-toggle-frame h5.dt-sc-toggle { font-size: 13px; }
+		.type2 h5.dt-sc-toggle-accordion, .type2 h5.dt-sc-toggle { font-size: 24px; }
+		.type3 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion, .type3 .dt-sc-toggle-frame h5.dt-sc-toggle { font-size: 14px; }
+	
+	}
+	
+	
+	/* Note: Design for a width of 768px */
+    @media only screen and (min-width:768px) and (max-width:991px) {
+	
+		/** Toggles **/
+		.type2 > h5.dt-sc-toggle-accordion, .type2 > h5.dt-sc-toggle { font-size: 24px; }		
+		
+		.type2 h5.dt-sc-toggle-accordion::before, .type2 h5.dt-sc-toggle::before { height: 25px; left: 11px; }
+		.type2.alignright h5.dt-sc-toggle-accordion::before, .type2.alignright h5.dt-sc-toggle::before { left: auto; right: 11px; }
+		
+		.type2 h5.dt-sc-toggle-accordion::after, .type2 h5.dt-sc-toggle::after { width: 25px; }
+		.type2 > h5.dt-sc-toggle-accordion a, .type2 > h5.dt-sc-toggle a, .type2 > .dt-sc-toggle-content { padding-left: 40px; }
+		.type2.alignright > h5.dt-sc-toggle-accordion a, .type2.alignright > h5.dt-sc-toggle a, .type2.alignright > .dt-sc-toggle-content { padding-right: 40px; }
+		
+		.type3 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion, .type3 .dt-sc-toggle-frame h5.dt-sc-toggle { font-size: 14px; }
+		
+	}
+	
+	
+	/* Common Styles for the devices below 479px width */
+    @media only screen and (max-width: 479px) {
+		
+		/** Toggles **/		
+		.dt-sc-toggle-frame h5.dt-sc-toggle-accordion::before, .dt-sc-toggle-frame h5.dt-sc-toggle::before { left: 20px; }
+		.dt-sc-toggle-frame h5.dt-sc-toggle-accordion::after, .dt-sc-toggle-frame h5.dt-sc-toggle::after { left: 13px; }
+		
+		.dt-sc-toggle-frame h5.dt-sc-toggle-accordion a, .dt-sc-toggle-frame h5.dt-sc-toggle a { padding: 12px 0 12px 50px; }
+		.type2 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion a, .type2 .dt-sc-toggle-frame h5.dt-sc-toggle a { padding-top: 15px; padding-bottom: 15px; }
+		
+		.dt-sc-toggle-frame h5.dt-sc-toggle-accordion a::before, .dt-sc-toggle-frame h5.dt-sc-toggle a::before { width: 40px; }
+		
+		.type2 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion, .type2 .dt-sc-toggle-frame h5.dt-sc-toggle { font-size: 13px; }
+		.type2 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion::before, .type2 .dt-sc-toggle-frame h5.dt-sc-toggle::before { height: 20px; right: 25px; }
+		.type2 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion::after, .type2 .dt-sc-toggle-frame h5.dt-sc-toggle::after { right: 15px; width: 20px; }
+		
+		.type2 h5.dt-sc-toggle-accordion, .type2 h5.dt-sc-toggle { font-size: 16px; }
+		
+		.type2 h5.dt-sc-toggle-accordion::before, .type2 h5.dt-sc-toggle::before { height: 20px; left: 8px; }
+		.type2.alignright h5.dt-sc-toggle-accordion::before, .type2.alignright h5.dt-sc-toggle::before { left: auto; right: 8px; }
+		
+		.type2 h5.dt-sc-toggle-accordion::after, .type2 h5.dt-sc-toggle::after { width: 20px; }
+		.type2 > h5.dt-sc-toggle-accordion a, .type2 > h5.dt-sc-toggle a, .type2 > .dt-sc-toggle-content { padding-left: 35px; }
+		.type2.alignright > h5.dt-sc-toggle-accordion a, .type2.alignright > h5.dt-sc-toggle a, .type2.alignright > .dt-sc-toggle-content { padding-right: 35px; }	
+		   
+		.type3 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion, .type3 .dt-sc-toggle-frame h5.dt-sc-toggle { font-size: 14px; }
+		.type2 .dt-sc-toggle-frame h5.dt-sc-toggle-accordion a, .type2 .dt-sc-toggle-frame h5.dt-sc-toggle a { padding-right: 35px; }
+	
+	} 

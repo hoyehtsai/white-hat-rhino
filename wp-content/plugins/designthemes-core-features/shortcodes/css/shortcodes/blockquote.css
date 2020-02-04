@@ -1,0 +1,184 @@
+@charset "utf-8";
+/* Table of Content
+==================================================
+	1.0 - Blockquotes
+	2.0 - Default Colors
+	3.0 - Responsive
+	4.0 - Skin Colors*/
+
+	/*--------------------------------------------------------------
+	1.0 - Blockquotes
+	--------------------------------------------------------------*/
+	blockquote.type1 q, blockquote > p { font-size:18px; line-height:30px; display:inline-block; font-weight:300; border-top:1px solid; border-bottom:1px solid; padding:20px 0px; margin-bottom:10px; }
+	.dt-sc-dark-bg blockquote.type1 q { border-color:#ffffff; }
+	
+	blockquote.type2 { padding-left:70px; position:relative; overflow:hidden; }
+	blockquote.type2 q { font-size:24px; line-height:40px; max-width:85%; display:inline-block; }
+	blockquote.type2 q:before { content:""; }
+	blockquote.type2:before { content: "\""; font-size:70px; left:0px; position:absolute; top:15px; font-family:'Roboto Slab', serif; width:70px; text-align:center; }
+	blockquote.type2 cite { font-style:normal; margin:30px 0px 0px; float:right; position:relative; width:100%; text-align:right; }
+	blockquote.type2 cite:before { content:""; position:absolute; right:25%; top:14px; background:rgba(0, 0, 0, 0.1); height:1px; width:89%; }
+	
+	blockquote.type3 { padding:15px 0 15px 25px; border-left:2px solid rgba(0, 0, 0, 0.2); }
+	blockquote.type3 q { font-size:16px; }
+	
+	blockquote.type4 { background: #f5f5f5; font-size: 16px; line-height: 30px; padding: 30px; text-align: center; }
+	blockquote.type4 > cite { display: inline-block; text-align: center; width: 100%; text-transform:uppercase; font-style:normal; }
+	blockquote.type4 span { float: left; width: 100%; color:#999999; text-transform:capitalize; font-size:13px; }
+	blockquote.type4 > q:before, blockquote.type4 > q:after { display: inline-block; font-family: georgia; font-size: 30px; text-align: center; width: 100%; position:relative; }
+	blockquote.type4 > q:before { top:14px; }
+	blockquote.type4 > q:after { bottom:-10px; }
+	
+	/* Variations */
+	
+	/* Blue */
+	blockquote.type1.blue q, blockquote.type3.blue { border-color: #008bd3; }
+	blockquote.type2.blue cite::before { background-color: #008bd3; }	
+		
+	/* Brown */
+	blockquote.type1.brown q, blockquote.type3.brown { border-color: #795548; }
+	blockquote.type2.brown cite::before { background-color: #795548; }		
+	
+	/* CadetBlue */
+	blockquote.type1.cadetblue q, blockquote.type3.cadetblue { border-color: #3c939d; }
+	blockquote.type2.cadetblue cite::before { background-color: #3c939d; }	
+	
+	/* Chillipepper */	
+	blockquote.type1.chillipepper q, blockquote.type3.chillipepper { border-color: #c10841; }
+	blockquote.type2.chillipepper cite::before { background-color: #c10841; }
+
+	/* Cyan */	
+	blockquote.type1.cyan q, blockquote.type3.cyan { border-color: #00bcd4; }
+	blockquote.type2.cyan cite::before { background-color: #00bcd4; }
+	
+	/* Darkgolden */	
+	blockquote.type1.darkgolden q, blockquote.type3.darkgolden { border-color: #b48b3c; }
+	blockquote.type2.darkgolden cite::before { background-color: #b48b3c; }	
+	
+	/* DeepOrange */	
+	blockquote.type1.deeporange q, blockquote.type3.deeporange { border-color: #ff5722; }
+	blockquote.type2.deeporange cite::before { background-color: #ff5722; }	
+	
+	/* DeepPurple */	
+	blockquote.type1.deeppurple q, blockquote.type3.deeppurple { border-color: #673ab7; }
+	blockquote.type2.deeppurple cite::before { background-color: #673ab7; }	
+	
+	/* Green */	
+	blockquote.type1.green q, blockquote.type3.green { border-color: #60ae0d; }
+	blockquote.type2.green cite::before { background-color: #60ae0d; }	
+	
+	/* Lime */	
+	blockquote.type1.lime q, blockquote.type3.lime { border-color: #cddc39; }
+	blockquote.type2.lime cite::before { background-color: #cddc39; }	
+	
+	/* Magenta */	
+	blockquote.type1.magenta q, blockquote.type3.magenta { border-color: #cb506d; }
+	blockquote.type2.magenta cite::before { background-color: #cb506d; }	
+	
+	/* Orange */	
+	blockquote.type1.orange q, blockquote.type3.orange { border-color: #ff9800; }
+	blockquote.type2.orange cite::before { background-color: #ff9800; }
+	
+	/* Pink */	
+	blockquote.type1.pink q, blockquote.type3.pink { border-color: #fd6ca3; }
+	blockquote.type2.pink cite::before { background-color: #fd6ca3; }	
+	
+	/* Purple */	
+	blockquote.type1.purple q, blockquote.type3.purple { border-color: #9c27b0; }
+	blockquote.type2.purple cite::before { background-color: #9c27b0; }		
+	
+	/* Red */	
+	blockquote.type1.red q, blockquote.type3.red { border-color: #da0000; }
+	blockquote.type2.red cite::before { background-color: #da0000; }
+	
+	/* SkyBlue */	
+	blockquote.type1.skyblue q, blockquote.type3.skyblue { border-color: #0eb2e7; }
+	blockquote.type2.skyblue cite::before { background-color: #0eb2e7; }	
+	
+	/* Teal */	
+	blockquote.type1.teal q, blockquote.type3.teal { border-color: #009688; }
+	blockquote.type2.teal cite::before { background-color: #009688; }	
+	
+	/* Turquoise */	
+	blockquote.type1.turquoise q, blockquote.type3.turquoise { border-color: #32ccbd; }
+	blockquote.type2.turquoise cite::before { background-color: #32ccbd; }
+	
+	/* Wisteria */	
+	blockquote.type1.wisteria q, blockquote.type3.wisteria { border-color: #9b59b6; }
+	blockquote.type2.wisteria cite::before { background-color: #9b59b6; }	
+	
+	/* Yellow */	
+	blockquote.type1.yellow q, blockquote.type3.yellow { border-color: #ffe401; }
+	blockquote.type2.yellow cite::before { background-color: #ffe401; }
+	
+	
+	/*--------------------------------------------------------------
+	2.0 - Default Colors
+	--------------------------------------------------------------*/
+	blockquote.type1 q, blockquote > p { border-color:rgba(0, 0, 0, 0.15); }
+	
+	
+	
+	/*--------------------------------------------------------------
+	3.0 - Responsive
+	--------------------------------------------------------------*/
+	
+	/*----*****---- << Mobile >> ----*****----*/	
+	
+	
+	 /* Note: Design for a width of 960px */
+	
+    @media only screen and (min-width:992px) and (max-width:1199px) {
+		
+		blockquote.type2 cite:before { left: -42px; right: auto; width: calc(90% - 32px); }	
+		
+	}
+	
+
+	/*----*****---- << Tablet (Portrait) >> ----*****----*/	
+	
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width:768px) and (max-width:991px) {
+		
+	blockquote.type2 cite:before { left: -42px; right: auto; width: calc(80% + 32px); }	
+	
+	}
+	
+	/*----*****---- << Mobile (Landscape) >> ----*****----*/	
+	
+	/* Common Styles for the devices below 767px width */
+	@media only screen and (max-width: 767px) {
+	
+	blockquote.type2 cite:before { left: -42px; right: auto; width: calc(50% + 32px); }
+	
+	blockquote.type3 { margin-left: 0; }
+	
+	}
+	
+	/*----*****---- << Mobile (Landscape) >> ----*****----*/	
+	
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+		
+	blockquote.type2 cite:before { width: calc(50% + 62px); }
+		
+	}
+	
+	/* Common Styles for the devices below 479px width */
+    @media only screen and (max-width: 479px) {
+		
+	blockquote.type2 cite:before { width: calc(50% + 22px); }
+	
+	blockquote.type3 { margin-left: 0; }
+		
+	}
+	
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 319px) {
+		
+	blockquote.type2 { padding-left: 50px; width: 100%; box-sizing: border-box; }
+	blockquote.type2 cite:before { right: 0; top: -10px; width: calc(100% + 32px); }
+	
+	}	 

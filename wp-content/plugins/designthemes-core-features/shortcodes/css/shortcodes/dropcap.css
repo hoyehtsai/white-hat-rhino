@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* Table of Content
+==================================================
+	1.0 - Dropcap
+	2.0 - Responsive*/
+
+
+	/*--------------------------------------------------------------
+	1.0 - Dropcap
+	--------------------------------------------------------------*/
+	.dt-sc-dropcap { font-size:24px; float:left; margin:10px 0px 10px 0px; text-align:center; line-height:35px; }
+	.dt-sc-dropcap.dt-sc-dropcap-default { font-size:50px; padding-right:20px; font-weight:900; }
+	.dt-sc-dropcap.dt-sc-dropcap-circle { width:40px; height:40px; line-height:38px; margin:5px 20px 0px 0px; padding:0px; border-radius:30px 30px 30px 30px; behavior:url(./PIE.htc); }
+	.dt-sc-dropcap.dt-sc-dropcap-bordered-circle { width:42px; height:42px; line-height:34px; margin:5px 20px 0 0; padding:0px; text-align:center; box-shadow:0 0 5px rgba(0, 0, 0, 0.3); -moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.3); -webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.3); border-radius:30px 30px 30px 30px; behavior:url(./PIE.htc); }
+	.dt-sc-dropcap.dt-sc-dropcap-square { width:40px; height:40px; line-height:36px; text-align:center; margin:5px 20px 0px 0px; padding:0px; }		
+	.dt-sc-dropcap.dt-sc-dropcap-bordered-square { box-shadow:0 0 5px rgba(0, 0, 0, 0.3); -moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.3); -webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.3); width:42px; height:42px; text-align:center; margin:5px 20px 0px 0px; padding:0px; line-height:34px; }
+	
+	.dt-sc-dropcap.dt-sc-dropcap-circle, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle, .dt-sc-dropcap.dt-sc-dropcap-square, .dt-sc-dropcap.dt-sc-dropcap-bordered-square { background:#000000; }
+	.dt-sc-dropcap.dt-sc-dropcap-bordered-circle { border:2px solid #FFFFFF; }
+	.dt-sc-dropcap.dt-sc-dropcap-bordered-square { border:2px solid #FFFFFF; }	
+	
+	.dt-sc-dropcap.dt-sc-dropcap-circle, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle, .dt-sc-dropcap.dt-sc-dropcap-square, .dt-sc-dropcap.dt-sc-dropcap-bordered-square { color:#ffffff; }
+	
+	.dt-sc-dropcap.dt-sc-dropcap-circle.blue, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle.blue, .dt-sc-dropcap.dt-sc-dropcap-square.blue, .dt-sc-dropcap.dt-sc-dropcap-bordered-square.blue { background:#008bd3; }
+	
+	.dt-sc-dropcap.dt-sc-dropcap-circle.brown, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle.brown, .dt-sc-dropcap.dt-sc-dropcap-square.brown, .dt-sc-dropcap.dt-sc-dropcap-bordered-square.brown { background:#795548; }
+	.dt-sc-dropcap.dt-sc-dropcap-circle.cadetblue, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle.cadetblue, .dt-sc-dropcap.dt-sc-dropcap-square.cadetblue, .dt-sc-dropcap.dt-sc-dropcap-bordered-square.cadetblue { background:#3c939d; }
+	.dt-sc-dropcap.dt-sc-dropcap-circle.chillipepper, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle.chillipepper, .dt-sc-dropcap.dt-sc-dropcap-square.chillipepper, .dt-sc-dropcap.dt-sc-dropcap-bordered-square.chillipepper { background:#c10841; }
+	.dt-sc-dropcap.dt-sc-dropcap-circle.cyan, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle.cyan, .dt-sc-dropcap.dt-sc-dropcap-square.cyan, .dt-sc-dropcap.dt-sc-dropcap-bordered-square.cyan { background:#00bcd4; }
+	.dt-sc-dropcap.dt-sc-dropcap-circle.darkgolden, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle.darkgolden, .dt-sc-dropcap.dt-sc-dropcap-square.darkgolden, .dt-sc-dropcap.dt-sc-dropcap-bordered-square.darkgolden { background:#b48b3c; }
+	.dt-sc-dropcap.dt-sc-dropcap-circle.deeporange, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle.deeporange, .dt-sc-dropcap.dt-sc-dropcap-square.deeporange, .dt-sc-dropcap.dt-sc-dropcap-bordered-square.deeporange { background:#ff5722; }
+	.dt-sc-dropcap.dt-sc-dropcap-circle.deeppurple, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle.deeppurple, .dt-sc-dropcap.dt-sc-dropcap-square.deeppurple, .dt-sc-dropcap.dt-sc-dropcap-bordered-square.deeppurple { background:#673ab7; }
+	.dt-sc-dropcap.dt-sc-dropcap-circle.green, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle.green, .dt-sc-dropcap.dt-sc-dropcap-square.green, .dt-sc-dropcap.dt-sc-dropcap-bordered-square.green { background:#60ae0d; }
+	.dt-sc-dropcap.dt-sc-dropcap-circle.lime, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle.lime, .dt-sc-dropcap.dt-sc-dropcap-square.lime, .dt-sc-dropcap.dt-sc-dropcap-bordered-square.lime { background:#cddc39; }
+	.dt-sc-dropcap.dt-sc-dropcap-circle.magenta, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle.magenta, .dt-sc-dropcap.dt-sc-dropcap-square.magenta, .dt-sc-dropcap.dt-sc-dropcap-bordered-square.magenta { background:#cb506d; }
+	.dt-sc-dropcap.dt-sc-dropcap-circle.orange, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle.orange, .dt-sc-dropcap.dt-sc-dropcap-square.orange, .dt-sc-dropcap.dt-sc-dropcap-bordered-square.orange { background:#ff9800; }
+	.dt-sc-dropcap.dt-sc-dropcap-circle.pink, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle.pink, .dt-sc-dropcap.dt-sc-dropcap-square.pink, .dt-sc-dropcap.dt-sc-dropcap-bordered-square.pink { background:#fd6ca3; }
+	.dt-sc-dropcap.dt-sc-dropcap-circle.purple, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle.purple, .dt-sc-dropcap.dt-sc-dropcap-square.purple, .dt-sc-dropcap.dt-sc-dropcap-bordered-square.purple { background:#9c27b0; }
+	.dt-sc-dropcap.dt-sc-dropcap-circle.red, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle.red, .dt-sc-dropcap.dt-sc-dropcap-square.red, .dt-sc-dropcap.dt-sc-dropcap-bordered-square.red { background:#da0000; }
+	.dt-sc-dropcap.dt-sc-dropcap-circle.skyblue, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle.skyblue, .dt-sc-dropcap.dt-sc-dropcap-square.skyblue, .dt-sc-dropcap.dt-sc-dropcap-bordered-square.skyblue { background:#0eb2e7; }
+	.dt-sc-dropcap.dt-sc-dropcap-circle.teal, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle.teal, .dt-sc-dropcap.dt-sc-dropcap-square.teal, .dt-sc-dropcap.dt-sc-dropcap-bordered-square.teal { background:#009688; }
+	.dt-sc-dropcap.dt-sc-dropcap-circle.turquoise, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle.turquoise, .dt-sc-dropcap.dt-sc-dropcap-square.turquoise, .dt-sc-dropcap.dt-sc-dropcap-bordered-square.turquoise { background:#32ccbd; }
+	.dt-sc-dropcap.dt-sc-dropcap-circle.wisteria, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle.wisteria, .dt-sc-dropcap.dt-sc-dropcap-square.wisteria, .dt-sc-dropcap.dt-sc-dropcap-bordered-square.wisteria { background:#9b59b6; }
+	.dt-sc-dropcap.dt-sc-dropcap-circle.yellow, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle.yellow, .dt-sc-dropcap.dt-sc-dropcap-square.yellow, .dt-sc-dropcap.dt-sc-dropcap-bordered-square.yellow { background:#ffe401; }
+	
+	
+	.dt-sc-dropcap.dt-sc-dropcap-default.blue { color:#008bd3; }	
+	.dt-sc-dropcap.dt-sc-dropcap-default.brown { color:#795548; }
+	.dt-sc-dropcap.dt-sc-dropcap-default.cadetblue { color:#3c939d; }
+	.dt-sc-dropcap.dt-sc-dropcap-default.chillipepper { color:#c10841; }
+	.dt-sc-dropcap.dt-sc-dropcap-default.cyan { color:#00bcd4; }
+	.dt-sc-dropcap.dt-sc-dropcap-default.darkgolden { color:#b48b3c; }
+	.dt-sc-dropcap.dt-sc-dropcap-default.deeporange { color:#ff5722; }
+	.dt-sc-dropcap.dt-sc-dropcap-default.deeppurple { color:#673ab7; }
+	.dt-sc-dropcap.dt-sc-dropcap-default.green { color:#60ae0d; }
+	.dt-sc-dropcap.dt-sc-dropcap-default.lime { color:#cddc39; }
+	.dt-sc-dropcap.dt-sc-dropcap-default.magenta { color:#cb506d; }
+	.dt-sc-dropcap.dt-sc-dropcap-default.orange { color:#ff9800; }
+	.dt-sc-dropcap.dt-sc-dropcap-default.pink { color:#fd6ca3; }
+	.dt-sc-dropcap.dt-sc-dropcap-default.purple { color:#9c27b0; }
+	.dt-sc-dropcap.dt-sc-dropcap-default.red { color:#da0000; }
+	.dt-sc-dropcap.dt-sc-dropcap-default.skyblue { color:#0eb2e7; }
+	.dt-sc-dropcap.dt-sc-dropcap-default.teal { color:#009688; }
+	.dt-sc-dropcap.dt-sc-dropcap-default.turquoise { color:#32ccbd; }
+	.dt-sc-dropcap.dt-sc-dropcap-default.wisteria { color:#9b59b6; }
+	.dt-sc-dropcap.dt-sc-dropcap-default.yellow { color:#ffe401; }
+	
+	
+	
+	/*--------------------------------------------------------------
+	2.0 - Responsive
+	--------------------------------------------------------------*/
+	/* Note: Design for a width of 960px */	
+    @media only screen and (min-width:992px) and (max-width:1199px) {
+		
+		.dt-sc-dropcap.dt-sc-dropcap-default { font-size: 32px; padding-right: 15px; }
+		.dt-sc-dropcap.dt-sc-dropcap-circle, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle,
+		.dt-sc-dropcap.dt-sc-dropcap-square, .dt-sc-dropcap.dt-sc-dropcap-bordered-square { margin-right: 15px; }
+		
+	}
+	
+	
+	/* Note: Design for a width of 768px */
+    @media only screen and (min-width:768px) and (max-width:991px) {
+		
+		.dt-sc-dropcap.dt-sc-dropcap-default { font-size: 24px; padding-right: 15px; }
+		.dt-sc-dropcap.dt-sc-dropcap-circle, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle,
+		.dt-sc-dropcap.dt-sc-dropcap-square, .dt-sc-dropcap.dt-sc-dropcap-bordered-square { margin-right: 15px; }
+		
+	}
+	
+	
+	/*----*****---- << Mobile (Landscape) >> ----*****----*/	
+	
+	/* Common Styles for the devices below 767px width */
+	@media only screen and (max-width: 767px) {
+		
+		/** Dropcap **/
+		.dt-sc-dropcap.dt-sc-dropcap-default { padding-right: 15px; }
+		
+		.dt-sc-dropcap.dt-sc-dropcap-circle, .dt-sc-dropcap.dt-sc-dropcap-bordered-circle,
+		.dt-sc-dropcap.dt-sc-dropcap-square, .dt-sc-dropcap.dt-sc-dropcap-bordered-square { margin: 5px 15px 0 2px; }
+		
+	}

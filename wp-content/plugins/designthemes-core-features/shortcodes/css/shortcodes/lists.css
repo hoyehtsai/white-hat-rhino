@@ -1,0 +1,169 @@
+
+/* Table of Content
+==================================================
+	1.0 - Lists*/
+	
+
+	/*--------------------------------------------------------------
+	1.0 - Lists
+	--------------------------------------------------------------*/
+	ul.dt-sc-fancy-list { list-style-type:none; list-style-position:outside; margin:0px; }
+	ul.dt-sc-fancy-list li { clear:both; display:block; position:relative; padding:5px 0px 5px 23px; }
+	ul.dt-sc-fancy-list li:first-child { padding-top: 0; }
+	ul.dt-sc-fancy-list li ul { padding-left:0px; }
+	
+	
+	.dt-sc-fancy-list.align_left.arrow { padding-left:0; }
+	ul.dt-sc-fancy-list.align_left.arrow li { font-size:18px; color:#000000; padding:4px 0 4px 23px; }
+	ul.dt-sc-fancy-list.align_left.arrow.f_lg li { font-size:22px; padding:5px 0 5px 30px; }
+	ul.dt-sc-fancy-list.model-request-list.f_lg li:before { font-size:22px; top:5px; }
+	ol.dt-sc-fancy-list li span { color:#808080; }
+	
+	
+	ul.dt-sc-fancy-list.arrow li { padding-left:15px; }
+	ul.dt-sc-fancy-list li:before { font-family:FontAwesome; font-style:normal; font-weight:normal; text-decoration:inherit; font-size:12px; position: absolute; top: 6px; left: 0px; }
+	ul.dt-sc-fancy-list li:first-child:before { top: 1px; }
+	
+	ul.dt-sc-fancy-list.arrow li:before { content:"\f105";  }
+	ul.dt-sc-fancy-list.rounded-arrow li:before { content:"\f0a9";  }
+	ul.dt-sc-fancy-list.double-arrow li:before { content:"\f101";  }	
+	ul.dt-sc-fancy-list.heart li:before { content:"\f004"; font-size:12px; }
+	ul.dt-sc-fancy-list.trash li:before { content:"\f014";  }
+	ul.dt-sc-fancy-list.star li:before { content:"\f005";  }
+	ul.dt-sc-fancy-list.tick li:before { content:"\f00c";  }
+	ul.dt-sc-fancy-list.rounded-tick li:before { content:"\f058";  }
+	ul.dt-sc-fancy-list.cross li:before { content:"\f00d";  }
+	ul.dt-sc-fancy-list.rounded-cross li:before { content:"\f057";  }
+	ul.dt-sc-fancy-list.rounded-question li:before { content:"\f059";  }
+	ul.dt-sc-fancy-list.rounded-info li:before { content:"\f05a";  }
+	ul.dt-sc-fancy-list.delete li:before { content:"\f05e";  }
+	ul.dt-sc-fancy-list.warning li:before { content:"\f071";  }
+	ul.dt-sc-fancy-list.comment li:before { content:"\f075";  }
+	ul.dt-sc-fancy-list.edit li:before { content:"\f044";  }
+	ul.dt-sc-fancy-list.share li:before { content:"\f064";  }
+	ul.dt-sc-fancy-list.plus li:before { content:"\f067";  }
+	ul.dt-sc-fancy-list.rounded-plus li:before { content:"\f055";  }
+	ul.dt-sc-fancy-list.minus li:before { content:"\f068";  }	
+	ul.dt-sc-fancy-list.rounded-minus li:before { content:"\f056";  }	
+	ul.dt-sc-fancy-list.asterisk li:before { content:"\f069";  }
+	ul.dt-sc-fancy-list.cart li:before { content:"\f07a";  }
+	ul.dt-sc-fancy-list.folder li:before { content:"\f07b";  }
+	ul.dt-sc-fancy-list.folder-open li:before { content:"\f07c";  }
+	ul.dt-sc-fancy-list.desktop li:before { content:"\f108";  }
+	ul.dt-sc-fancy-list.tablet li:before { content:"\f10a";  }
+	ul.dt-sc-fancy-list.mobile li:before { content:"\f10b";  }
+	ul.dt-sc-fancy-list.reply li:before { content:"\f112";  }
+	ul.dt-sc-fancy-list.quote li:before { content:"\f10d";  }
+	ul.dt-sc-fancy-list.mail li:before { content:"\f0e0";  }
+	ul.dt-sc-fancy-list.external-link li:before { content:"\f08e";  }	
+	ul.dt-sc-fancy-list.adjust li:before { content:"\f042";  }
+	ul.dt-sc-fancy-list.pencil li:before { content:"\f040";  }
+	ul.dt-sc-fancy-list.print li:before { content:"\f02f";  }
+	ul.dt-sc-fancy-list.tag li:before { content:"\f02b";  }	
+	ul.dt-sc-fancy-list.thumbs-up li:before { content:"\f088";  }
+	ul.dt-sc-fancy-list.thumbs-down li:before { content:"\f087";  }
+	ul.dt-sc-fancy-list.time li:before { content:"\f017";  }
+	ul.dt-sc-fancy-list.globe li:before { content:"\f0ac";  }	
+	ul.dt-sc-fancy-list.pushpin li:before { content:"\f08d";  }
+	ul.dt-sc-fancy-list.map-marker li:before { content:"\f041";  }
+	ul.dt-sc-fancy-list.link li:before { content:"\f0c1";  }
+	ul.dt-sc-fancy-list.paper-clip li:before { content:"\f0c6";  }	
+	ul.dt-sc-fancy-list.download li:before { content:"\f019";  }
+	ul.dt-sc-fancy-list.key li:before { content:"\f084";  }
+	ul.dt-sc-fancy-list.search li:before { content:"\f002";  }
+	ul.dt-sc-fancy-list.rss li:before { content:"\f09e";  }	
+	ul.dt-sc-fancy-list.twitter li:before { content:"\f099";  }
+	ul.dt-sc-fancy-list.facebook li:before { content:"\f09a";  }
+	ul.dt-sc-fancy-list.linkedin li:before { content:"\f0e1";  }
+	ul.dt-sc-fancy-list.google-plus li:before { content:"\f0d5";  }
+	
+	ul.dt-sc-fancy-list.circletick li:before { content:"\e685"; font-family: 'Pe-icon-7-stroke'; font-size: 16px; font-weight: bold; }	
+	ul.dt-sc-fancy-list.book li:before { content:"\f02d";  }	
+	ul.dt-sc-fancy-list.check li:before { content:"\f046";  }
+	ul.dt-sc-fancy-list.hand li:before { content:"\f0a4";  }
+	ul.dt-sc-fancy-list.cog li:before { content:"\f013";  }
+	ul.dt-sc-fancy-list.play li:before { content:"\f01d";  }
+	ul.dt-sc-fancy-list.teamug li:before { content:"\e637"; font-family:"Stroke-Gap-Icons"; }
+	
+	ul.dt-sc-fancy-list.play2 li:before { content:"\f04b";  }
+	ul.dt-sc-fancy-list.rounded-circle-tick li:before { content:"\f05d";  }
+	ul.dt-sc-fancy-list.circle-bullet li:before { content:"\f111";  }
+	
+	ul.dt-sc-fancy-list.rounded-tick-alter li:before { content:"\e66c"; font-family:'Pe-icon-7-stroke'; }
+	ul.dt-sc-fancy-list.wrench li:before { content:"\f0ad";  }
+	
+	ul.dt-sc-fancy-list.type2 li { padding-left:0px; }
+	ul.dt-sc-fancy-list.type2 li span { font-size:18px; margin:0px 10px 0px 0px; position:relative; top:2px; }
+	
+	
+	ul.dt-sc-fancy-list.blue li:before { color:#008bd3; }
+	ul.dt-sc-fancy-list.brown li:before { color:#795548; }
+	ul.dt-sc-fancy-list.cadetblue  li:before { color:#3c939d; }
+	ul.dt-sc-fancy-list.chillipepper li:before { color:#c10841; }
+	ul.dt-sc-fancy-list.cyan li:before { color:#00bcd4; }
+	ul.dt-sc-fancy-list.darkgolden li:before { color:#b48b3c; }
+	ul.dt-sc-fancy-list.deeporange li:before { color:#ff5722; }	
+	ul.dt-sc-fancy-list.deeppurple li:before { color:#673ab7; }
+	ul.dt-sc-fancy-list.green li:before { color:#60ae0d; }
+	ul.dt-sc-fancy-list.lime li:before { color:#cddc39; }
+	ul.dt-sc-fancy-list.magenta li:before { color:#cb506d; }
+	ul.dt-sc-fancy-list.orange li:before { color:#ff9800; }
+	ul.dt-sc-fancy-list.pink li:before { color:#fd6ca3; }	
+	ul.dt-sc-fancy-list.purple li:before { color:#9c27b0; }
+	ul.dt-sc-fancy-list.red li:before { color:#da0000; }
+	ul.dt-sc-fancy-list.skyblue li:before { color:#0eb2e7; }
+	ul.dt-sc-fancy-list.teal li:before { color:#009688; }
+	ul.dt-sc-fancy-list.turquoise li:before { color:#32ccbd; }
+	ul.dt-sc-fancy-list.wisteria li:before { color:#9b59b6; }
+	ul.dt-sc-fancy-list.yellow li:before { color:#ffe401; }
+	
+	ol.dt-sc-fancy-list li { padding:5px 0px 5px 0px; }
+
+	ol.decimal { list-style-type:decimal; }
+	ol.decimal-leading-zero { list-style-type:decimal-leading-zero; }
+	ol.lower-alpha { list-style-type:lower-alpha; }
+	ol.lower-roman { list-style-type:lower-roman; }
+	ol.upper-alpha { list-style-type:upper-alpha; }
+	ol.upper-roman { list-style-type:upper-roman; }	
+	
+	ol.dt-sc-fancy-list.blue li { color:#008bd3; }
+	ol.dt-sc-fancy-list.brown li { color:#795548; }
+	ol.dt-sc-fancy-list.cadetblue  li { color:#3c939d; }
+	ol.dt-sc-fancy-list.chillipepper li { color:#c10841; }
+	ol.dt-sc-fancy-list.cyan li { color:#00bcd4; }
+	ol.dt-sc-fancy-list.darkgolden li { color:#b48b3c; }
+	ol.dt-sc-fancy-list.deeporange li { color:#ff5722; }	
+	ol.dt-sc-fancy-list.deeppurple li { color:#673ab7; }
+	ol.dt-sc-fancy-list.green li { color:#60ae0d; }
+	ol.dt-sc-fancy-list.lime li { color:#cddc39; }
+	ol.dt-sc-fancy-list.magenta li { color:#cb506d; }
+	ol.dt-sc-fancy-list.orange li { color:#ff9800; }
+	ol.dt-sc-fancy-list.pink li { color:#fd6ca3; }	
+	ol.dt-sc-fancy-list.purple li { color:#9c27b0; }
+	ol.dt-sc-fancy-list.red li { color:#da0000; }
+	ol.dt-sc-fancy-list.skyblue li { color:#0eb2e7; }
+	ol.dt-sc-fancy-list.teal li { color:#009688; }
+	ol.dt-sc-fancy-list.turquoise li { color:#32ccbd; }
+	ol.dt-sc-fancy-list.wisteria li { color:#9b59b6; }
+	ol.dt-sc-fancy-list.yellow li { color:#ffe401; }
+	
+	ol.dt-sc-fancy-list.green li { color:#6dc82b; }
+	ol.dt-sc-fancy-list.orange li { color:#f39d12; }
+	ol.dt-sc-fancy-list.blue li { color:#4db8c9; }
+	ol.dt-sc-fancy-list.pink li { color:#e67fb9; }
+	ol.dt-sc-fancy-list.red li { color:#e74d3c; }
+	ol.dt-sc-fancy-list.purple li { color:#9c59b6; }
+	ol.dt-sc-fancy-list.ocean li { color:#1abc9c; }	
+	ol.dt-sc-fancy-list.slateblue li { color:#836fff; }
+	ol.dt-sc-fancy-list.skyblue li { color:#00bfff; }
+	ol.dt-sc-fancy-list.coral li { color:#ff7f50; }
+	ol.dt-sc-fancy-list.khaki li { color:#b6af55; }
+	ol.dt-sc-fancy-list.cyan li { color:#00cdcd; }
+	ol.dt-sc-fancy-list.grey li { color:#8e8e8e; }	
+	ol.dt-sc-fancy-list.gold li { color:#e0a81c; }
+	ol.dt-sc-fancy-list.chocolate li { color:#d77d31; }
+	ol.dt-sc-fancy-list.raspberry li { color:#a23b6f; }
+	ol.dt-sc-fancy-list.electricblue li { color:#536878; }
+	ol.dt-sc-fancy-list.eggplant li { color:#614051; }
+	ol.dt-sc-fancy-list.ferngreen li { color:#4f7942; }
+	ol.dt-sc-fancy-list.palebrown li { color:#987654; }

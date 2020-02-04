@@ -1,0 +1,468 @@
+
+/* Table of Content
+==================================================
+	1.0  -  Contact Form
+	2.0  -  DT Responsive*/
+
+	/*--------------------------------------------------------------
+	1.0 - Contact Form
+	--------------------------------------------------------------*/
+
+	/*----*****---- << 1.1 - Business Contact Form >> ----*****----*/
+	.business-contact-form { background:#ffffff; padding:30px 15px; margin:0px 0px 10px; width:100%;  float:left; clear:both; position:relative; }
+	.business-contact-form h2 { font-size:20px; }
+	.business-contact-form:before { content:""; position:absolute; width:100%; height:100%; border:10px solid rgba(255, 255, 255, 0.4); left:-10px; top:-10px; }
+	.business-contact-form input[type="text"], .business-contact-form input[type="email"], .business-contact-form textarea { background:rgba(0, 0, 0, 0.02); border:1px solid rgba(0, 0, 0, 0.05); border-radius:3px; padding:19px 15px 18px; }
+	.business-contact-form textarea { height:134px; }
+	.business-contact-form input[type="submit"] { margin-top:20px; padding:20px 20px 17px; font-size:18px; font-weight:normal; text-transform:none; width:100%; }
+	
+	.business-contact-form input[type="text"]:focus, .business-contact-form input[type="email"]:focus, .business-contact-form textarea:focus { border:1px solid rgba(0, 0, 0, 0.2); }
+	
+	.business-contact-social li { margin:0px 30px; }
+	.business-contact-social li a { font-size:20px; color:#000000; }
+	
+	
+	
+	
+	/*----*****---- << 1.2 - Attorney Contact Form >> ----*****----*/
+	.attorney-contact-form input[type="text"], .attorney-contact-form input[type="email"], .attorney-contact-form input[type="tel"], .attorney-contact-form textarea, .attorney-contact-form select { border:0px; border-bottom:1px solid #000000; color:#000000; padding:15px 0px; font-size:16px; }
+	.attorney-contact-form { margin: 0 auto; text-align: center; width: 70%; }
+	.attorney-contact-form textarea { height:53px; }
+	.attorney-contact-form input[type="submit"] { border-radius:0px; background:#000000; margin:20px 20px 0px 0px; padding:16px 30px; float:none; }
+	.attorney-contact-form input[type="submit"]:hover { background:#cda85c; }
+	.attorney-contact-form .selection-box:after { content:none; }
+	
+	.secondary-sidebar .attorney-contact-form { width:100%; }
+	.secondary-sidebar .attorney-contact-form input[type="submit"] { float:left; }
+	
+	
+	
+	/*----*****---- << 1.3 - Event Contact Form >> ----*****----*/
+	.event-contact-form input[type="text"], .event-contact-form input[type="email"], .event-contact-form input[type="tel"], .event-contact-form textarea { background:transparent; border:2px solid #fff; color:#ffffff; padding:14px 15px 13px; border-radius:5px; }
+	.event-contact-form textarea { height:153px; }
+	.event-contact-form input[type="submit"] { float:right; text-transform:none; margin:20px 0px 0px; font-size:16px; font-weight:normal; }
+	
+	
+	
+	/*----*****---- << 1.4 - Fitness Contact Form >> ----*****----*/
+	.fitness-form h2 { color:#eb0029; font-weight:600; }
+	.fitness-form .form-field { position:relative; margin:12px 0px 0px; float:left; clear:both; width:100%; }
+	.fitness-form span.fa, .fitness-form span.icon { position:absolute; left:15px; top:15px; color:rgba(0, 0, 0, 0.2); font-size:16px; z-index:9; color:#161616; }
+	.fitness-form input[type="text"], .fitness-form input[type="email"], .fitness-form input[type="tel"], .fitness-form textarea { padding:13px 0 13px 40px; text-transform:capitalize; font-size:14px; border-width:0px 0px 3px 0px; border-color:#ebeef0; margin-bottom: 5px; color:#000000; }
+	.fitness-form input[type="text"]:hover, .fitness-form input[type="email"]:hover, .fitness-form input[type="tel"]:hover, .fitness-form textarea:hover { border-color:#161616; -webkit-transition:all 0.3s linear; -moz-transition:all 0.3s linear; -o-transition:all 0.3s linear; -ms-transition:all 0.3s linear; transition:all 0.3s linear; } 
+	.fitness-form input[type="submit"] { border-radius: 0; float: right; font-weight: normal; letter-spacing: 0.5px; margin-top: 20px; font-size:16px; padding: 16px 30px; }
+	.fitness-form textarea { height:120px; }
+	
+	.fitness-contact-info .dt-sc-contact-info { font-size:16px; }
+	.fitness-contact-info .dt-sc-contact-info p b { color:#666666; }
+	.fitness-contact-info .dt-sc-contact-info span { font-size:18px; color:#eb0029; margin:1px 10px 30px 0px; }
+	.fitness-contact-info .dt-sc-contact-info h6 { font-size:18px; margin-bottom:10px; }	
+	
+	.fitness-contact-info .dt-sc-sociable li a { color:#161616; }
+	.fitness-contact-info .dt-sc-sociable li a:hover { color:#fff; }
+	
+	.fitness-contact-boxes .wpb_text_column { width:20.5%; float:left; margin-bottom:0px; }
+	.fitness-contact-boxes .wpb_text_column:nth-child(2), .fitness-contact-boxes .wpb_text_column:last-child { width:23.1%; float:left; padding-left:30px; }
+	.fitness-contact-boxes .wpb_text_column:nth-child(3) { width:12.8%; float:left; padding-top:85px; }
+	.fitness-form-container.extend-bg-fullwidth-right:after { background:#ffffff; }
+	
+	
+	
+	/*----*****---- << 1.5 - Hosting Contact Form >> ----*****----*/
+	.hosting-contact-form input[type="submit"] { width:100%; padding:15px 20px 13px; margin-top:15px; }
+	.hosting-contact-form textarea { height:196px; }
+	
+	
+	
+	/*----*****---- << 1.6 - Restaurant Contact Form >> ----*****----*/
+	.restaurant-contact-form { width:100%; float:right; max-width:570px; padding:30px 0px 0px; }
+	.restaurant-contact-form h3 { margin-bottom:25px; padding-left: 10px; }
+	.restaurant-contact-form input[type="text"], .restaurant-contact-form input[type="email"], .restaurant-contact-form input[type="tel"], .restaurant-contact-form textarea { background:none; border-color:rgba(255, 255, 255, 0.2); color:#ffffff; }
+	.restaurant-contact-form input[type="text"]:focus, .restaurant-contact-form input[type="email"]:focus, .restaurant-contact-form input[type="tel"]:focus, .restaurant-contact-form textarea:focus { border-color:#b48b3c; }
+	.restaurant-contact-form input[type="submit"] { margin-top:0px; float:right; }
+	
+	.restaurant-contact-bg:before { content:""; position:absolute; right:-201px; top:0px; background:url(./images/slanting-bg.png) no-repeat; width:201px; height:525px; z-index:9; }
+	
+	.dt-sc-contact-details-on-map { position: relative; }
+	.dt-sc-contact-details-on-map:after { background:rgba(0, 0, 0, 0.8); content:""; display: block; height:100%; position:absolute; left: 0; top: 0; width:100%; }
+	.dt-sc-contact-details-on-map.hide-overlay:after { display: none; }
+	
+	.dt-sc-contact-details-on-map .map {  width: 100%; }
+	.dt-sc-contact-details-on-map .dt-sc-map-overlay { padding: 72px 0 0; }
+	.dt-sc-contact-details-on-map .back-to-contact { display: none; }
+	.dt-sc-contact-details-on-map .back-to-contact span { background:#b48b3c; border:2px solid #b48b3c; border-radius:50%; color:#ffffff; float:left; font-size:28px; height:60px; left:0px; line-height:60px; margin:auto; position: absolute; right:0px; text-align:center; top:-30px; width:60px; z-index:99; } 
+	
+	.dt-sc-contact-details-on-map .section-wrapper.dt-sc-map-overlay { right:0px; margin:auto; max-width:1170px; }
+	
+	.dt-sc-contact-details-on-map .dt-sc-map-overlay:after { left:100%; right:inherit; }
+	.vc_row.vc_row-no-padding .dt-sc-map-overlay .wpb_column.vc_col-sm-3 { padding-left:15px; padding-right:15px; }
+	
+	
+	
+	/*----*****---- << 1.7 - Spa Contact Form >> ----*****----*/
+	.spa-contact-form input[type="text"], .spa-contact-form input[type="tel"], .spa-contact-form input[type="email"], .spa-contact-form textarea { border-color:#ffc9d4; font-family:'Open Sans', sans-serif; font-size:16px; color:#000000; font-weight:600; border-radius:15px 0px; }
+	.spa-contact-form input[type="text"]:focus, .spa-contact-form input[type="tel"]:focus, .spa-contact-form input[type="email"]:focus, .spa-contact-form textarea:focus{ border-color:#ef577a; }
+	
+	
+	
+	/*----*****---- << 1.8 - University Forms >> ----*****----*/
+	.university-contact-form .form-field, .university-contact-form .button-field { position:relative; float:left; clear:both; margin:0px 0px 20px; width:100%; }
+	.university-contact-form .form-field i, .university-contact-form .button-field i { position:absolute; right:15px; top:15px; font-size:23px; color:#1c3f55; z-index:9; font-weight:bold; }
+	.university-contact-form .form-field input[type="text"], .university-contact-form .form-field input[type="tel"], .university-contact-form .form-field input[type="email"], .university-contact-form textarea, .university-contact-form .form-field select { padding:16px 30px 15px 12px; color:#1c3f55; font-weight:normal; font-family:'Open Sans', sans-serif; }
+	.university-contact-form textarea { height:205px; }
+	.university-contact-form .button-field { margin:10px 0px 0px; }
+	.university-contact-form .button-field input[type="submit"] { padding: 0 48px 0 20px; width: 100%; color: #ffffff; height: 49px; line-height: 49px; border-radius: 0; }
+	.university-contact-form .button-field i { color: #463839; right: 0px; top: 10px; width: 48px; height: 49px; line-height: 49px; text-align: center; }
+	
+	
+	
+	/*----*****---- << 1.9 - Yoga Forms >> ----*****----*/
+	.dt-sc-newsletter-section.yoga-expert-form .dt-sc-subscribe-frm { width:100%; float:left; }
+	.dt-sc-newsletter-section.yoga-expert-form { float:left; clear:both; margin:0px; padding:0px; width:100%; }
+	.dt-sc-newsletter-section.yoga-expert-form .dt-sc-subscribe-frm input[type="email"] { border:1px solid #c8dcdf; border-radius:5px; width:50%; float:left; margin:0px 20px 0px 0px; }
+	.dt-sc-newsletter-section.yoga-expert-form .dt-sc-subscribe-frm input[type="submit"] { background:#927d7d; clear:none; padding:17px 20px; margin:0px; border-radius:3px; }
+	.dt-sc-newsletter-section.yoga-expert-form .dt-sc-subscribe-frm input[type="submit"]:hover { background:#3c939d; }
+	
+	.yoga-contact-form input[type="text"], .yoga-contact-form input[type="email"], .yoga-contact-form input[type="tel"], .yoga-contact-form textarea { border-color:#c8dcdf; border-radius:5px; }
+	.yoga-contact-form input[type="submit"] { background:#927d7d; margin:20px 0px 0px; }
+	.yoga-contact-form input[type="submit"]:hover { background:#3c939d; }
+	.yoga-contact-form textarea { height:100px; } 
+	
+	
+	
+	/*----*****---- << 1.10 - Nightclub Booking Form >> ----*****----*/
+	.nightclub-contact { float:left; clear:both; width:100%; margin:0px; padding:0px; }
+	.nightclub-contact-info { width:23%; float:left; margin:0px 2.5% 0px 0px; padding:20px 0px 67px; border-bottom:1px solid #000000; }
+	.nightclub-contact-info .dt-sc-contact-info { font-size:16px; line-height:34px; }
+	.nightclub-contact-info .dt-sc-contact-info span { color:#c09245; font-size:24px; }
+	.nightclub-contact-info .dt-sc-contact-info span.icon-pointer { font-size:30px; }
+	.nightclub-contact-info .dt-sc-contact-info span.icon-phone2 { margin-bottom:45px; }
+	.nightclub-contact-info .dt-sc-contact-info span.icon-plaine { margin-bottom:10px; }
+	.nightclub-contact-info .dt-sc-contact-info a { color:#000000; }
+	.nightclub-contact-info .dt-sc-contact-info a:hover { color:#c09245; }
+	.nightclub-working-hours { color:#ffffff; background:#000000; padding:30px; width:32%; float:left; margin:0px 2.5% 0px 0px; }
+	.nightclub-working-hours h2 { color:#ffffff; }
+	.nightclub-working-hours ul { float:left; clear:both; margin:10px 0px 0px; width:100%; }
+	.nightclub-working-hours li { font-size:16px; display:block; clear:both; color:#c09245; padding:0px; margin:0px; }
+	.nightclub-working-hours li span { color:#ffffff; width:120px; display:inline-block; }
+	
+	
+	.nightclub-booking-form { float:left; clear:both; width:100%; margin:0px; padding:0px; }
+	.nightclub-booking-form p { margin-bottom:20px; float:left; clear:both; width:100%; position:relative; }
+	.nightclub-booking-form p.date:before, .nightclub-booking-form p.time:before { position:absolute; right:14px; top:9px; color:#ffffff; font-size:25px; font-family:FontAwesome; }
+	.nightclub-booking-form p.date:before { content:"\f073"; }
+	.nightclub-booking-form p.time:before { content:"\f017"; }
+	.nightclub-booking-form p label { float:left; width:35%; padding:0px 10px 0px 0px;  color:#ffffff; font-size:16px; line-height:52px; }
+	.nightclub-booking-form input[type="text"], .nightclub-booking-form input[type="tel"], .nightclub-booking-form input[type="date"] { width:65%;  background:rgba(255, 255, 255, 0.1); float:left; color:#ffffff; font-size:16px; font-family:'Open Sans', sans-serif; }
+	.nightclub-booking-form input[type="submit"] { font-size:30px; text-transform:none; font-weight:normal; float:right; border-radius:0px; margin:10px -105px 0px 0px; }
+	
+	
+	.nightclub-contact-form { width:40%; float:left; margin:0px;  padding:45px 45px 30px; position:relative; background:#f2f2f2; margin:-192px 0px 0px; }
+	.nightclub-contact-form:before { border: 4px solid #000000; content:""; height: auto; position:absolute; bottom: 20px; left:20px; right: 20px; top:20px; width: auto; }
+	.nightclub-contact-form p { font-size:14px; color:rgba(0, 0, 0, 0.5); line-height:24px; position:relative; z-index:1; }
+	.nightclub-contact-form form { float:left; clear:both; width:100%; position:relative; z-index:1; }
+	.nightclub-contact-form input[type="text"], .nightclub-contact-form input[type="email"], .nightclub-contact-form input[type="tel"], .nightclub-contact-form textarea { background:none; border:none; border-bottom:1px solid #000000; font-size:16px; color:#000000; padding:16px 12px 8px 0; margin-bottom:7px; }
+	.nightclub-contact-form textarea { height:150px; }
+	.nightclub-contact-form input[type="submit"] { border-radius:0px; width:100%; text-align:center; font-size:20px; font-weight:normal; margin:40px 0px 0px; padding:18px 20px 17px; }
+	
+	
+	
+	/*----*****---- << 1.11 - Architecture Contact Form >> ----*****----*/
+	.architecture-contact-form input[type="text"], .architecture-contact-form input[type="email"], .architecture-contact-form input[type="tel"], .architecture-contact-form textarea { border:0px; border-bottom:1px solid #000000; color:#000000; padding:15px 0px 10px 30px; font-size:14px; background:none; }
+	.architecture-contact-form textarea { height:130px; }
+	.architecture-contact-form input[type="submit"] { float:right; border-radius:0px; background:#000000; color:#ffffff; font-weight:normal; margin:20px 0px 0px 20px; padding:16px 30px; }
+	.architecture-contact-form input[type="submit"]:hover { background:#ffe401; color:#000000; }
+	
+	.architecture-contact-form .form-field { position:relative; margin:0px; float:left; clear:both; width:100%; }
+	.architecture-contact-form span.fa { position:absolute; left:0px; top:15px; color:#000000; font-size:16px; }
+	
+	
+	
+	/*----*****---- << 1.12 - Insurance Contact Form >> ----*****----*/
+	.insurance-contact-form input[type="text"], .insurance-contact-form input[type="email"], .insurance-contact-form textarea { background:rgba(0, 0, 0, 0.02); }
+	.insurance-contact-form  input[type="submit"] { margin-top:20px; width:100%; font-size:16px; padding:17px 20px 16px; }
+	.insurance-contact-form textarea { height:122px; } 
+	
+	.insurance-custom-tab .dt-sc-tabs-horizontal-frame-content { border:1px solid rgba(0, 0, 0, 0.1); border-top:0px; border-radius:0px 0px 3px 3px; padding:25px;  }
+	.insurance-quote-form { float:left; width:100%; margin:0px; padding:0px; }
+	.insurance-quote-form label { margin-bottom:5px; display:inline-block; }
+	.insurance-quote-form .radio-label { clear:both; margin:0px; }
+	.insurance-quote-form .radio-label .wpcf7-list-item { position:relative; clear:both; display:inline-block; }
+	.insurance-quote-form .radio-label .wpcf7-list-item label:before { content:""; position:absolute; left:5px; top:7px; width:14px; height:14px; border:1px solid rgba(0, 0, 0, 0.2); background:#ffffff; border-radius:50%; }
+	.insurance-quote-form .radio-label input[type="radio"] { width:30px; }
+	.insurance-quote-form .radio-label .wpcf7-list-item-label { position:relative; min-width:40px; display:inline-block; line-height:29px; margin:0px; }
+	.insurance-quote-form .radio-label .wpcf7-list-item-label:before { opacity:0; }
+	.insurance-quote-form .radio-label input[type="radio"]:checked + .wpcf7-list-item-label:before  { content:""; position:absolute; left:-23px; top:2px; bottom:0px; margin:auto; width:6px; height:6px; background:#008bd3; border-radius:50%;opacity:1; }
+	.insurance-quote-form .radio-label .wpcf7-list-item.last input[type="radio"]:checked + .wpcf7-list-item-label:before { left:-31px; }
+	
+	.insurance-quote-form input[type="text"], .insurance-quote-form input[type="tel"], .insurance-quote-form input[type="date"], .insurance-quote-form select { background:rgba(0, 0, 0, 0.02); }
+	.insurance-quote-form .checkbox-label input[type="checkbox"] { position:absolute; left:0px; top:2px; }
+	.insurance-quote-form .checkbox-label span { line-height:20px; float:left; padding:0px 0px 0px 23px; }
+	.insurance-quote-form .checkbox-label { font-size:12px; color:#222222; position:relative; clear:both; display:inline-block; }
+	
+	.insurance-quote-form input[type="submit"] { border-radius:0px; padding:14px 20px; }
+	
+	
+	
+	/*----*****---- << 1.13 - Hotel Contact Form >> ----*****----*/
+	.wpcf7-form.hotel-contact-form p { position:relative; margin-bottom:10px; }
+	.hotel-contact-form p span.fa { position:absolute; right:15px; top:17px; color:rgba(0, 0, 0, 0.2); font-size:16px; z-index:1; }
+	.hotel-contact-form p textarea { height:120px; }
+	.hotel-contact-form p input[type="submit"] { float:right; margin:15px 0px 0px 10px; border-radius:0px; }
+	.hotel-contact-form p .clear { background:#000000; }
+	.hotel-contact-form p .clear:hover { background:#c09245; }
+	
+	
+	
+	/*----*****---- << 1.14 - Plumber Contact Form >> ----*****----*/
+	.plumber-contact-form { width:100%; float:left; clear:both; margin:0px; padding:0px; text-align:center; }
+	.plumber-contact-form form { width:50%; display:inline-block; }
+	.plumber-contact-form form input[type="text"], .plumber-contact-form form input[type="email"], .plumber-contact-form form textarea { border-color:#e2ebf1; border-radius:3px; }
+	.plumber-contact-form form input[type="submit"] { width:100%; font-size:16px; font-weight:bold; background:none; color:#15a7e1; border:1px solid #15a7e1; box-shadow:3px 3px 0 0 #1297cc; padding:16px 20px; }
+	.plumber-contact-form form input[type="submit"]:hover { background:#15a7e1; color:#ffffff; box-shadow:3px 3px 0 0 rgba(0, 0, 0, 0.1); }
+	
+	
+	
+	/*----*****---- << 1.15 - Fashion Contact Form >> ----*****----*/
+	.fashion-contact-details .dt-sc-contact-info span { font-size:14px; }
+	.fashion-contact-form input[type="submit"] { background:#000000; float:right; font-family:'Open Sans', sans-serif; float: right; font-size: 18px; font-weight: normal; padding: 15px 20px 12px; }
+	.fashion-contact-form input[type="submit"]:hover { background:#c3875f }
+	
+	
+	
+	/*----*****---- << 1.16 - Jewel Contact Form >> ----*****----*/
+	.jewel-contact-form label { float:right; color:#000000; }
+	.jewel-contact-form input[type="submit"] { float:right; margin:20px 0px 0px; padding:17px 20px 15px; }
+	.jewel-contact-form textarea { height:306px; } 
+	
+	
+	
+	/*----*****---- << 1.17 - Contact Form 7 Validation >> ----*****----*/
+	.wpcf7-form .wpcf7-not-valid { border-color:#ff0000 !important; }
+	.wpcf7-form .wpcf7-not-valid-tip { display:none; }
+	
+	.wpcf7-form.event-contact-form .wpcf7-not-valid { background-color:rgba(255, 0, 0, 0.1) !important; }
+	.wpcf7-form.university-contact-form p { clear:both; }
+	
+	.wpcf7-form div.wpcf7-validation-errors, .wpcf7-form div.wpcf7-mail-sent-ok { clear: both; float: left; margin-left: 0; margin-right: 0; padding:15px 15px 15px 45px; width: 99%; box-sizing: border-box; }
+	.wpcf7-form div.wpcf7-validation-errors { background-color:#ffcccc; border:1px solid #ff9999; color:#d01313; position:relative; }
+	.wpcf7-form div.wpcf7-validation-errors:before, .wpcf7-form div.wpcf7-mail-sent-ok:before { top:15px; left:18px; font-family:FontAwesome; font-style:normal; font-weight:normal; text-decoration:inherit; font-size:20px; position:absolute; }
+	.wpcf7-form div.wpcf7-validation-errors:before { content:"\f057"; color:#C54228; }
+	
+	.wpcf7-form div.wpcf7-mail-sent-ok { background-color:#eafac0; border:1px solid #b1cf67; color:#7ba411; position:relative; }
+	.wpcf7-form div.wpcf7-mail-sent-ok:before { content:"\f058"; color:#75b632; }
+
+	
+	/*--------------------------------------------------------------
+	   Social
+	--------------------------------------------------------------*/
+	.dt-sc-sociable { float:left; clear:both; margin:0px; padding:0px; line-height:0px; }
+	.dt-sc-sociable li { float:left; display:inline; margin: 0 5px 5px; padding: 0; }
+	.dt-sc-sociable li a { width:36px; height:36px; float:left; text-align:center; line-height:36px; font-size:15px; }
+	.dt-sc-sociable li a.zmdi { font-size: 20px; }
+	
+	.aligncenter .dt-sc-sociable { text-align:center; width:100%; }
+	.aligncenter .dt-sc-sociable li, .aligncenter .dt-sc-sociable li a { float:none; display:inline-block; }
+	
+	.alignright .dt-sc-sociable  { float:right; text-align:right; }
+	
+	.dt-sc-sociable.rounded-square li a { border-radius:5px; }
+	.dt-sc-sociable.rounded li a { border-radius:50%; }
+	.dt-sc-sociable.rounded-border li a { border:1px solid; border-radius:50%; width:40px; height:40px; }
+	.dt-sc-dark-bg .dt-sc-sociable.rounded-border li a { border:2px solid; }
+	.dt-sc-sociable.square-border li a { border:1px solid; }
+	.dt-sc-dark-bg .dt-sc-sociable.square-border li a { border:1px solid; }
+	
+	.dt-sc-sociable.rounded-border-dashed li a { border:1px dashed; border-radius:50%; }
+	
+	.dt-sc-sociable.diamond-square-border li { text-align:center; border:1px solid; width:32px; height:32px; -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg);  transform:rotate(45deg); border-radius:3px; margin:0px 0px 20px 20px; }
+	.dt-sc-sociable.diamond-square-border li a { margin:-5px 0px 0px -5px; width:40px; height:40px; line-height:40px; -webkit-transform:rotate(-45deg); -moz-transform:rotate(-45deg); -ms-transform:rotate(-45deg); transform:rotate(-45deg); float:left; }
+	/*.dt-sc-sociable.diamond-square-border li:last-child { border-bottom:1px solid rgba(0, 0, 0, 0.2); }*/
+	
+	.diamond-narrow-square-border li { position:relative; margin:0px 8px; }
+	.diamond-narrow-square-border li a { width:40px; height:40px; position:relative; z-index:1; height:60px; line-height:60px; }
+	.diamond-narrow-square-border li:before { content:""; position:absolute; left:-1px; right:0; margin:auto; top:12px; width:35px; height:35px; border:1px solid; z-index:1; transform:rotate3d(1, 1, 5, 47deg) skew(10deg, 10deg); -webkit-transform:rotate3d(1, 1, 5, 47deg) skew(10deg, 10deg); }
+	
+	/* IE9 Only */		
+	.ie9 .diamond-narrow-square-border li::before { transform: rotate(45deg) skew(10deg, 10deg); -ms-transform: rotate(45deg) skew(10deg, 10deg); }
+	
+	.dt-sc-sociable.filled li a.fa-facebook, .dt-sc-sociable.square li a.fa-facebook:hover,
+	.dt-sc-sociable.filled li.facebook a, .dt-sc-sociable.square li.facebook a:hover/*, .dt-sc-sociable li.facebook a*/ { background:#3162a2; }
+
+	.dt-sc-sociable.filled li a.fa-twitter, .dt-sc-sociable.square li a.fa-twitter:hover,
+	.dt-sc-sociable.filled li.twitter a, .dt-sc-sociable.square li.twitter a:hover/*, .dt-sc-sociable li.twitter a*/ { background:#2fb1eb; }	
+
+	.dt-sc-sociable.filled li a.fa-dribbble, .dt-sc-sociable.square li a.fa-dribbble:hover,
+	.dt-sc-sociable.filled li.dribbble a, .dt-sc-sociable.square li.dribbble a:hover/*, .dt-sc-sociable li.dribbble a*/ { background:#ff68c5; }	
+
+	.dt-sc-sociable.filled li a.fa-tumblr, .dt-sc-sociable.square li a.fa-tumblr:hover,
+	.dt-sc-sociable.filled li.tumblr a, .dt-sc-sociable.square li.tumblr a:hover/*, .dt-sc-sociable li.tumblr a*/ { background:#34465d; }	
+
+	.dt-sc-sociable.filled li a.fa-google-plus, .dt-sc-sociable.square li a.fa-google-plus:hover,
+	.dt-sc-sociable.filled li.google-plus a, .dt-sc-sociable.square li.google-plus a:hover/*, .dt-sc-sociable li.google-plus a*/ { background:#c54542; }
+
+	.dt-sc-sociable li a:before { font-family: "FontAwesome"; }
+	.dt-sc-sociable li a.zmdi:before { font-family:Material-Design-Iconic-Font; }
+
+	/*.dt-sc-sociable li.delicious a { background: #2648be; }
+	.dt-sc-sociable li.deviantart a { background: #54675a; }
+	.dt-sc-sociable li.digg a { background: #1a5891; }
+	.dt-sc-sociable li.flickr a { background: #e30377; }
+	.dt-sc-sociable li.comment a { background: #5fb749; }
+	.dt-sc-sociable li.instagram a { background: #895a4d; }
+	.dt-sc-sociable li.lastfm a { background: #d12540; }
+	.dt-sc-sociable li.linkedin a { background: #0173b2; }
+	.dt-sc-sociable li.mail a { background: #edc719; }
+	.dt-sc-sociable li.myspace a { background: #4f79c6; }
+	.dt-sc-sociable li.picasa a { background: #8a66a3; }
+	.dt-sc-sociable li.pinterest a { background: #ca1325; }
+	.dt-sc-sociable li.reddit a { background: #ff1a00; }
+	.dt-sc-sociable li.rss a { background: #ffb922; }
+	.dt-sc-sociable li.skype a { background: #00aaf1; }
+	.dt-sc-sociable li.stumbleupon a { background: #eb4924; }
+	.dt-sc-sociable li.technorati a { background: #5bb834; }
+	.dt-sc-sociable li.twitter a { background: #2caae1; }
+	.dt-sc-sociable li.viadeo a { background: #f4982b; }
+	.dt-sc-sociable li.vimeo a { background: #41b2dc; }
+	.dt-sc-sociable li.yahoo a { background: #7c1f70; }
+	.dt-sc-sociable li.youtube a { background: #ff3431; }*/
+	
+	.dt-sc-sociable.square li a:hover, #footer .dt-sc-sociable.square li a:hover/*, .dt-sc-sociable li a*/ { color:#fff; }
+
+	.dt-sc-sociable li.delicious a:before { content: "\f1a5"; }
+	.dt-sc-sociable li.deviantart a:before { content: "\f1bd"; }
+	.dt-sc-sociable li.digg a:before { content: "\f1a6"; }
+	.dt-sc-sociable li.flickr a:before { content: "\f16e"; }
+	.dt-sc-sociable li.comment a:before { content: "\f075"; }
+	.dt-sc-sociable li.lastfm a:before { content: "\f202"; }
+	.dt-sc-sociable li.linkedin a:before { content: "\f0e1"; }
+	.dt-sc-sociable li.envelope-open a:before { content: "\f2b6"; }
+	.dt-sc-sociable li.myspace a:before { content: "\f0c0"; }
+	.dt-sc-sociable li.picasa a:before { content: ""; }
+	.dt-sc-sociable li.pinterest a:before { content: "\f0d2"; }
+	.dt-sc-sociable li.reddit a:before { content: "\f1a1"; }
+	.dt-sc-sociable li.rss a:before { content: "\f09e"; }
+	.dt-sc-sociable li.skype a:before { content: "\f17e"; }
+	.dt-sc-sociable li.stumbleupon a:before { content: "\f1a4"; }
+	.dt-sc-sociable li.technorati a:before { content: ""; }
+	.dt-sc-sociable li.twitter a:before { content: "\f099"; }
+	.dt-sc-sociable li.viadeo a:before { content: "\f2a9"; }
+	.dt-sc-sociable li.vimeo a:before { content: "\f27d"; }
+	.dt-sc-sociable li.yahoo a:before { content: "\f19e"; }
+	.dt-sc-sociable li.youtube a:before { content: "\f167"; }
+
+	.dt-sc-sociable li.dribbble a:before { content: "\f17d"; }
+	.dt-sc-sociable li.google-plus a:before { content: "\f0d5"; }
+	.dt-sc-sociable li.tumblr a:before { content: "\f173"; }
+	.dt-sc-sociable li.dribbble a:before { content: "\f17d"; }
+	.dt-sc-sociable li.instagram a:before { content: "\f16d"; }
+	.dt-sc-sociable li.facebook a:before { content: "\f09a"; }
+	
+	.dt-sc-sociable.hexagon-with-border li, .dt-sc-sociable.hexagon-border li { position:relative; width:42px; height:25px; margin:14px 5px; border-left:solid 2px;  border-right:solid 2px; }
+	.dt-sc-sociable.hexagon-with-border li:before, .dt-sc-sociable.hexagon-with-border li:after, .dt-sc-sociable.hexagon-border li:before, .dt-sc-sociable.hexagon-border li:after { content:""; position:absolute; z-index:1; width:28px; height:28px; -webkit-transform:scaleY(0.5774) rotate(-45deg); -ms-transform:scaleY(0.5774) rotate(-45deg); transform:scaleY(0.5774) rotate(-45deg); background-color:inherit; left:5px; }
+	.dt-sc-sociable.hexagon-with-border li:before, .dt-sc-sociable.hexagon-border li:before { top:-14.0660px; border-top:solid 2.5px; border-right:solid 2.5px; }
+	.dt-sc-sociable.hexagon-with-border li:after, .dt-sc-sociable.hexagon-border li:after { bottom:-14.0660px; border-bottom:solid 2.5px; border-left:solid 2.5px; left:5px; }
+	.dt-sc-sociable.hexagon-with-border li a, .dt-sc-sociable.hexagon-border li a { line-height:52px; position:relative; z-index:9; left:-1px; top:-13px; width:42px; height:52px; }
+		
+	.dt-sc-sociable.no-margin li { margin: 13px 0 0; }
+	.dt-sc-sociable.no-margin li a { text-align: left; }
+	.dt-sc-sociable.no-margin li a:hover { color: #2b2b2b; }
+	
+	/*--------------------------------------------------------------
+	2.0 - DT Responsive
+	--------------------------------------------------------------*/
+	/* Note: Design for a width of 960px */	
+    @media only screen and (min-width:992px) and (max-width:1199px) {
+		
+		/** Restaurant **/		
+		.restaurant-contact-bg:before { content: none; }		
+		.restaurant-contact-bg > .vc_column-inner { padding-right: 0 !important; }
+		
+		.restaurant-contact-form { float: none; display: block; max-width: 100%; margin: 0 auto; width: 80%; }
+		
+		/** Fitness **/
+		.fitness-contact-boxes .wpb_text_column:nth-child(3) { padding-top:55px; }
+		
+	}
+	
+	/* Note: Design for a width of 768px */
+    @media only screen and (min-width:768px) and (max-width:991px) {
+		
+		/** Business **/
+		.business-contact-social li { margin: 0 20px; }
+		.plumber-contact-form form { width:100%; }
+		
+	}
+	
+	
+	/*----*****---- << Mobile (Landscape) >> ----*****----*/	
+	
+	/* Common Styles for the devices below 767px width */
+	@media only screen and (max-width: 767px) {
+ 		
+ 		/** Restaurant **/
+		.restaurant-booking-form { padding: 0 50px; }
+ 		
+		.restaurant-contact-bg:before { content: none; }		
+		.restaurant-contact-bg > .vc_column-inner { padding-right: 0 !important; }
+		
+		.restaurant-contact-form { float: none; display: block; max-width: 100%; margin: 0 auto 20px; width: 80%; }		
+		.restaurant-contact-form .wpb_column { margin-bottom: 20px; }
+		
+		/** Contact-details-on-map **/
+		.dt-sc-contact-details-on-map:after { z-index: -1; }
+		.dt-sc-contact-details-on-map .dt-sc-map-overlay { position: inherit; }
+		.dt-sc-contact-details-on-map .dt-sc-map-overlay .dt-sc-contact-info.type3 { font-size: 13px; }
+		
+		/** Jewel **/	
+		.jewel-contact-form .vc_col-sm-2 { width: 30% !important; }
+		.jewel-contact-form .vc_col-sm-10 { width: 70% !important; }
+		
+		/** Plumber **/
+		.plumber-contact-form form { width:100%; }
+
+		/* */
+
+		.alignright .dt-sc-sociable { float: none; text-align: center; margin: 0; }
+ 	
+	}
+	
+	/*----*****---- << Mobile (Landscape) >> ----*****----*/
+    /* Note: Design for a width of 480px */
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+		
+		/** Wedding **/
+		.rsvp-form { padding: 65px 35px; }
+		.rsvp-form form:before { left: -81px; }
+		.rsvp-form form:after { right: -164px; }
+		
+	}
+	
+	/* Common Styles for the devices below 479px width */
+    @media only screen and (max-width: 479px) {
+		/** Attorney **/
+		.attorney-contact-form { width:100%; }
+		
+		/** Wedding **/
+		.rsvp-form { padding: 65px 35px; width: 100%; }
+		.rsvp-form form:before, .rsvp-form form:after { content: none; }
+	}
+	
+	
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 319px) {
+				
+		
+		/** Business **/
+		.business-contact-form { padding-left: 5px; padding-right: 5px; }
+		.business-contact-social li { margin: 0 5px; }
+		
+		/** Jewel **/		
+		.jewel-contact-form { text-align: center; }
+		.jewel-contact-form label { float: none; }
+		.jewel-contact-form .vc_col-sm-2, .jewel-contact-form .vc_col-sm-10 { width: 100% !important; }
+		
+		/** Wedding **/
+		.rsvp-form { padding: 65px 25px; margin-left: -15px; width: calc(100% + 30px); }
+		.rsvp-form:before { height: auto; bottom: 5px; left: 5px; right: 5px; top: 5px; width: auto; }
+	}

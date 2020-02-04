@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* Table of Content
+==================================================
+	1.0 - Transition
+	1.1 - Social
+	1.2 - Browser Css 
+	1.3 - Default Color
+	1.4 - Skin Color*/
+
+	/*--------------------------------------------------------------
+	1.0 - Transition
+	--------------------------------------------------------------*/
+	.dt-sc-sociable, .dt-sc-sociable.diamond-square-border li { -webkit-transition:all 0.3s linear; -moz-transition:all 0.3s linear; -o-transition:all 0.3s linear; -ms-transition:all 0.3s linear; transition:all 0.3s linear; }
+	
+	
+	
+	/*--------------------------------------------------------------
+	1.1 - Social
+	--------------------------------------------------------------*/
+	.dt-sc-sociable { float:left; clear:both; margin:0px; padding:0px; line-height:0px; }
+	.dt-sc-sociable li { float:left; display:inline; margin: 0 5px 5px; padding: 0; }
+	.dt-sc-sociable li a { width:36px; height:36px; float:left; text-align:center; line-height:36px; font-size:16px; }
+	
+	.aligncenter .dt-sc-sociable { text-align:center; width:100%; }
+	.aligncenter .dt-sc-sociable li, .aligncenter .dt-sc-sociable li a { float:none; display:inline-block; }
+	
+	.alignright .dt-sc-sociable  { float:right; text-align:right; }
+	
+	.dt-sc-sociable.rounded-square li a { border-radius:5px; }
+	.dt-sc-sociable.rounded li a { border-radius:50%; }
+	.dt-sc-sociable.rounded-border li a { border:2px solid; border-radius:50%; width:40px; height:40px; }
+	.dt-sc-dark-bg .dt-sc-sociable.rounded-border li a { border:2px solid; }
+	.dt-sc-sociable.square-border li a { border:1px solid; }
+	.dt-sc-dark-bg .dt-sc-sociable.square-border li a { border:1px solid; }
+	
+	.dt-sc-sociable.rounded-border-dashed li a { border:1px dashed; border-radius:50%; }
+	
+	.dt-sc-sociable.diamond-square-border li { text-align:center; border:1px solid; width:32px; height:32px; -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg);  transform:rotate(45deg); border-radius:3px; margin:0px 0px 20px 20px; }
+	.dt-sc-sociable.diamond-square-border li a { margin:-5px 0px 0px -5px; width:40px; height:40px; line-height:40px; -webkit-transform:rotate(-45deg); -moz-transform:rotate(-45deg); -ms-transform:rotate(-45deg); transform:rotate(-45deg); float:left; }
+	/*.dt-sc-sociable.diamond-square-border li:last-child { border-bottom:1px solid rgba(0, 0, 0, 0.2); }*/
+	
+	.diamond-narrow-square-border li { position:relative; margin:0px 8px; }
+	.diamond-narrow-square-border li a { width:40px; height:40px; position:relative; z-index:1; height:60px; line-height:60px; }
+	.diamond-narrow-square-border li:before { content:""; position:absolute; left:-1px; right:0; margin:auto; top:12px; width:35px; height:35px; border:1px solid; z-index:1; transform:rotate3d(1, 1, 5, 47deg) skew(10deg, 10deg); -webkit-transform:rotate3d(1, 1, 5, 47deg) skew(10deg, 10deg); }
+	
+	/* IE9 Only */		
+	.ie9 .diamond-narrow-square-border li::before { transform: rotate(45deg) skew(10deg, 10deg); -ms-transform: rotate(45deg) skew(10deg, 10deg); }
+	
+	.dt-sc-sociable.filled li a.fa-facebook, .dt-sc-sociable.square li a.fa-facebook:hover { background:#3162a2; }
+	.dt-sc-sociable.filled li a.fa-twitter, .dt-sc-sociable.square li a.fa-twitter:hover { background:#2fb1eb; }	
+	.dt-sc-sociable.filled li a.fa-dribbble, .dt-sc-sociable.square li a.fa-dribbble:hover { background:#ff68c5; }	
+	.dt-sc-sociable.filled li a.fa-tumblr, .dt-sc-sociable.square li a.fa-tumblr:hover { background:#34465d; }	
+	.dt-sc-sociable.filled li a.fa-google-plus, .dt-sc-sociable.square li a.fa-google-plus:hover { background:#c54542; }
+	
+	.dt-sc-sociable.square li a:hover, #footer .dt-sc-sociable.square li a:hover { color:#fff; }	
+	
+	.dt-sc-sociable.hexagon-with-border li, .dt-sc-sociable.hexagon-border li { position:relative; width:42px; height:25px; margin:14px 5px; border-left:solid 2px;  border-right:solid 2px; }
+	.dt-sc-sociable.hexagon-with-border li:before, .dt-sc-sociable.hexagon-with-border li:after, .dt-sc-sociable.hexagon-border li:before, .dt-sc-sociable.hexagon-border li:after { content:""; position:absolute; z-index:1; width:28px; height:28px; -webkit-transform:scaleY(0.5774) rotate(-45deg); -ms-transform:scaleY(0.5774) rotate(-45deg); transform:scaleY(0.5774) rotate(-45deg); background-color:inherit; left:5px; }
+	.dt-sc-sociable.hexagon-with-border li:before, .dt-sc-sociable.hexagon-border li:before { top:-14.0660px; border-top:solid 2.5px; border-right:solid 2.5px; }
+	.dt-sc-sociable.hexagon-with-border li:after, .dt-sc-sociable.hexagon-border li:after { bottom:-14.0660px; border-bottom:solid 2.5px; border-left:solid 2.5px; left:5px; }
+	.dt-sc-sociable.hexagon-with-border li a, .dt-sc-sociable.hexagon-border li a { line-height:52px; position:relative; z-index:9; left:-1px; top:-13px; width:42px; height:52px; }
+	
+	
+	
+	/*--------------------------------------------------------------
+	1.2 - Browser Css
+	--------------------------------------------------------------*/
+	
+	@media screen and (-webkit-min-device-pixel-ratio:0) { 
+		.dt-sc-sociable.hexagon-with-border li:after, .dt-sc-sociable.hexagon-border li:after { bottom:-14.0660px; }
+		::i-block-chrome,.dt-sc-sociable.hexagon-with-border li:after, .dt-sc-sociable.hexagon-border li:after { bottom:-15.0660px; }
+	}	
+	
+	
+	
+	/*--------------------------------------------------------------
+	1.3 - Default Colors
+	--------------------------------------------------------------*/	
+	.dt-sc-sociable.filled li a,  .dt-sc-sociable.hexagon-with-border li a, .dt-sc-sociable.hexagon-border li a { color:#ffffff; }
+	.dt-sc-sociable.diamond-square-border li a { color:rgba(0, 0, 0, 0.2); }
+	.dt-sc-dark-bg .dt-sc-sociable.diamond-square-border li a { color:rgba(255, 255, 255, 0.2); }
+	
+	.dt-sc-sociable.hexagon-with-border li:hover, .dt-sc-sociable.hexagon-border li:hover { background:#ffffff; }
+	
+	.dt-sc-sociable.diamond-square-border li, .dt-sc-sociable.rounded-border li a, .dt-sc-sociable.square-border li a, .dt-sc-sociable.rounded-border-dashed li a { border-color:rgba(0, 0, 0, 0.2); }
+	.dt-sc-dark-bg .dt-sc-sociable.diamond-square-border li, .dt-sc-dark-bg .dt-sc-sociable.rounded-border li a, .dt-sc-dark-bg .dt-sc-sociable.square-border li a { border-color:rgba(255, 255, 255, 0.2); } 
+	

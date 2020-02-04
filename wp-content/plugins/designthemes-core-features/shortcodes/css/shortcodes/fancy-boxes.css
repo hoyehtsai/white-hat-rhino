@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* Table of Content
+==================================================
+	1.0 - Transition
+	2.0 - Alert Boxes
+	3.0 - DT Responsive*/
+
+	/*--------------------------------------------------------------
+	1.0 - Titled Boxes
+	--------------------------------------------------------------*/
+	.dt-sc-titled-box { margin-bottom:20px; width:100%; clear:both; }
+	.dt-sc-titled-box h6.dt-sc-titled-box-title { font-size:14px; font-weight:600; text-transform:uppercase; padding:12px 15px 11px; text-shadow:none; margin:0px; } 
+	.dt-sc-titled-box h6.dt-sc-titled-box-title span { font-size:16px; margin-right:5px; }
+	.dt-sc-titled-box-content { padding:20px; background:rgba(0, 0, 0, 0.05); }				
+	
+	.dt-sc-titled-box h6.dt-sc-titled-box-title { color:#ffffff; }
+	
+	.dt-sc-titled-box.blue h6.dt-sc-titled-box-title { background-color:#008bd3; }
+	.dt-sc-titled-box.brown h6.dt-sc-titled-box-title { background-color:#795548; }
+	.dt-sc-titled-box.cadetblue h6.dt-sc-titled-box-title { background-color:#3c939d; }
+	.dt-sc-titled-box.chillipepper h6.dt-sc-titled-box-title { background-color:#c10841; }
+	.dt-sc-titled-box.cyan h6.dt-sc-titled-box-title { background-color:#00bcd4; }
+	.dt-sc-titled-box.darkgolden h6.dt-sc-titled-box-title { background-color:#b48b3c; }
+	.dt-sc-titled-box.deeporange h6.dt-sc-titled-box-title { background-color:#ff5722; }	
+	.dt-sc-titled-box.deeppurple h6.dt-sc-titled-box-title { background-color:#673ab7; }
+	.dt-sc-titled-box.green h6.dt-sc-titled-box-title { background-color:#60ae0d; }
+	.dt-sc-titled-box.lime h6.dt-sc-titled-box-title { background-color:#cddc39; }
+	.dt-sc-titled-box.magenta h6.dt-sc-titled-box-title { background-color:#cb506d; }
+	.dt-sc-titled-box.orange h6.dt-sc-titled-box-title { background-color:#ff9800; }
+	.dt-sc-titled-box.pink h6.dt-sc-titled-box-title { background-color:#fd6ca3; }	
+	.dt-sc-titled-box.purple h6.dt-sc-titled-box-title { background-color:#9c27b0; }
+	.dt-sc-titled-box.red h6.dt-sc-titled-box-title { background-color:#da0000; }
+	.dt-sc-titled-box.skyblue h6.dt-sc-titled-box-title { background-color:#0eb2e7; }
+	.dt-sc-titled-box.teal h6.dt-sc-titled-box-title { background-color:#009688; }
+	.dt-sc-titled-box.turquoise h6.dt-sc-titled-box-title { background-color:#32ccbd; }
+	.dt-sc-titled-box.wisteria h6.dt-sc-titled-box-title { background-color:#9b59b6; }
+	.dt-sc-titled-box.yellow h6.dt-sc-titled-box-title { background-color:#ffe401; color:#000000; }
+	
+	
+	
+	/*--------------------------------------------------------------
+	2.0 - Alert Boxes
+	--------------------------------------------------------------*/
+	
+	.dt-sc-error-box, .dt-sc-warning-box, .dt-sc-success-box, .dt-sc-info-box { margin-bottom:20px; padding:15px 15px 15px 45px; clear:both; }
+	.dt-sc-error-box a, .dt-sc-warning-box a, .dt-sc-success-box a, .dt-sc-info-box a { text-decoration:underline; }
+	
+	.dt-sc-error-box { background-color:#ffcccc; border:1px solid #ff9999; color:#d01313; position:relative; }
+	.dt-sc-error-box:before, .dt-sc-warning-box:before, .dt-sc-success-box:before, .dt-sc-info-box:before { top:15px; left:18px; font-family:FontAwesome; font-style:normal; font-weight:normal; text-decoration:inherit; font-size:20px; position:absolute; }		
+	.dt-sc-error-box:before { content:"\f057"; color:#C54228; }
+	
+	.dt-sc-warning-box { background-color:#fdebae; border:1px solid #e6c555; color:#c79d13; position:relative; }
+	.dt-sc-warning-box:before { content:"\f06a"; color:#e2b828; }
+	
+	.dt-sc-success-box { background-color:#eafac0; border:1px solid #b1cf67; color:#7ba411; position:relative; }
+	.dt-sc-success-box:before { content:"\f058"; color:#75b632; }
+	
+	.dt-sc-info-box { background-color:#bfe4f9; border:1px solid #68a2cf; color:#2081b9; position:relative; }
+	.dt-sc-info-box:before { content:"\f05a"; color:#008bc1; }
+	
+	.dt-sc-error-box a { color:#d01313; }
+	.dt-sc-warning-box a { color:#c79d13; }
+	.dt-sc-success-box a { color:#7ba411; }
+	.dt-sc-info-box a { color:#2081b9; }
+	
+	
+	
+	/*--------------------------------------------------------------
+	3.0 - Responsive
+	--------------------------------------------------------------*/
+	
+	/* Note: Design for a width of 960px */	
+    @media only screen and (min-width:992px) and (max-width:1199px) {
+	
+		.dt-sc-error-box:before, .dt-sc-warning-box:before, .dt-sc-success-box:before, .dt-sc-info-box:before { top: 16px; }	
+	
+	}
+	
+	
+	/* Note: Design for a width of 768px */
+    @media only screen and (min-width:768px) and (max-width:991px) {
+		
+		.dt-sc-error-box:before, .dt-sc-warning-box:before, .dt-sc-success-box:before, .dt-sc-info-box:before { top: 17px; }
+	
+	}
+	
+	/*----*****---- << Mobile (Landscape) >> ----*****----*/	
+	
+	/* Common Styles for the devices below 767px width */
+	@media only screen and (max-width: 767px) {
+	
+		.dt-sc-error-box:before, .dt-sc-warning-box:before, .dt-sc-success-box:before, .dt-sc-info-box:before { top: 16px; }
+	
+	}
+	
+	
+	/*----*****---- << Mobile >> ----*****----*/	
+
+	/* Common Styles for the devices below 479px width */
+    @media only screen and (max-width: 479px) {
+		
+		.dt-sc-error-box:before, .dt-sc-warning-box:before, .dt-sc-success-box:before, .dt-sc-info-box:before { top: 17px; }
+	
+	}
+	
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 319px) {
+		
+	/** Fancy Boxes **/
+	.dt-sc-titled-box h6.dt-sc-titled-box-title { font-size: 12px; letter-spacing: 0; line-height: 20px; padding-left: 35px; position: relative; }
+	.dt-sc-titled-box h6.dt-sc-titled-box-title span { font-size: 14px; position: absolute; left: 10px; top: 14px; }
+	
+	}
+	

@@ -1,0 +1,464 @@
+
+/* Table of Content
+==================================================
+	1.0 - Transition
+	1.1 - Buttons
+	1.2 - Default Colors
+	1.3 - Responsive*/
+
+
+	/*--------------------------------------------------------------
+	1.0 - Transition
+	--------------------------------------------------------------*/
+	.dt-sc-button.with-icon.icon-right.type1, .dt-sc-button.with-icon.icon-right.type1:after, .dt-sc-colored-big-buttons:hover span, .dt-sc-partially-rounded, .dt-sc-button.with-icon.icon-left span:after, .dt-sc-button.readmore:before, .dt-sc-button.bordered:after { -webkit-transition:all 0.3s linear; -moz-transition:all 0.3s linear; -o-transition:all 0.3s linear; -ms-transition:all 0.3s linear; transition:all 0.3s linear; }
+
+	/*--------------------------------------------------------------
+	1.1 - Buttons
+	--------------------------------------------------------------*/
+
+	.dt-sc-button { font-size:12px; text-transform: inherit; font-weight: bold; padding:8px 15px; line-height:normal; display:inline-block; margin:10px 0px 0px; cursor:pointer; outline:none; position:relative; z-index:1; }
+	
+	.dt-sc-button { background:rgba(0, 0, 0, 0.05); color:#000000; }
+	.dt-sc-button:hover, .secondary-skin.dt-sc-button.bordered:hover, .secondary-skin.dt-sc-button.bordered:hover, .secondary-skin.dt-sc-button.fully-rounded-border:hover { color:#ffffff; }
+	
+	.dt-sc-button.filled, .dt-sc-button.filled:hover, .secondary-skin.dt-sc-button.rounded-corner, .secondary-skin.dt-sc-button.rounded-border:hover { color:#ffffff; }
+	.dt-sc-button.rounded-border, .dt-sc-button.bordered { border:4px double; border-radius:3px; background:none; }
+	
+	.dt-sc-button.transparent { background: none; border: none; padding: 0; }
+	
+	.dt-sc-button.rounded-border:hover, .dt-sc-button.bordered:hover { color:#ffffff; border-radius:5px; }
+	.dt-sc-button.bordered, .dt-sc-button.bordered:hover { border-radius:0px; }
+	.dt-sc-button.partially-rounded { border-radius:15px 0px; }	
+	.dt-sc-button.partially-rounded:hover { border-radius:0px 15px; }	
+	
+	.dt-sc-button.rounded-border.black, .dt-sc-button.bordered.black, .dt-sc-button.fully-rounded-border.black { border-color:#000000; color:#000000; }
+	
+	.dt-sc-button.with-shadow { box-shadow:3px 3px 0px 0px rgba(0, 0, 0, 0.2); }
+	
+	.dt-sc-button.with-shadow.white { background:#ffffff; }
+	.dt-sc-button.with-shadow.white:hover { box-shadow:3px 3px 0px 0px rgba(0, 0, 0, 0.1); }
+	
+	.rounded-corner { border-radius:5px; }
+	
+	.dt-sc-button.filled.white { background:#ffffff; color:#000000; }
+	.dt-sc-button.filled.white:hover { color:#ffffff; }
+	.dt-sc-button.filled.black { background:#000000; }
+	
+	.dt-sc-button.small { font-size:12px; padding:13px 20px 11px; }
+	.dt-sc-button.medium { font-size:14px; padding:16px 30px 14px; }
+	.dt-sc-button.large { font-size:16px; padding:20px 40px 18px; }
+	.dt-sc-button.xlarge { font-size:20px; padding:26px 50px 24px; }
+		
+	.dt-sc-button.with-icon.icon-right span { margin-left:10px; }	
+	
+	.dt-sc-button.dt-sc-left-margin { margin-left:20px; }
+	
+	/* Right icon Type1 */
+	.dt-sc-button.with-icon.icon-right.type1 { padding-right:14px;  }
+	.dt-sc-button.with-icon.icon-right.type1 span { margin-left:35px; }
+	.dt-sc-button.with-icon.icon-right.type1 { position:relative; letter-spacing:0.5px; overflow:hidden; }
+	.dt-sc-button.with-icon.icon-right.type1:after { content:''; position:absolute; z-index:-1; }
+	.dt-sc-button.with-icon.icon-right.type1:before { left:auto; right:10px;  z-index:2; }
+	.dt-sc-button.with-icon.icon-right.type1:after {  width:35%; height:200%; z-index:1; right:0; top:0; margin:-5px 0 0 -5px; -webkit-transform-origin:0 0; -webkit-transform:rotate(-20deg); -moz-transform-origin:0 0;  -moz-transform:rotate(-20deg); -ms-transform-origin:0 0; -ms-transform:rotate(-20deg); transform-origin:0 0; transform:rotate(-20deg); }
+	.dt-sc-button.with-icon.icon-right.type1:hover:after { width:40%; }
+	
+	.dt-sc-button.large.with-icon.icon-right.type1:after {  width:30%; }
+	.dt-sc-button.large.with-icon.icon-right.type1:hover:after { width:35%; }
+	.dt-sc-button.xlarge.with-icon.icon-right.type1:after {  width:28%; }
+	.dt-sc-button.xlarge.with-icon.icon-right.type1:hover:after { width:33%; }	
+	
+	/* Right icon Type2 */	
+	.dt-sc-button.with-icon.icon-right.type2 span { padding:23px 0px 9px 20px; position:absolute; margin:0px 0px 0px 15px; display:inline-block; top:0px; right:21px; height:100%; }
+	.dt-sc-button.with-icon.icon-right.type2 span:after { content:""; position:absolute; left:0px; top:0px; height:100%; border-left:1px solid rgba(0, 0, 0, 0.05); border-right:1px solid rgba(255, 255, 255, 0.2); }
+	
+	.dt-sc-button.small.with-icon.icon-right.type2 { padding:13px 70px 11px 20px; }
+	.dt-sc-button.small.with-icon.icon-right.type2 span { padding-top:12px; font-size:16px; }
+	.dt-sc-button.medium.with-icon.icon-right.type2 { padding:16px 75px 14px 23px; }
+	.dt-sc-button.medium.with-icon.icon-right.type2 span { padding-top:16px; font-size:18px; }
+	.dt-sc-button.large.with-icon.icon-right.type2 { padding:20px 80px 18px 25px; }
+	.dt-sc-button.large.with-icon.icon-right.type2 span { padding-top:21px; font-size:20px; }
+	.dt-sc-button.xlarge.with-icon.icon-right.type2 { padding:26px 100px 24px 30px; }
+	.dt-sc-button.xlarge.with-icon.icon-right.type2 span { padding-top:26px; padding-left:25px; right:25px; font-size:24px; }	
+	
+	/* Right icon Type3 */
+	.dt-sc-button.with-icon.icon-right.type3 { text-transform:none; }
+	.dt-sc-button.with-icon.icon-right.type3 span { position:absolute; right:0px; top:0px; bottom:0px; margin:auto; height:100%; background:#000000; color:#ffffff; text-align:center; }
+	.dt-sc-button.with-icon.icon-right.type3 span:before { bottom:0px; height:12px; left:0px; margin:auto; position:absolute; right:0px; top:0px; }
+	
+	.dt-sc-button.small.with-icon.icon-right.type3 { padding-right:60px; font-size:14px; }
+	.dt-sc-button.small.with-icon.icon-right.type3 span { width:40px; font-size:14px; }
+	
+	.dt-sc-button.medium.with-icon.icon-right.type3 { padding:13px 75px 13px 25px; font-size:16px; }
+	.dt-sc-button.medium.with-icon.icon-right.type3 span { width:50px; font-size:16px; }
+	
+	.dt-sc-button.large.with-icon.icon-right.type3 { padding-right:100px; font-size:18px; } 
+	.dt-sc-button.large.with-icon.icon-right.type3 span { width:60px; font-size:18px; }
+	.dt-sc-button.large.with-icon.icon-right.type3 span:before { height:14px; }
+	
+	.dt-sc-button.xlarge.with-icon.icon-right.type3 { padding-right:120px; font-size:20px; }
+	.dt-sc-button.xlarge.with-icon.icon-right.type3 span { width:80px; font-size:20px; }
+	.dt-sc-button.xlarge.with-icon.icon-right.type3 span:before { height:16px; }
+
+	
+	/* Left icon Type1 */
+	
+	.dt-sc-button.small.with-icon.icon-left { padding:13px 20px 11px; }
+	.dt-sc-button.small.with-icon.icon-left span { margin-right:15px; }
+	.dt-sc-button.medium.with-icon.icon-left { padding:16px 25px 14px; }
+	.dt-sc-button.medium.with-icon.icon-left span { margin-right:20px; }
+	.dt-sc-button.large.with-icon.icon-left { padding:20px 30px 18px; }
+	.dt-sc-button.large.with-icon.icon-left span { margin-right:20px; }
+	.dt-sc-button.xlarge.with-icon.icon-left { padding:26px 35px 24px; }
+	.dt-sc-button.xlarge.with-icon.icon-left span { margin-right:25px; }
+	
+	.dt-sc-button.large.with-icon.icon-left span { line-height: 20px; }	
+	
+	/* Left icon Type2 */	
+	.dt-sc-button.with-icon.icon-left.type2 span:after { content:""; position:absolute; top:0px; height:100%; width:1px; }
+	.dt-sc-button.with-icon.icon-left.type2 span { text-align:center; }
+	
+	.dt-sc-button.small.with-icon.icon-left.type2 { padding-left:15px; }
+	.dt-sc-button.small.with-icon.icon-left.type2 span { width:30px; padding-right:15px; margin-right:15px; }
+	.dt-sc-button.small.with-icon.icon-left.type2 span:after { left:45px; }
+	.dt-sc-button.small.with-icon.icon-left.type2 span.pe-icon { font-size:15px; }
+	
+	.dt-sc-button.medium.with-icon.icon-left.type2 { padding-left:20px; }
+	.dt-sc-button.medium.with-icon.icon-left.type2 span { width:35px; padding-right:20px; margin-right:20px; }
+	.dt-sc-button.with-icon.icon-left.type2 span.pe-icon { font-size:20px; font-weight:bold; }
+	.dt-sc-button.medium.with-icon.icon-left.type2 span:after { left:55px; }
+	
+	.dt-sc-button.large.with-icon.icon-left.type2 { padding-left:25px; }
+	.dt-sc-button.large.with-icon.icon-left.type2 span { width:42px; padding-right:25px; margin-right:25px; }
+	.dt-sc-button.large.with-icon.icon-left.type2 span:after { left:67px; }
+	
+	.dt-sc-button.xlarge.with-icon.icon-left.type2 { padding-left:30px; }
+	.dt-sc-button.xlarge.with-icon.icon-left.type2 span { width:50px; padding-right:30px; margin-right:30px; }
+	.dt-sc-button.xlarge.with-icon.icon-left.type2 span:after { left:80px; }
+	
+	.dt-sc-button.grey { color:rgba(0, 0, 0, 0.4); background:rgba(0, 0, 0, 0.1); }
+	.dt-sc-button.grey.with-icon.icon-left span:after { background:#ffffff; }
+	.dt-sc-button.grey.with-icon.icon-left:hover span:after { background:rgba(0, 0, 0, 0.05); }
+	
+	.dt-sc-button.fully-rounded-border { background:none; }
+	.dt-sc-button.fully-rounded-border, .dt-sc-button.fully-rounded-border:hover { border:2px solid; border-radius:50px; }
+	.dt-sc-button.fully-rounded-border.small { padding:14px 25px 11px; }
+	.dt-sc-button.fully-rounded-border.medium { padding:17px 30px 14px; }
+	.dt-sc-button.fully-rounded-border:hover { color:#ffffff; } 
+	
+	
+	/* Big Colored Buttons */
+	.dt-sc-colored-big-buttons { display:inline-block; position:relative; text-transform:uppercase; font-size:18px; line-height:normal; padding:25px 30px; border:1px solid; background:#ffffff; text-align:left; color:#000000; border-radius:5px; width:100%; letter-spacing:0.5px; font-weight:300; }
+	.dt-sc-colored-big-buttons:hover { color:#ffffff; }
+	.dt-sc-colored-big-buttons.with-left-icon { padding-left:110px; }
+	.dt-sc-colored-big-buttons span { color:#ffffff; font-size:30px; line-height:92px; height:100%; position:absolute; left: 0; top: 0; text-align:center; vertical-align:middle; width:80px; border-radius: 3px 0 0 3px; }
+	.dt-sc-colored-big-buttons span.pe-icon { font-size:35px; }
+	.dt-sc-colored-big-buttons:hover span { background:#ffffff; }
+	
+	.dt-sc-colored-big-buttons.blue { border-color:#015c89; }
+	.dt-sc-colored-big-buttons.orange { border-color:#f27935; }
+	.dt-sc-colored-big-buttons.green { border-color:#6ca04a; }
+	
+	.dt-sc-colored-big-buttons.blue span, .dt-sc-colored-big-buttons.blue:hover { background:#015c89; }
+	.dt-sc-colored-big-buttons.orange span, .dt-sc-colored-big-buttons.orange:hover { background:#f27935; }
+	.dt-sc-colored-big-buttons.green span, .dt-sc-colored-big-buttons.green:hover { background:#6ca04a; }
+	
+	.dt-sc-colored-big-buttons.blue:hover span { background:#015078; }
+	.dt-sc-colored-big-buttons.orange:hover span { background:#e07231; }
+	.dt-sc-colored-big-buttons.green:hover span { background:#618f42; }
+	
+	
+	
+	/* Variations */
+	.dt-sc-button.blue, .dt-sc-button.blue.rounded-border:hover, .dt-sc-button.blue.bordered:hover, .dt-sc-button.blue.fully-rounded-border:hover, .dt-sc-button.brown, .dt-sc-button.brown.rounded-border:hover, .dt-sc-button.brown.bordered:hover, .dt-sc-button.brown.fully-rounded-border:hover, .dt-sc-button.cadetblue, .dt-sc-button.cadetblue.rounded-border:hover, .dt-sc-button.cadetblue.bordered:hover, .dt-sc-button.cadetblue.fully-rounded-border:hover, .dt-sc-button.chillipepper, .dt-sc-button.chillipepper.rounded-border:hover, .dt-sc-button.chillipepper.bordered:hover, .dt-sc-button.chillipepper.fully-rounded-border:hover, .dt-sc-button.cyan, .dt-sc-button.cyan.rounded-border:hover, .dt-sc-button.cyan.bordered:hover, .dt-sc-button.cyan.fully-rounded-border:hover, .dt-sc-button.darkgolden, .dt-sc-button.darkgolden.rounded-border:hover, .dt-sc-button.darkgolden.bordered:hover, .dt-sc-button.darkgolden.fully-rounded-border:hover, .dt-sc-button.deeporange, .dt-sc-button.deeporange.rounded-border:hover, .dt-sc-button.deeporange.bordered:hover, .dt-sc-button.deeporange.fully-rounded-border:hover, .dt-sc-button.deeppurple, .dt-sc-button.deeppurple.rounded-border:hover, .dt-sc-button.deeppurple.bordered:hover, .dt-sc-button.deeppurple.fully-rounded-border:hover, .dt-sc-button.green, .dt-sc-button.green.rounded-border:hover, .dt-sc-button.green.bordered:hover, .dt-sc-button.green.fully-rounded-border:hover, .dt-sc-button.lime, .dt-sc-button.lime.rounded-border:hover, .dt-sc-button.lime.bordered:hover, .dt-sc-button.lime.fully-rounded-border:hover, .dt-sc-button.megenta, .dt-sc-button.megenta.rounded-border:hover, .dt-sc-button.megenta.bordered:hover, .dt-sc-button.megenta.fully-rounded-border:hover, .dt-sc-button.orange, .dt-sc-button.orange.rounded-border:hover, .dt-sc-button.orange.bordered:hover, .dt-sc-button.orange.fully-rounded-border:hover, .dt-sc-button.pink, .dt-sc-button.pink.rounded-border:hover, .dt-sc-button.pink.bordered:hover, .dt-sc-button.pink.fully-rounded-border:hover, .dt-sc-button.purple, .dt-sc-button.purple.rounded-border:hover, .dt-sc-button.purple.bordered:hover, .dt-sc-button.purple.fully-rounded-border:hover, .dt-sc-button.red, .dt-sc-button.red.rounded-border:hover, .dt-sc-button.red.bordered:hover, .dt-sc-button.red.fully-rounded-border:hover, .dt-sc-button.skyblue, .dt-sc-button.skyblue.rounded-border:hover, .dt-sc-button.skyblue.bordered:hover, .dt-sc-button.skyblue.fully-rounded-border:hover, .dt-sc-button.teal, .dt-sc-button.teal.rounded-border:hover, .dt-sc-button.teal.bordered:hover, .dt-sc-button.teal.fully-rounded-border:hover, .dt-sc-button.turquoise, .dt-sc-button.turquoise.rounded-border:hover, .dt-sc-button.turquoise.bordered:hover, .dt-sc-button.turquoise.fully-rounded-border:hover, .dt-sc-button.wisteria, .dt-sc-button.wisteria.rounded-border:hover, .dt-sc-button.wisteria.bordered:hover, .dt-sc-button.wisteria.fully-rounded-border:hover { color:#ffffff; }	
+	
+	.dt-sc-button.blue.rounded-border, .dt-sc-button.blue.bordered, .dt-sc-button.blue.fully-rounded-border, .dt-sc-button.brown.rounded-border, .dt-sc-button.brown.bordered, .dt-sc-button.brown.fully-rounded-border, .dt-sc-button.cadetblue.rounded-border, .dt-sc-button.cadetblue.bordered, .dt-sc-button.cadetblue.fully-rounded-border, .dt-sc-button.chillipepper.rounded-border, .dt-sc-button.chillipepper.bordered, .dt-sc-button.chillipepper.fully-rounded-border, .dt-sc-button.cyan.rounded-border, .dt-sc-button.cyan.bordered, .dt-sc-button.cyan.fully-rounded-border, .dt-sc-button.darkgolden.rounded-border, .dt-sc-button.darkgolden.bordered, .dt-sc-button.darkgolden.fully-rounded-border, .dt-sc-button.deeporange.rounded-border, .dt-sc-button.deeporange.bordered, .dt-sc-button.deeporange.fully-rounded-border, .dt-sc-button.deeppurple.rounded-border, .dt-sc-button.deeppurple.bordered, .dt-sc-button.deeppurple.fully-rounded-border, .dt-sc-button.green.rounded-border, .dt-sc-button.green.bordered, .dt-sc-button.green.fully-rounded-border, .dt-sc-button.lime.rounded-border, .dt-sc-button.lime.bordered, .dt-sc-button.lime.fully-rounded-border, .dt-sc-button.megenta.rounded-border, .dt-sc-button.megenta.bordered, .dt-sc-button.megenta.fully-rounded-border, .dt-sc-button.orange.rounded-border, .dt-sc-button.orange.bordered, .dt-sc-button.orange.fully-rounded-border, .dt-sc-button.pink.rounded-border, .dt-sc-button.pink.bordered, .dt-sc-button.pink.fully-rounded-border, .dt-sc-button.purple.rounded-border, .dt-sc-button.purple.bordered, .dt-sc-button.purple.fully-rounded-border, .dt-sc-button.red.rounded-border, .dt-sc-button.red.bordered, .dt-sc-button.red.fully-rounded-border, .dt-sc-button.skyblue.rounded-border, .dt-sc-button.skyblue.bordered, .dt-sc-button.skyblue.fully-rounded-border, .dt-sc-button.teal.rounded-border, .dt-sc-button.teal.bordered, .dt-sc-button.teal.fully-rounded-border, .dt-sc-button.turquoise.rounded-border, .dt-sc-button.turquoise.bordered, .dt-sc-button.turquoise.fully-rounded-border, .dt-sc-button.wisteria.rounded-border, .dt-sc-button.wisteria.bordered, .dt-sc-button.wisteria.fully-rounded-border, .dt-sc-button.yellow.rounded-border, .dt-sc-button.yellow.bordered, .dt-sc-button.yellow.fully-rounded-border { background:none; }
+	
+	.dt-sc-button.white.rounded-border, .dt-sc-button.white.bordered, .dt-sc-button.white.fully-rounded-border { color:#ffffff; border-color:#ffffff; }
+	.dt-sc-button.white.rounded-border:hover, .dt-sc-button.white.bordered:hover, .dt-sc-button.white.fully-rounded-border:hover { color:#000000; background:#ffffff; border-color:#ffffff; }
+	
+	.dt-sc-button.yellow, .dt-sc-button.yellow.rounded-border:hover, .dt-sc-button.yellow.bordered:hover, .dt-sc-button.yellow.fully-rounded-border:hover { color:#000000; }
+		
+	/* Blue */
+	.dt-sc-button.blue, .dt-sc-button.blue.filled, .dt-sc-button.blue.rounded-border:hover, .dt-sc-button.blue.bordered:hover, .dt-sc-button.blue.fully-rounded-border:hover { background:#008bd3; }
+	.dt-sc-button.blue:hover, .dt-sc-button.blue.filled:hover, .dt-sc-button.blue.with-icon.icon-right.type1:hover { background:#0081c2; }	
+	.dt-sc-button.blue.rounded-border, .dt-sc-button.blue.bordered, .dt-sc-button.blue.fully-rounded-border { color:#008bd3; }	
+	.dt-sc-button.blue.fully-rounded-border, .dt-sc-button.blue.rounded-border:hover, .dt-sc-button.blue.bordered:hover, .dt-sc-button.blue.fully-rounded-border:hover { border-color:#008bd3; }	
+		
+	/* Brown */
+	.dt-sc-button.brown, .dt-sc-button.brown.filled, .dt-sc-button.brown.rounded-border:hover, .dt-sc-button.brown.bordered:hover, .dt-sc-button.brown.fully-rounded-border:hover { background:#795548; }
+	.dt-sc-button.brown:hover, .dt-sc-button.brown.filled:hover, .dt-sc-button.brown.with-icon.icon-right.type1:hover { background:#573a30; }	
+	.dt-sc-button.brown.rounded-border, .dt-sc-button.brown.bordered, .dt-sc-button.brown.fully-rounded-border { color:#795548; }	
+	.dt-sc-button.brown.fully-rounded-border, .dt-sc-button.brown.rounded-border:hover, .dt-sc-button.brown.bordered:hover, .dt-sc-button.brown.fully-rounded-border:hover { border-color:#795548; }		
+	
+	/* CadetBlue */
+	.dt-sc-button.cadetblue, .dt-sc-button.cadetblue.filled, .dt-sc-button.cadetblue.rounded-border:hover, .dt-sc-button.cadetblue.bordered:hover, .dt-sc-button.cadetblue.fully-rounded-border:hover { background:#3c939d; }
+	.dt-sc-button.cadetblue:hover, .dt-sc-button.cadetblue.filled:hover, .dt-sc-button.cadetblue.with-icon.icon-right.type1:hover { background:#34818a; }	
+	.dt-sc-button.cadetblue.rounded-border, .dt-sc-button.cadetblue.bordered, .dt-sc-button.cadetblue.fully-rounded-border { color:#3c939d; }	
+	.dt-sc-button.cadetblue.fully-rounded-border, .dt-sc-button.cadetblue.rounded-border:hover, .dt-sc-button.cadetblue.bordered:hover, .dt-sc-button.cadetblue.fully-rounded-border:hover { border-color:#3c939d; }		
+	
+	/* Chillipepper */
+	.dt-sc-button.chillipepper, .dt-sc-button.chillipepper.filled, .dt-sc-button.chillipepper.rounded-border:hover, .dt-sc-button.chillipepper.bordered:hover, .dt-sc-button.chillipepper.fully-rounded-border:hover { background:#c10841; }
+	.dt-sc-button.chillipepper:hover, .dt-sc-button.chillipepper.filled:hover, .dt-sc-button.chillipepper.with-icon.icon-right.type1:hover { background:#9d0836; }	
+	.dt-sc-button.chillipepper.rounded-border, .dt-sc-button.chillipepper.bordered, .dt-sc-button.chillipepper.fully-rounded-border { color:#c10841; }	
+	.dt-sc-button.chillipepper.fully-rounded-border, .dt-sc-button.chillipepper.rounded-border:hover, .dt-sc-button.chillipepper.bordered:hover, .dt-sc-button.chillipepper.fully-rounded-border:hover { border-color:#c10841; }	
+	
+	/* Cyan */
+	.dt-sc-button.cyan, .dt-sc-button.cyan.filled, .dt-sc-button.cyan.rounded-border:hover, .dt-sc-button.cyan.bordered:hover, .dt-sc-button.cyan.fully-rounded-border:hover { background:#00bcd4; }
+	.dt-sc-button.cyan:hover, .dt-sc-button.cyan.filled:hover, .dt-sc-button.cyan.with-icon.icon-right.type1:hover { background:#00a0b4; }	
+	.dt-sc-button.cyan.rounded-border, .dt-sc-button.cyan.bordered, .dt-sc-button.cyan.fully-rounded-border { color:#00bcd4; }	
+	.dt-sc-button.cyan.fully-rounded-border, .dt-sc-button.cyan.rounded-border:hover, .dt-sc-button.cyan.bordered:hover, .dt-sc-button.cyan.fully-rounded-border:hover { border-color:#00bcd4; }		
+	
+	/* Darkgolden */
+	.dt-sc-button.darkgolden, .dt-sc-button.darkgolden.filled, .dt-sc-button.darkgolden.rounded-border:hover, .dt-sc-button.darkgolden.bordered:hover, .dt-sc-button.darkgolden.fully-rounded-border:hover { background:#b48b3c; }
+	.dt-sc-button.darkgolden:hover, .dt-sc-button.darkgolden.filled:hover, .dt-sc-button.darkgolden.with-icon.icon-right.type1:hover { background:#a17b35; }	
+	.dt-sc-button.darkgolden.rounded-border, .dt-sc-button.darkgolden.bordered, .dt-sc-button.darkgolden.fully-rounded-border { color:#b48b3c; }	
+	.dt-sc-button.darkgolden.fully-rounded-border, .dt-sc-button.darkgolden.rounded-border:hover, .dt-sc-button.darkgolden.bordered:hover, .dt-sc-button.darkgolden.fully-rounded-border:hover { border-color:#b48b3c; }		
+	
+	/* DeepOrange */
+	.dt-sc-button.deeporange, .dt-sc-button.deeporange.filled, .dt-sc-button.deeporange.rounded-border:hover, .dt-sc-button.deeporange.bordered:hover, .dt-sc-button.deeporange.fully-rounded-border:hover { background:#ff5722; }
+	.dt-sc-button.deeporange:hover, .dt-sc-button.deeporange.filled:hover, .dt-sc-button.deeporange.with-icon.icon-right.type1:hover { background:#db4211; }	
+	.dt-sc-button.deeporange.rounded-border, .dt-sc-button.deeporange.bordered, .dt-sc-button.deeporange.fully-rounded-border { color:#ff5722; }	
+	.dt-sc-button.deeporange.fully-rounded-border, .dt-sc-button.deeporange.rounded-border:hover, .dt-sc-button.deeporange.bordered:hover, .dt-sc-button.deeporange.fully-rounded-border:hover { border-color:#ff5722; }		
+	
+	/* DeepPurple */
+	.dt-sc-button.deeppurple, .dt-sc-button.deeppurple.filled, .dt-sc-button.deeppurple.rounded-border:hover, .dt-sc-button.deeppurple.bordered:hover, .dt-sc-button.deeppurple.fully-rounded-border:hover { background:#673ab7; }
+	.dt-sc-button.deeppurple:hover, .dt-sc-button.deeppurple.filled:hover, .dt-sc-button.deeppurple.with-icon.icon-right.type1:hover { background:#532b99; }	
+	.dt-sc-button.deeppurple.rounded-border, .dt-sc-button.deeppurple.bordered, .dt-sc-button.deeppurple.fully-rounded-border { color:#673ab7; }	
+	.dt-sc-button.deeppurple.fully-rounded-border, .dt-sc-button.deeppurple.rounded-border:hover, .dt-sc-button.deeppurple.bordered:hover, .dt-sc-button.deeppurple.fully-rounded-border:hover { border-color:#673ab7; }		
+	
+	/* Green */
+	.dt-sc-button.green, .dt-sc-button.green.filled, .dt-sc-button.green.rounded-border:hover, .dt-sc-button.green.bordered:hover, .dt-sc-button.green.fully-rounded-border:hover { background:#60ae0d; }
+	.dt-sc-button.green:hover, .dt-sc-button.green.filled:hover, .dt-sc-button.green.with-icon.icon-right.type1:hover { background:#54990b; }	
+	.dt-sc-button.green.rounded-border, .dt-sc-button.green.bordered, .dt-sc-button.green.fully-rounded-border { color:#60ae0d; }	
+	.dt-sc-button.green.fully-rounded-border, .dt-sc-button.green.rounded-border:hover, .dt-sc-button.green.bordered:hover, .dt-sc-button.green.fully-rounded-border:hover { border-color:#60ae0d; }		
+	
+	/* Lime */
+	.dt-sc-button.lime, .dt-sc-button.lime.filled, .dt-sc-button.lime.rounded-border:hover, .dt-sc-button.lime.bordered:hover, .dt-sc-button.lime.fully-rounded-border:hover { background:#cddc39; }
+	.dt-sc-button.lime:hover, .dt-sc-button.lime.filled:hover, .dt-sc-button.lime.with-icon.icon-right.type1:hover { background:#b1bf27; }	
+	.dt-sc-button.lime.rounded-border, .dt-sc-button.lime.bordered, .dt-sc-button.lime.fully-rounded-border { color:#cddc39; }	
+	.dt-sc-button.lime.fully-rounded-border, .dt-sc-button.lime.rounded-border:hover, .dt-sc-button.lime.bordered:hover, .dt-sc-button.lime.fully-rounded-border:hover { border-color:#cddc39; }		
+	
+	/* Magenta */
+	.dt-sc-button.magenta, .dt-sc-button.magenta.filled, .dt-sc-button.magenta.rounded-border:hover, .dt-sc-button.magenta.bordered:hover, .dt-sc-button.magenta.fully-rounded-border:hover { background:#cb506d; }
+	.dt-sc-button.magenta:hover, .dt-sc-button.magenta.filled:hover, .dt-sc-button.magenta.with-icon.icon-right.type1:hover { background:#ae3753; }	
+	.dt-sc-button.magenta.rounded-border, .dt-sc-button.magenta.bordered, .dt-sc-button.magenta.fully-rounded-border { color:#cb506d; }	
+	.dt-sc-button.magenta.fully-rounded-border, .dt-sc-button.magenta.rounded-border:hover, .dt-sc-button.magenta.bordered:hover, .dt-sc-button.magenta.fully-rounded-border:hover { border-color:#cb506d; }		
+	
+	/* Orange */
+	.dt-sc-button.orange, .dt-sc-button.orange.filled, .dt-sc-button.orange.rounded-border:hover, .dt-sc-button.orange.bordered:hover, .dt-sc-button.orange.fully-rounded-border:hover { background:#ff9800; }
+	.dt-sc-button.orange:hover, .dt-sc-button.orange.filled:hover, .dt-sc-button.orange.with-icon.icon-right.type1:hover { background:#da8200; }	
+	.dt-sc-button.orange.rounded-border, .dt-sc-button.orange.bordered, .dt-sc-button.orange.fully-rounded-border { color:#ff9800; }	
+	.dt-sc-button.orange.fully-rounded-border, .dt-sc-button.orange.rounded-border:hover, .dt-sc-button.orange.bordered:hover, .dt-sc-button.orange.fully-rounded-border:hover { border-color:#ff9800; }		
+	
+	/* Pink */
+	.dt-sc-button.pink, .dt-sc-button.pink.filled, .dt-sc-button.pink.rounded-border:hover, .dt-sc-button.pink.bordered:hover, .dt-sc-button.pink.fully-rounded-border:hover { background:#fd6ca3; }
+	.dt-sc-button.pink:hover, .dt-sc-button.pink.filled:hover, .dt-sc-button.pink.with-icon.icon-right.type1:hover { background:#e86496; }	
+	.dt-sc-button.pink.rounded-border, .dt-sc-button.pink.bordered, .dt-sc-button.pink.fully-rounded-border { color:#fd6ca3; }	
+	.dt-sc-button.pink.fully-rounded-border, .dt-sc-button.pink.rounded-border:hover, .dt-sc-button.pink.bordered:hover, .dt-sc-button.pink.fully-rounded-border:hover { border-color:#fd6ca3; }		
+	
+	/* Purple */
+	.dt-sc-button.purple, .dt-sc-button.purple.filled, .dt-sc-button.purple.rounded-border:hover, .dt-sc-button.purple.bordered:hover, .dt-sc-button.purple.fully-rounded-border:hover { background:#9c27b0; }
+	.dt-sc-button.purple:hover, .dt-sc-button.purple.filled:hover, .dt-sc-button.purple.with-icon.icon-right.type1:hover { background:#7c1b8c; }	
+	.dt-sc-button.purple.rounded-border, .dt-sc-button.purple.bordered, .dt-sc-button.purple.fully-rounded-border { color:#9c27b0; }	
+	.dt-sc-button.purple.fully-rounded-border, .dt-sc-button.purple.rounded-border:hover, .dt-sc-button.purple.bordered:hover, .dt-sc-button.purple.fully-rounded-border:hover { border-color:#9c27b0; }		
+	
+	/* Red */
+	.dt-sc-button.red, .dt-sc-button.red.filled, .dt-sc-button.red.rounded-border:hover, .dt-sc-button.red.bordered:hover, .dt-sc-button.red.fully-rounded-border:hover { background:#da0000; }
+	.dt-sc-button.red:hover, .dt-sc-button.red.filled:hover, .dt-sc-button.red.with-icon.icon-right.type1:hover { background:#c50000; }	
+	.dt-sc-button.red.rounded-border, .dt-sc-button.red.bordered, .dt-sc-button.red.fully-rounded-border { color:#da0000; }	
+	.dt-sc-button.red.fully-rounded-border, .dt-sc-button.red.rounded-border:hover, .dt-sc-button.red.bordered:hover, .dt-sc-button.red.fully-rounded-border:hover { border-color:#da0000; }		
+	
+	/* SkyBlue */
+	.dt-sc-button.skyblue, .dt-sc-button.skyblue.filled, .dt-sc-button.skyblue.rounded-border:hover, .dt-sc-button.skyblue.bordered:hover, .dt-sc-button.skyblue.fully-rounded-border:hover { background:#0eb2e7; }
+	.dt-sc-button.skyblue:hover, .dt-sc-button.skyblue.filled:hover, .dt-sc-button.skyblue.with-icon.icon-right.type1:hover { background:#0da2d4; }	
+	.dt-sc-button.skyblue.rounded-border, .dt-sc-button.skyblue.bordered, .dt-sc-button.skyblue.fully-rounded-border { color:#0eb2e7; }	
+	.dt-sc-button.skyblue.fully-rounded-border, .dt-sc-button.skyblue.rounded-border:hover, .dt-sc-button.skyblue.bordered:hover, .dt-sc-button.skyblue.fully-rounded-border:hover { border-color:#0eb2e7; }		
+	
+	/* Teal */
+	.dt-sc-button.teal, .dt-sc-button.teal.filled, .dt-sc-button.teal.rounded-border:hover, .dt-sc-button.teal.bordered:hover, .dt-sc-button.teal.fully-rounded-border:hover { background:#009688; }
+	.dt-sc-button.teal:hover, .dt-sc-button.teal.filled:hover, .dt-sc-button.teal.with-icon.icon-right.type1:hover { background:#007f73; }	
+	.dt-sc-button.teal.rounded-border, .dt-sc-button.teal.bordered, .dt-sc-button.teal.fully-rounded-border { color:#009688; }	
+	.dt-sc-button.teal.fully-rounded-border, .dt-sc-button.teal.rounded-border:hover, .dt-sc-button.teal.bordered:hover, .dt-sc-button.teal.fully-rounded-border:hover { border-color:#009688; }		
+	
+	/* Turquoise */
+	.dt-sc-button.turquoise, .dt-sc-button.turquoise.filled, .dt-sc-button.turquoise.rounded-border:hover, .dt-sc-button.turquoise.bordered:hover, .dt-sc-button.turquoise.fully-rounded-border:hover { background:#32ccbd; }
+	.dt-sc-button.turquoise:hover, .dt-sc-button.turquoise.filled:hover, .dt-sc-button.turquoise.with-icon.icon-right.type1:hover { background:#24b6a8; }	
+	.dt-sc-button.turquoise.rounded-border, .dt-sc-button.turquoise.bordered, .dt-sc-button.turquoise.fully-rounded-border { color:#32ccbd; }	
+	.dt-sc-button.turquoise.fully-rounded-border, .dt-sc-button.turquoise.rounded-border:hover, .dt-sc-button.turquoise.bordered:hover, .dt-sc-button.turquoise.fully-rounded-border:hover { border-color:#32ccbd; }		
+	
+	/* Wisteria */
+	.dt-sc-button.wisteria, .dt-sc-button.wisteria.filled, .dt-sc-button.wisteria.rounded-border:hover, .dt-sc-button.wisteria.bordered:hover, .dt-sc-button.wisteria.fully-rounded-border:hover { background:#9b59b6; }
+	.dt-sc-button.wisteria:hover, .dt-sc-button.wisteria.filled:hover, .dt-sc-button.wisteria.with-icon.icon-right.type1:hover { background:#7c4094; }	
+	.dt-sc-button.wisteria.rounded-border, .dt-sc-button.wisteria.bordered, .dt-sc-button.wisteria.fully-rounded-border { color:#9b59b6; }	
+	.dt-sc-button.wisteria.fully-rounded-border, .dt-sc-button.wisteria.rounded-border:hover, .dt-sc-button.wisteria.bordered:hover, .dt-sc-button.wisteria.fully-rounded-border:hover { border-color:#9b59b6; }		
+	
+	/* Yellow */
+	.dt-sc-button.yellow, .dt-sc-button.yellow.filled, .dt-sc-button.yellow.rounded-border:hover, .dt-sc-button.yellow.bordered:hover, .dt-sc-button.yellow.fully-rounded-border:hover { background:#ffe401; }
+	.dt-sc-button.yellow:hover, .dt-sc-button.yellow.filled:hover, .dt-sc-button.yellow.with-icon.icon-right.type1:hover { background:#ebd302; }	
+	.dt-sc-button.yellow.rounded-border, .dt-sc-button.yellow.bordered, .dt-sc-button.yellow.fully-rounded-border { color:#ffe401; }	
+	.dt-sc-button.yellow.fully-rounded-border, .dt-sc-button.yellow.rounded-border:hover, .dt-sc-button.yellow.bordered:hover, .dt-sc-button.yellow.fully-rounded-border:hover { border-color:#ffe401; }
+	
+	/* VIGIL */
+	
+	.dt-sc-button.readmore { padding: 0; background: none; color: #000; float: right; font-size:16px; font-weight:500; }
+	.dt-sc-button.readmore:hover { background: none; }
+	.dt-sc-button.readmore:hover:before { width: 100%; }
+	.dt-sc-button.readmore:before {  position: absolute; content: ""; width: 0; height: 2px; background: #000; bottom: -5px; left: 0; right: 0; margin: 0 auto; }
+	
+	.dt-sc-button.bordered:hover:after { opacity: 1; transform: scale(1); -moz-transform: scale(1); -webkit-transform: scale(1); -ms-transform: scale(1); width: 100%; border-radius: 0; }
+	.dt-sc-button.bordered:after {  position: absolute; content: ""; width: 0;  height: 100%; background: #108bea; left: 0; top: 0;  z-index: -1; border-radius: 50%; right: 0;  margin: 0 auto; transform: scale(.8); -webkit-transform: scale(.8); -o-transform: scale(.8); -ms-transform: scale(.8); -moz-transform: scale(.8); opacity: 0; }
+	.dt-sc-button.bordered:hover { background: transparent !important; }
+	
+	/*--------------------------------------------------------------
+	1.2 - Default Colors
+	--------------------------------------------------------------*/		
+	.dt-sc-button.rounded-border.black:hover, .dt-sc-button.bordered.black:hover, /* Dark bg */ .dt-sc-dark-bg .dt-sc-button.rounded-border, .dt-sc-dark-bg .dt-sc-button.bordered, .dt-sc-dark-bg.skin-color .dt-sc-button.fully-rounded-border, /* Skin highlight */.dt-sc-skin-highlight .dt-sc-button.rounded-border, .dt-sc-skin-highlight .dt-sc-button.bordered { color:#ffffff; }
+	
+	.dt-sc-skin-highlight .dt-sc-button.rounded-border:hover, .dt-sc-skin-highlight .dt-sc-button.bordered:hover { background:#ffffff; }
+	.dt-sc-dark-bg .dt-sc-button.rounded-border, .dt-sc-dark-bg .dt-sc-button.bordered, .dt-sc-dark-bg.skin-color .dt-sc-button.fully-rounded-border, /* Skin highlight */.dt-sc-skin-highlight .dt-sc-button.rounded-border, .dt-sc-skin-highlight .dt-sc-button.bordered { border-color:#ffffff; }
+	
+	.dt-sc-button.with-icon.icon-right.type1:after { background:rgba(0, 0, 0, 0.1); }
+	.dt-sc-button.with-icon.icon-left.type2 span:after { background:rgba(0, 0, 0, 0.05); }
+	
+
+
+	
+	/*--------------------------------------------------------------
+	1.3 - Responsive
+	--------------------------------------------------------------*/
+	
+	 @media only screen and (min-width:992px) and (max-width:1199px) {
+	
+		.dt-sc-button.large.with-icon.icon-left span { line-height: 18px; }
+	
+	 }
+
+	/*----*****---- << Tablet (Portrait) >> ----*****----*/	
+		
+		/* Note: Design for a width of 768px */
+	
+		@media only screen and (min-width:768px) and (max-width:991px) {
+		
+			/** Buttons **/
+			.dt-sc-button.medium { font-size: 13px; }	
+			
+			.dt-sc-button.large { font-size: 15px; padding: 20px 34px 18px; }
+			.dt-sc-button.xlarge { font-size: 16px; padding: 26px 36px 24px; }
+			
+			.dt-sc-button.xlarge.with-icon.icon-left span { margin-right: 18px; margin-top: 3px; }
+				
+			.dt-sc-button.large.with-icon.icon-right.type1 { font-size: 15px; padding-left: 34px; }
+			
+			.dt-sc-button.medium.with-icon.icon-right.type1::after,
+			.dt-sc-button.large.with-icon.icon-right.type1::after { width: 32%; }		
+			
+			.dt-sc-button.medium.with-icon.icon-right.type1:hover:after { width: 36%; }
+			
+			.dt-sc-button.xlarge.with-icon.icon-right.type1 { font-size: 16px; padding-left: 30px; }
+			.dt-sc-button.xlarge.with-icon.icon-right.type1::after { width: 34%; }
+			.dt-sc-button.xlarge.with-icon.icon-right.type1:hover:after { width: 36%; }
+			
+			.dt-sc-button.xlarge.with-icon.icon-right.type2 { font-size: 17px; padding: 26px 80px 24px 20px; }
+			.dt-sc-button.xlarge.with-icon.icon-right.type2 span { font-size: 21px; padding-left: 20px; right: 23px; }
+			
+			.dt-sc-button.large.with-icon.icon-right.type2 { font-size: 14px; }
+			.dt-sc-button.xlarge.with-icon.icon-right.type2 { font-size: 16px; }
+			
+			.dt-sc-button.medium.with-icon.icon-right.type3 { font-size: 15px; }
+			.dt-sc-button.large.with-icon.icon-right.type3 { font-size: 16px; padding-left: 24px; padding-right: 88px; }
+			
+			.dt-sc-button.xlarge.with-icon.icon-right.type3 { font-size: 17px; padding-left: 25px; padding-right: 90px; }
+			.dt-sc-button.xlarge.with-icon.icon-right.type3 span { width: 65px; }
+			
+			.dt-sc-button.large.with-icon.icon-left.type2 { padding-left: 18px; padding-right: 24px; }
+			.dt-sc-button.large.with-icon.icon-left.type2 span { margin-right: 18px; padding-right: 18px; }		
+			.dt-sc-button.large.with-icon.icon-left.type2 span::after { left: 52px; }
+			
+			.dt-sc-button.xlarge.with-icon.icon-left.type2 { padding-left: 20px; padding-right: 24px; }
+			.dt-sc-button.xlarge.with-icon.icon-left.type2 span { margin-right: 20px; padding-right: 20px; }
+			.dt-sc-button.xlarge.with-icon.icon-left.type2 span::after { left: 59px; }
+			
+			.dt-sc-colored-big-buttons.with-left-icon { padding-left: 80px; }
+			.dt-sc-colored-big-buttons span { width: 65px; }		
+			
+			.dt-sc-image-caption.type7 a.dt-sc-button { padding: 13px 16px; }
+		
+		}
+		
+		
+		/*----*****---- << Mobile (Landscape) >> ----*****----*/	
+	
+		/* Common Styles for the devices below 767px width */
+		@media only screen and (max-width: 767px) {
+		
+			.dt-sc-button.dt-sc-left-margin { margin-left: 10px; margin-right: 10px; }
+		
+		}
+	
+	
+		/*----*****---- << Mobile (Landscape) >> ----*****----*/
+		/* Note: Design for a width of 480px */
+		@media only screen and (min-width: 480px) and (max-width: 767px) {
+	 
+			/** University **/	
+			.aligncenter .dt-sc-button.medium.with-icon.icon-right.type3 { padding: 14px 80px 13px 30px; }
+			
+		}
+		
+		
+		/*----*****---- << Mobile >> ----*****----*/	
+	
+		/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+		@media only screen and (min-width: 320px) and (max-width: 479px) {	
+			.dt-sc-colored-big-buttons { font-size: 16px; }
+		}
+		
+		
+		/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+		@media only screen and (max-width: 319px) {
+			
+			/** Buttons **/
+			.dt-sc-button.small { font-size: 11px; }
+			.dt-sc-button.medium { font-size: 13px; }	
+			
+			.dt-sc-button.large { font-size: 14px; padding: 20px 34px 18px; }
+			.dt-sc-button.xlarge { font-size: 15px; padding: 26px 36px 24px; }
+			
+			.dt-sc-button.xlarge.with-icon.icon-left span { margin-right: 18px; }
+			
+			.dt-sc-button.large.with-icon.icon-right.type1 { font-size: 15px; padding-left: 34px; }
+			
+			.dt-sc-button.medium.with-icon.icon-right.type1::after,
+			.dt-sc-button.large.with-icon.icon-right.type1::after { width: 32%; }		
+			
+			.dt-sc-button.medium.with-icon.icon-right.type1:hover:after { width: 36%; }
+			
+			.dt-sc-button.xlarge.with-icon.icon-right.type1 { font-size: 16px; padding-left: 30px; }
+			.dt-sc-button.xlarge.with-icon.icon-right.type1::after { width: 30%; }
+			
+			.dt-sc-button.xlarge.with-icon.icon-right.type2 { font-size: 17px; padding: 26px 80px 24px 20px; }
+			.dt-sc-button.xlarge.with-icon.icon-right.type2 span { font-size: 21px; padding-left: 20px; right: 23px; }
+			
+			.dt-sc-button.large.with-icon.icon-right.type2 { font-size: 14px; }
+			.dt-sc-button.xlarge.with-icon.icon-right.type2 { font-size: 16px; }
+			
+			.dt-sc-button.medium.with-icon.icon-right.type3 { font-size: 15px; }
+			.dt-sc-button.large.with-icon.icon-right.type3 { font-size: 16px; padding-left: 24px; padding-right: 88px; }
+			
+			.dt-sc-button.xlarge.with-icon.icon-right.type3 { font-size: 17px; padding-left: 25px; padding-right: 90px; }
+			.dt-sc-button.xlarge.with-icon.icon-right.type3 span { width: 65px; }
+			
+			.dt-sc-button.large.with-icon.icon-left.type2 { padding-left: 18px; padding-right: 24px; }
+			.dt-sc-button.large.with-icon.icon-left.type2 span { margin-right: 18px; padding-right: 18px; }		
+			.dt-sc-button.large.with-icon.icon-left.type2 span::after { left: 52px; }
+			
+			.dt-sc-button.xlarge.with-icon.icon-left.type2 { padding-left: 20px; padding-right: 24px; }
+			.dt-sc-button.xlarge.with-icon.icon-left.type2 span { margin-right: 20px; padding-right: 20px; }
+			.dt-sc-button.xlarge.with-icon.icon-left.type2 span::after { left: 59px; }
+			
+			.dt-sc-colored-big-buttons.with-left-icon { padding-left: 80px; }
+			.dt-sc-colored-big-buttons span { width: 65px; }
+			
+			.dt-sc-button.dt-sc-left-margin { margin-left: 0; }	
+			
+		} 

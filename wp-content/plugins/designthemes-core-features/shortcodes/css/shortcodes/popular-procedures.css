@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* Table of Content
+==================================================
+	1.0 - Transition
+	2.0 - Popular Procedures
+	3.0 - Responsive
+	4.0 - Skin Color*/
+
+	
+	/*--------------------------------------------------------------
+	1.0 - Transition
+	--------------------------------------------------------------*/
+	.dt-sc-popular-procedures .image img, .dt-sc-popular-procedures .details { -webkit-transition:all 0.3s linear; -moz-transition:all 0.3s linear; -o-transition:all 0.3s linear; -ms-transition:all 0.3s linear; transition:all 0.3s linear; }
+
+
+
+	/*--------------------------------------------------------------
+	2.0 - Popular Procedures
+	--------------------------------------------------------------*/	
+	.dt-sc-popular-procedures { width:100%; margin:0px; padding:0px; clear:both; display:block; }
+	.dt-sc-popular-procedures .image { float:left; clear:both; width:100%; margin:0px; }
+	.dt-sc-popular-procedures .details { float:left; clear:both; width:100%; margin:10px 0px 0px; text-align:center; padding:15px 32px 40px; }
+	.dt-sc-popular-procedures .details h3 { margin-bottom:0px; }
+	.dt-sc-popular-procedures .details .duration, .dt-sc-popular-procedures .details .price, .dt-sc-popular-procedures .details p { float:left; clear:both; margin: 5px 0px 25px; width:100%; }
+	.dt-sc-popular-procedures .details .duration { font-size:18px; }
+	.dt-sc-popular-procedures .details .price, .dt-sc-popular-procedures .details h3 { font-size:20px; }
+	.dt-sc-popular-procedures .details h5 { position: relative; float: none; display: inline-block; margin: 0; padding: 10px 25px; color: #fff; border-radius: 5px; } 	
+	.dt-sc-popular-procedures .image img, .dt-sc-popular-procedures:hover .details { border-radius:40px 0px; }
+	.dt-sc-popular-procedures .details, .dt-sc-popular-procedures:hover .image img { border-radius:0px 40px; }	
+	
+	.dt-sc-popular-procedures .details { background:rgba(0, 0, 0, 0.03); }
+	
+	
+	
+	/*--------------------------------------------------------------
+	3.0 - Responsive
+	--------------------------------------------------------------*/
+	
+	/*----*****---- << Mobile (Landscape) >> ----*****----*/	
+	
+	/* Common Styles for the devices below 767px width */
+	@media only screen and (max-width: 767px) {
+	
+		.dt-sc-popular-procedures { display: inline-block; }
+		.dt-sc-popular-procedures .image img, .dt-sc-popular-procedures:hover .details { width: 100%; }	
+	
+	}  

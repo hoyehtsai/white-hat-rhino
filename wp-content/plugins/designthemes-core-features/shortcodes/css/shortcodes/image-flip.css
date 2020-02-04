@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* Table of Content
+==================================================
+	1.0 - Transition
+	2.0 - Image Flip
+	3.0 - Responsive*/
+ 	
+
+	/*--------------------------------------------------------------
+	1.0 - Transition
+	--------------------------------------------------------------*/
+	.dt-sc-image-flip img { -webkit-transition:all 0.3s linear; -moz-transition:all 0.3s linear; -o-transition:all 0.3s linear; -ms-transition:all 0.3s linear; transition:all 0.3s linear; }
+	
+
+
+	/*--------------------------------------------------------------
+	1.0 - Image Flip
+	--------------------------------------------------------------*/
+	.dt-sc-image-flip { clear:both; float:left; width:100%; position:relative; }
+	.dt-sc-image-flip img:last-child { position:absolute; left:0px; top:0px; }
+	.dt-sc-image-flip img:last-child { opacity:0; }
+	.dt-sc-image-flip:hover img:last-child { opacity:1; }
+	.dt-sc-image-flip:hover img:first-child { opacity:0; }
+	 
+	.aligncenter .dt-sc-image-flip img:last-child { right:0px; margin:auto; }
+	
+	
+	
+	/*--------------------------------------------------------------
+	1.0 - Responsive
+	--------------------------------------------------------------*/
+	
+	/*----*****---- << Mobile (Landscape) >> ----*****----*/	
+	
+	/* Common Styles for the devices below 767px width */
+	@media only screen and (max-width: 767px) {
+		
+		.dt-sc-image-flip { text-align: center; }
+		.dt-sc-image-flip img { display: block; margin: 0 auto; }
+		.dt-sc-image-flip img:last-child { right: 0; }
+		
+	}

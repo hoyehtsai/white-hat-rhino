@@ -1,0 +1,242 @@
+
+/* Table of Content
+==================================================
+	1.0 - Transition
+	1.1 - Number Counter
+	1.2 - Browser Css
+	1.3 - Default Color*/
+
+	/*--------------------------------------------------------------
+	1.0 - Transition
+	--------------------------------------------------------------*/
+	.dt-sc-counter.type6 .dt-sc-couter-icon-holder:before, .dt-sc-counter.type2 .dt-sc-couter-icon-holder, .dt-sc-counter.type4 .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4 .dt-sc-couter-icon-holder, .dt-sc-counter.type5:before, .dt-sc-counter.type5:after, .dt-sc-counter.type3 .icon-wrapper, .dt-sc-counter.type1 .icon-wrapper span, .dt-sc-counter.type1 .dt-sc-counter-number, .dt-sc-counter.type1 .dt-sc-counter-number:before, .dt-sc-counter.type1 .icon-wrapper span:after, .dt-sc-counter.type5 h4, .dt-sc-counter.type5 .dt-sc-couter-icon-holder .icon-wrapper span { -webkit-transition:all 0.3s linear; -moz-transition:all 0.3s linear; -o-transition:all 0.3s linear; -ms-transition:all 0.3s linear; transition:all 0.3s linear; }
+	
+	
+	/*--------------------------------------------------------------
+	1.1 - Number Counter
+	--------------------------------------------------------------*/
+	.dt-sc-counter { float:left; clear:both; width:100%; margin:0px; padding:0px; }
+	
+	.dt-sc-counter.type1 { border-right:1px solid; margin-top:5px; padding-right:30px; }
+	.dt-sc-counter.type1 .icon-wrapper { width:100%; clear:both; position:relative; margin-bottom:20px; padding-bottom:20px; }
+	.dt-sc-counter.type1 .icon-wrapper:before { content:""; position:absolute; left:0px; bottom:0px; width:30px; height:2px; }
+	.dt-sc-counter.type1.alignright .icon-wrapper:before { right:0px; left:inherit; }
+	.dt-sc-counter.type1 .icon-wrapper span { font-size:32px; }
+	.dt-sc-counter.type1 .dt-sc-counter-number { font-size:30px; margin-bottom:20px; }
+	.dt-sc-counter.type1 h4 { font-size:16px; font-weight:300; text-transform:uppercase; margin-bottom:5px; }
+	
+	.dt-sc-counter.type1.last { border: none; }
+	
+	.dt-sc-counter.type1.aligncenter .icon-wrapper:before { left: 0; right: 0; margin: 0 auto; }	
+	
+	.secondary-skin-highlight .dt-sc-counter.type1 .dt-sc-counter-number:before { background: #fff; }
+	
+	.dt-sc-counter.type2 { text-align:center; }
+	.dt-sc-counter.type2 .icon-wrapper span.pe-icon, .dt-sc-counter.type2 .icon-wrapper span.icon, .dt-sc-counter.type2 .icon-wrapper span.fa { font-size:30px; display:inline-block; margin-bottom:10px; }
+	.dt-sc-counter.type2 .dt-sc-couter-icon-holder { display:inline-block; width:120px; height: 120px; padding:30px 0px; }
+	.dt-sc-counter.type2 .dt-sc-counter-number, .dt-sc-counter.type2 h4 { font-size:20px; }
+	.dt-sc-counter.type2 h4 { font-size:20px; margin:20px 0px 0px; }
+	
+	.dt-sc-counter.type2.alignleft { text-align: left; }
+	.dt-sc-counter.type2.alignright { text-align: right; }
+	
+	.dt-sc-counter.type2.alignleft .dt-sc-couter-icon-holder, .dt-sc-counter.type2.alignright .dt-sc-couter-icon-holder { text-align: center; }
+	
+	.dt-sc-counter.type3 { text-align:center; border-right:1px solid; }
+	.dt-sc-counter.type3.last, .last .dt-sc-counter.type3 { border-right-width: 0; }
+	.dt-sc-counter.type3 .dt-sc-couter-icon-holder { display:inline-block; padding:0px; margin:-32px 0px 0px; }
+	.dt-sc-counter.type3 .dt-sc-couter-icon-holder .icon-wrapper { width:70px; height:70px; border:5px solid; border-radius:50%; margin:0px 0px 20px; position:relative; text-align:center; }
+	.dt-sc-counter.type3 .dt-sc-couter-icon-holder span { line-height:60px; font-size:32px; margin-bottom:20px; }
+	.dt-sc-counter.type3 .dt-sc-counter-number { font-size:30px; }
+	.dt-sc-counter.type3 h4 { font-size:14px; margin:10px 0px 0px; text-transform:uppercase; padding:0px 0px 40px; }
+	.dt-sc-counter.type3 .icon-wrapper:before { border-radius: 50%; content: ""; height: 72px; left: -6px; margin: 0 auto; position: absolute; right: 0; top: -6px; width: 72px; border:1px solid; }
+		
+	.dt-sc-counter.type3.diamond-square { border-right-style:dashed; }
+	.dt-sc-counter.type3.diamond-square .dt-sc-couter-icon-holder { margin-top:0px; }
+	.dt-sc-counter.type3.diamond-square h4 { font-size:14px; text-transform:uppercase; letter-spacing:1px; padding-bottom:10px; }
+	.dt-sc-counter.type3.diamond-square .dt-sc-couter-icon-holder .icon-wrapper { background:none; width:100px; height:65px; }
+	.dt-sc-counter.type3.diamond-square .dt-sc-couter-icon-holder .icon-wrapper:before { content:""; position:absolute; left:-2px; right:0px; top:-1px; margin:auto; width:65px; height:65px; transform:rotate(37deg) skewX(-17deg) skewY(-3deg); -ms-transform:rotate(37deg) skewX(-17deg) skewY(-3deg); -webkit-transform:rotate(37deg) skewX(-17deg) skewY(-3deg); }
+	.dt-sc-counter.type3.diamond-square .dt-sc-couter-icon-holder .icon-wrapper:after { content:""; position:absolute; 	left:-3px; right:0px; top:3px; margin:auto; border:1px solid; width:57px; height:57px; transform:rotate(37deg) skewX(-17deg) skewY(-3deg); -ms-transform:rotate(37deg) skewX(-17deg) skewY(-3deg); -webkit-transform:rotate(37deg) skewX(-17deg) skewY(-3deg); }
+	.dt-sc-counter.type3.diamond-square .dt-sc-couter-icon-holder .icon-wrapper span { position:relative; line-height:65px; }
+	
+	.dt-sc-counter.type3.diamond-square .icon-wrapper:before { border-radius:0; }
+	
+	.dt-sc-counter.type3.alignright { text-align: right; padding-right: 30px; }
+	.dt-sc-counter.type3.alignleft { text-align: left; padding-left: 30px; }
+	
+	.dt-sc-counter.type4 { text-align:center; }
+	.dt-sc-counter.type4 .dt-sc-couter-icon-holder { display:inline-block; width:140px; height:140px; border:5px solid; border-radius:50%; position:relative; }
+	.dt-sc-counter.type4 .dt-sc-couter-icon-holder .icon-wrapper { width:70px; height:70px; border:5px solid; border-radius:50%; position:absolute; left:-40px; top:-10px; line-height:60px; }
+	.dt-sc-counter.type4 .dt-sc-couter-icon-holder span { line-height:60px; font-size:32px; }
+	.dt-sc-counter.type4 .dt-sc-counter-number { font-size:30px; line-height:135px; }
+	.dt-sc-counter.type4 h4 { font-size:14px; margin:15px 0px 0px; text-transform:uppercase; padding:0px; }
+	
+	.dt-sc-counter.type4.alignright .dt-sc-couter-icon-holder .icon-wrapper { left: auto; right: -40px; }
+	.dt-sc-counter.type4.aligncenter .dt-sc-couter-icon-holder .icon-wrapper { left: 0; right: 0; top: -30px; margin: 0 auto; }
+	
+	.dt-sc-dark-bg .dt-sc-counter.type4 .dt-sc-counter-number { color:#000000; }
+	.dt-sc-dark-bg .dt-sc-counter.type4:hover .dt-sc-counter-number { color: #fff; }
+	
+	.dt-sc-counter.type4.blue .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4.blue:hover .dt-sc-couter-icon-holder { background:#008bd3; }
+	.dt-sc-counter.type4.brown .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4.brown:hover .dt-sc-couter-icon-holder { background:#795548; }
+	.dt-sc-counter.type4.cadetblue .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4.cadetblue:hover .dt-sc-couter-icon-holder { background:#3c939d; }
+	.dt-sc-counter.type4.chillipepper .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4.chillipepper:hover .dt-sc-couter-icon-holder { background:#c10841; }
+	.dt-sc-counter.type4.cyan .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4.cyan:hover .dt-sc-couter-icon-holder { background:#00bcd4; }
+	.dt-sc-counter.type4.darkgolden .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4.darkgolden:hover .dt-sc-couter-icon-holder { background:#b48b3c; }
+	.dt-sc-counter.type4.deeporange .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4.deeporange:hover .dt-sc-couter-icon-holder { background:#ff5722; }
+	.dt-sc-counter.type4.deeppurple .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4.deeppurple:hover .dt-sc-couter-icon-holder { background:#673ab7; }
+	.dt-sc-counter.type4.green .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4.green:hover .dt-sc-couter-icon-holder { background:#6ca04a; }
+	.dt-sc-counter.type4.lime .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4.lime:hover .dt-sc-couter-icon-holder { background:#cddc39; }
+	.dt-sc-counter.type4.magenta .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4.magenta:hover .dt-sc-couter-icon-holder { background:#cb506d; }
+	.dt-sc-counter.type4.orange .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4.orange:hover .dt-sc-couter-icon-holder { background:#ff9800; }
+	.dt-sc-counter.type4.pink .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4.pink:hover .dt-sc-couter-icon-holder { background:#fd6ca3; }
+	.dt-sc-counter.type4.purple .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4.purple:hover .dt-sc-couter-icon-holder { background:#9c27b0; }
+	.dt-sc-counter.type4.red .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4.red:hover .dt-sc-couter-icon-holder { background:#da0000; }
+	.dt-sc-counter.type4.skyblue .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4.skyblue:hover .dt-sc-couter-icon-holder { background:#0eb2e7; }
+	.dt-sc-counter.type4.teal .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4.teal:hover .dt-sc-couter-icon-holder { background:#009688; }
+	.dt-sc-counter.type4.yellow .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4.yellow:hover .dt-sc-couter-icon-holder { background:#ffe401; }
+	.dt-sc-counter.type4.turquoise .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4.turquoise:hover .dt-sc-couter-icon-holder { background:#32ccbd; }
+	.dt-sc-counter.type4.wisteria .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4.wisteria:hover .dt-sc-couter-icon-holder { background:#9b59b6; }
+	.dt-sc-counter.type4.black .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4.black:hover .dt-sc-couter-icon-holder { background:#000000; }
+	
+	.dt-sc-counter.type5 { float: left; padding: 30px 35px 30px; position: relative;  }
+	.dt-sc-counter.type5 .dt-sc-couter-icon-holder .icon-wrapper { position: absolute; right: 10px; bottom: 10px; }
+	.dt-sc-counter.type5 .dt-sc-couter-icon-holder .icon-wrapper span { font-size:110px; opacity: 0.05; }
+	.dt-sc-counter.type5 .dt-sc-couter-icon-holder .dt-sc-counter-number { font-size: 40px; float: none; display: inline-block; width: 100%; color: #2d2d2d; font-weight: 900; letter-spacing: 1px; line-height:normal; }
+	.dt-sc-counter.type5 h4 { margin-bottom: 0; float: none; display: inline-block; text-transform: uppercase; font-size: 15px; }
+	
+	.dt-sc-counter.type5:before, .dt-sc-counter.type5:after { border-width: 2px; border-style: solid; content: ""; position: absolute; height: 50px; width: 50px; }
+	.dt-sc-counter.type5:before { top: 0; left: 0px; border-bottom-color: transparent !important; border-right-color: transparent !important; }
+	.dt-sc-counter.type5:after { right: 0px; bottom: 0; border-top-color: transparent !important; border-left-color: transparent !important; }
+	
+	.dt-sc-counter.type5:hover .dt-sc-couter-icon-holder .icon-wrapper span { opacity: 0.6; font-size: 100px; }
+	.dt-sc-counter.type5:hover::before { border-width: 5px; border-style: solid; border-bottom-color: transparent; border-right-color: transparent; }
+	.dt-sc-counter.type5:hover::after { border-width: 5px; border-style: solid; border-top-color: transparent; border-left-color: transparent; }
+	
+	.dt-sc-counter.type6 { text-align:center; border:1px solid rgba(0,0,0,0.05); margin:75px -1px 0px 0px; padding:0px 0px 40px; }
+	.dt-sc-counter.type6 .dt-sc-couter-icon-holder { width:140px; height:80px; display:inline-block; position:relative; margin:-6px 0px 15px; }
+	
+	.dt-sc-counter.type6 .dt-sc-couter-icon-holder:before { border:1px solid; content:""; position:absolute; left:0px; right:0px; top:-45px; margin:auto; width:100px; height:100px; border-radius:5px; -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg);  transform:rotate(45deg); z-index:1; }
+
+	.dt-sc-counter.type6 .dt-sc-couter-icon-holder .icon-wrapper { position:absolute; font-size:20px; z-index:1; left:0px; right:0px; top:-45px; margin:auto; }
+	.dt-sc-counter.type6 .dt-sc-counter-number { font-size:34px; font-weight:bold; position:relative; top:-9px; z-index:1; }
+	.dt-sc-counter.type6 h4 { font-size:16px; font-weight:bold; text-transform:uppercase; letter-spacing:1px; margin-bottom:0px; position:relative; padding:0px 10px; }
+	.dt-sc-counter.type6 h4:before { content:""; position:absolute; right:-6px; top:6px; margin:auto; width:12px; height:12px; -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg);  transform:rotate(45deg); z-index:1; }
+	.dt-sc-counter.type6.last h4:before { background:none; }
+	
+	
+	
+	/*--------------------------------------------------------------
+	1.2 - Browser Css
+	--------------------------------------------------------------*/
+	@media all and (min-width:0\0) and (min-resolution:.001dpcm) {
+		
+		.dt-sc-counter.type5:before, .dt-sc-counter.type5:after { transform: rotate(45deg) skew(10deg, 10deg); -ms-transform: rotate(45deg) skew(10deg, 10deg); }
+		
+		
+	}
+	
+	/* IE9 and above */	
+	@media screen and (min-width:0\0) { 
+			
+		.type4.dt-sc-counter .dt-sc-couter-icon-holder .icon-wrapper { border: none; box-shadow: 0 0 0 5px #fff; -ms-box-shadow: 0 0 0 5px #fff; }
+		
+		.diamond-square.type3.dt-sc-counter .dt-sc-couter-icon-holder .icon-wrapper::after { top: 0; }
+		.diamond-square.type3.dt-sc-counter .dt-sc-couter-icon-holder .icon-wrapper::before { top: -3px; }
+	
+	}
+	
+	
+	
+	/*--------------------------------------------------------------
+	1.3 - Default Colors
+	--------------------------------------------------------------*/
+	.dt-sc-counter { color:#000000; }
+	
+	.dt-sc-counter.type2 .dt-sc-couter-icon-holder, .dt-sc-counter.type3 .dt-sc-couter-icon-holder span, .dt-sc-counter.type4 .dt-sc-couter-icon-holder span, .dt-sc-counter.type4:hover .dt-sc-counter-number,  .dt-sc-counter.type6:hover .dt-sc-counter-number, .dt-sc-counter.type5:hover h4, .dt-sc-counter.type5:hover .dt-sc-couter-icon-holder, .dt-sc-dark-bg .dt-sc-counter { color:#ffffff; }
+	
+	.dt-sc-counter.type3 .dt-sc-couter-icon-holder .icon-wrapper { background:#000000; }
+	
+	.dt-sc-counter.type4 .dt-sc-couter-icon-holder, .dt-sc-counter.type6, .dt-sc-counter.type6 .dt-sc-couter-icon-holder:before { background:#ffffff; }	
+	.dt-sc-counter.type4 .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type4:hover .dt-sc-couter-icon-holder .icon-wrapper { background:#333333; }
+	
+	.dt-sc-counter.type1 { border-right-color:rgba(0, 0, 0, 0.1); }
+	.dt-sc-dark-bg .dt-sc-counter.type1 { border-color:rgba(255, 255, 255, 0.1); }
+	
+	.secondary-skin-bg .dt-sc-counter.type1:hover .dt-sc-counter-number { color: #fff; }
+	.secondary-skin-bg .dt-sc-counter.type1 .dt-sc-counter-number:before { background: #fff; }
+	
+	.dt-sc-counter.type3 .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-counter.type3.diamond-square .dt-sc-couter-icon-holder .icon-wrapper:after, .dt-sc-counter.type4 .dt-sc-couter-icon-holder .icon-wrapper, .dt-sc-dark-bg .dt-sc-counter.type5:before, .dt-sc-dark-bg .dt-sc-counter.type5:after { border-color:#ffffff; }
+.dt-sc-counter.type3 { border-color:rgba(0, 0, 0, 0.1); }
+
+	.dt-sc-counter.type4 .dt-sc-couter-icon-holder { border:5px solid rgba(0, 0, 0, 0.07); }
+	
+	.dt-sc-counter.type5:before, .dt-sc-counter.type5:after { border-color:#000000; }
+	
+	
+	/* Note: Design for a width of 960px */	
+    @media only screen and (min-width:992px) and (max-width:1199px) {
+		/** Counters **/
+		.vc_col-md-6 .dt-sc-counter.type1 { margin-bottom: 25px; }
+		
+		*.dt-sc-counter.type3, .vc_row-no-padding .dt-sc-counter.type3 { padding: 0; }
+		
+		.dt-sc-counter.type3.diamond-square .dt-sc-couter-icon-holder .icon-wrapper:before,
+		.dt-sc-counter.type3.diamond-square .dt-sc-couter-icon-holder .icon-wrapper:after,
+		.vc_row-no-padding .dt-sc-counter.type3.diamond-square .dt-sc-couter-icon-holder .icon-wrapper:before,
+		.vc_row-no-padding .dt-sc-counter.type3.diamond-square .dt-sc-couter-icon-holder .icon-wrapper:after { left: -2px; }		
+				
+		.dt-sc-counter.type5 { padding: 30px 25px 20px; }
+		.dt-sc-counter.type5 h4 { font-size: 16px; }
+	
+	}
+	
+	
+	/* Note: Design for a width of 768px */
+    @media only screen and (min-width:768px) and (max-width:991px) {
+		
+		/** Counters **/
+		.dt-sc-counter.type3, .vc_row-no-padding .dt-sc-counter.type3 { padding: 0; }
+		
+		.dt-sc-counter.type3.diamond-square .dt-sc-couter-icon-holder .icon-wrapper:before,
+		.dt-sc-counter.type3.diamond-square .dt-sc-couter-icon-holder .icon-wrapper:after,
+		.vc_row-no-padding .dt-sc-counter.type3.diamond-square .dt-sc-couter-icon-holder .icon-wrapper:before,
+		.vc_row-no-padding .dt-sc-counter.type3.diamond-square .dt-sc-couter-icon-holder .icon-wrapper:after { left: -2px; }
+		
+		.dt-sc-counter.type4 .dt-sc-couter-icon-holder { height: 120px; width: 120px; }
+		.dt-sc-counter.type4 .dt-sc-counter-number { font-size: 28px; line-height: 125px; }
+		.dt-sc-counter.type4 .dt-sc-couter-icon-holder .icon-wrapper { height: 60px; line-height: 60px; left: -30px; width: 60px; }
+		.dt-sc-counter.type4 .dt-sc-couter-icon-holder span { font-size: 28px; line-height: 50px; }
+		
+		.dt-sc-counter.type5 { margin-bottom: 50px; }
+		.dt-sc-counter.type5:before { height: 150px; width: 150px; }
+		.dt-sc-counter.type5:after { height: 130px; width: 130px; }
+
+		.dt-sc-counter.type6 h4 { font-size: 14px; }
+	
+	}
+	
+	
+	/*----*****---- << Mobile (Landscape) >> ----*****----*/	
+	
+	/* Common Styles for the devices below 767px width */
+	@media only screen and (max-width: 767px) { 
+	
+		/** Counters **/
+		.dt-sc-counter { margin-bottom: 15px; }
+		
+		.dt-sc-counter.type3 { border-left-style: solid; border-left-width: 1px; }
+		.dt-sc-counter.type3.diamond-square { border-left-style: dashed; }
+		.dt-sc-counter.type3.last, .last .dt-sc-counter.type3 { border-width: 0 1px; }
+		
+		.dt-sc-counter.type6 { display: block; float: none; margin-left: auto; margin-right: auto; width: 92%; }
+		.dt-sc-counter.type6 h4::after { content: ""; height: 12px; margin: auto; position: absolute; left: -6px; top: 6px; transform: rotate(45deg); width: 12px; z-index: 1; }
+	
+	}
+		
+	
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 319px) {	
+		.dt-sc-counter.type5::before { height: 180px; width: 180px; }
+		.dt-sc-counter.type5::after { height: 160px; width: 160px; }
+	}  

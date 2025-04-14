@@ -1,0 +1,38 @@
+/*
+Author: Atikul Islam;
+Version: 1.0.0;
+*/
+
+/*animation:  animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction */
+
+.rotation {
+	animation: rotate 20s linear infinite;
+}
+@keyframes rotate {
+	from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+.move-up-down{
+	animation: moving 2s linear infinite;
+}
+@keyframes moving {
+	0% {
+		-webkit-transform: translateY(-30px);
+		transform: translateY(-30px);
+	}
+	50% {
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
+	100% {
+		-webkit-transform: translateY(-30px);
+		transform: translateY(-30px);
+	}
+}

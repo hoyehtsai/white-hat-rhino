@@ -1,0 +1,94 @@
+
+@media screen and (max-width: 991px) {
+
+.map-location-area {
+    display: none;
+}
+	.section-title .title {
+		font-size: 36px;
+	}
+
+	/*=========
+	Case Study
+	===========*/
+
+	.case-study.style1 .case-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	/*=========
+	Filter Tab
+	===========*/
+
+	.filter-tab #tabs {
+		flex-wrap: wrap;
+	}
+	.filter-tab #tabs li{
+		margin-bottom: 30px;
+		flex: 0 0 auto;
+		width: 50%;
+	}
+	
+	.filter-tab .content {
+		padding-top: 50px;
+	}
+	.filter-tab .content .text img{
+		margin-top: 30px;
+	}
+	.filter-tab .content .text .row{
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.dreamit-slick-slider .single-slick .content-wrapper {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.dreamit-slick-slider .hero-text h2 {
+		font-size: 58px;
+	}
+	.dreamit-slick-slider .hero-text h3 {
+		font-size: 18px;
+	}
+	.portfolio-filter ul li {
+		display: block;
+	}
+	.portfolio-filter ul li::before {
+		top: auto;
+		bottom: 0;
+	}
+
+	/*=========
+	Case Study
+	===========*/
+
+	.case-study.style1 .case-grid {
+		display: block;
+	}
+	.case-study.style1 .case-grid .gird-item {
+		margin-bottom: 20px;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+
+	.filter-tab #tabs li{
+		width: 100%;
+	}
+
+	/* Subscribe */
+
+	.subscribe-form input[type="email"]{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.subscribe-form input[type="submit"]{
+		position: static;
+		width: 100%;
+	}
+
+}

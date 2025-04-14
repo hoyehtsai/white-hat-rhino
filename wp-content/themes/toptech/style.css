@@ -1,0 +1,2202 @@
+ /*
+Theme Name: TopTech
+Theme URI: http://wp.dreamitsolution.net/toptech/
+Description: TopTech - IT Solution, Technology & Business Consultant WordPress Theme
+Author: DreamIT Solution
+Author URI: https://themeforest.net/user/dreamit-solution
+Version: 1.0.0
+Tags: custom-menu, editor-style, featured-images
+Text Domain: toptech
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*---------------------------------------- Don't change any css from here. If you need to change, Please use child theme. ------------------------------------------*/
+ html, body {
+}
+ img {
+     max-width: 100%;
+     height: auto;
+}
+ .box.wrapper {
+     max-width: 1200px;
+     margin: auto;
+     background: #fff;
+     -webkit-box-shadow: 0px 0px 5px #ddd;
+     box-shadow: 0px 0px 5px #ddd;
+}
+ .template-home-wrapper {
+     overflow: hidden;
+}
+ .fix {
+     overflow: hidden;
+}
+ .clear_both {
+     clear: both;
+}
+ fff .lead{
+     font-weight:400;
+}
+ .form-group {
+     margin-bottom: 20px;
+}
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1320px;
+}
+/*===================== toptech HEADING TOP AREA CSS =========================*/
+/* LEFT RIGHT CSS */
+ .em40_header_area_main.hdisplay_none {
+     display: none;
+}
+.toptech-header-top {
+    background: #00194c;
+    padding: 9px 0;
+}
+ .top-address p {
+     margin-bottom: 0;
+     font-size: 12px;
+     display:inline-block;
+}
+ .top-address p span, .top-address p a {
+     margin-right: 20px;
+}
+.top-address p span i, .top-address p a i {
+    font-size: 13px;
+    color: #fff;
+    margin-right: 10px;
+}
+ .top-address p a {
+     display: inline-block;
+     text-decoration: none;
+     -webkit-transition: all 0.2s ease-in-out;
+     -o-transition: all 0.2s ease-in-out;
+     transition: all 0.2s ease-in-out;
+}
+/* TOP RIGHT CSS */
+.top-address span {
+    color: #fff;
+    padding: 0 0 0 10px;
+    position: relative;
+    z-index: 1;
+}
+.top-address img {
+    position: relative;
+    top: 5px;
+}
+.top-right-menu {
+    float: right;
+}
+.top-right-menu ul.social-icons {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.top-right-menu span {
+    display: inline-block;
+    font-size: 15px;
+    font-family: Nunito;
+    font-weight: 500;
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+}
+ .top-right-menu ul.social-icons li {
+     display: inline-block;
+     margin-left: 5px;
+     position: relative;
+}
+.top-right-menu ul.social-icons li a {
+    font-size: 15px;
+    color: #fff !important;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 5px;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 50%;
+    background: #0c5adb;
+    text-align: center;
+}
+.top-right-menu ul.social-icons li:nth-child(2) a{
+    color:#03A4EC;
+}
+.top-right-menu ul.social-icons li:nth-child(3) a{
+    color:#F75E3E;
+}
+.top-right-menu ul.social-icons li:nth-child(4) a{
+    color:#DD4E85;
+}
+.top-right-menu ul.social-icons li a:last-child{
+    margin-right:0;
+}
+.top-address p a, .top-address p span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+.top-right-menu .social-icons li a:hover, .top-right-menu .social-icons li a i:hover {
+    color: #0c5adb;
+    background:#fff;
+}
+ .top-both-p0 .top-address p a, .top-both-p0 .top-address p span {
+     margin-right: 0px;
+     margin-left: 12px;
+}
+ .right_menu_button {
+     text-align: right;
+}
+ .login_button {
+     font-size: 12px;
+     text-transform: uppercase;
+     color: #fff;
+     border: 1px solid #fff;
+     display: inline-block;
+     padding: 0px 17px;
+     margin-left: 10px;
+     font-weight: 500;
+     -webkit-transition: .3s;
+     -o-transition: .3s;
+     transition: .3s;
+     line-height: 24px;
+}
+ .login_button.active, .login_button:hover {
+     background: #333;
+     border-color: #333;
+     color: #fff;
+}
+ .header-support {
+     margin-top: 11px;
+     margin-left: 14px;
+     display:inline-block;
+}
+ .header-support a {
+     color: #fff;
+     font-weight: 500;
+     background: #0c5adb;
+     padding: 8px 21px;
+     border-radius: 30px;
+     display: inline-block;
+     position: relative;
+     z-index: 1;
+}
+ .header-support a:before{
+     position:absolute;
+     left:0;
+     top:0;
+     height:100%;
+     width:0%;
+     content:"";
+     background:#161a33;
+     border-radius:30px;
+     z-index:-1;
+     -webkit-transition:.3s;
+     -o-transition:.3s;
+     transition:.3s;
+}
+ .header-support a:hover::before{
+     width:100%;
+}
+ .header-support b {
+     font-weight: 400;
+     font-size: 17px;
+     color: #565872;
+}
+ .header-support i {
+     margin-right: 12px;
+     display: inline-block;
+}
+/* sub menu css */
+ .top-right-menu ul .sub-menu {
+     position: absolute;
+     left: 0px;
+     top: 100%;
+     visibility: hidden;
+     opacity: 0;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+     border-top: 1px solid #f00;
+     width: 150px;
+     -webkit-transition: .5s;
+     -o-transition: .5s;
+     transition: .5s;
+     text-align: left;
+     background: #fff;
+     z-index: 1;
+}
+ .top-right-menu ul.social-icons li:hover .sub-menu {
+     opacity: 1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+     visibility: visible;
+}
+ .top-right-menu ul .sub-menu li {
+     padding: 5px 0px 0px 5px;
+}
+ .top-right-menu ul .sub-menu li a {
+     font-size: 12px;
+}
+ .top-right-menu ul .sub-menu ul {
+     display: none;
+}
+ .top-welcome p {
+     padding: 0px;
+     margin: 0px;
+}
+ .top-address a {
+     margin-right: 5px;
+     color: #43342c;
+}
+ .top-address.em-login a+a {
+     margin-right: 0;
+}
+ .top-address.em-login p a i, .top-address.em-login p a i {
+     margin-right: 5px;
+}
+ .top-address.em-login a+a:before {
+     content: "|";
+     margin-right: 12px;
+}
+/* .txtc {
+     text-align: center;
+}
+ .text-center {
+     text-align: center;
+}*/
+ .text-center {
+     text-align: left!important;
+}
+ .text-left {
+     text-align: left;
+}
+ .text-right {
+     text-align: right;
+}
+ .top-address a:hover{
+     color:#fff;
+}
+/* top opening */
+ .top-address.menu_18 span {
+     background: #fff;
+     padding: 8px 15px 9px;
+     display: inline-block;
+     color: #333;
+}
+ .top-right-menu ul.social-icons.menu_18, .top-right-menu ul.social-icons.menu_19 {
+     padding: 7px 0;
+}
+ .em-login.menu_18, .em-quearys-top.menu_19 {
+     padding: 7px 0;
+}
+/* top quearys */
+ .em-top-quearys-area {
+     position: relative;
+     display: inline-block;
+}
+ .em-header-quearys {
+     list-style: none;
+}
+ .em-quearys-menu i {
+     border-radius: 3px;
+     display: inline-block;
+     height: 30px;
+     text-align: center;
+     width: 30px;
+     line-height: 30px;
+     font-size: 13px;
+     cursor: pointer;
+     color: #fff;
+     margin-top: 0px;
+     background: #0c5adb;
+}
+ .heading_style_3 .hbg2 .em-quearys-menu i {
+     color: #333;
+}
+ .em-quearys-inner {
+     position: absolute;
+     right: 15px;
+     top: 36px;
+     z-index: 999;
+     display: none;
+     -webkit-transition: .5s;
+     -o-transition: .5s;
+     transition: .5s;
+}
+
+ .em-quearys-form {
+     background-color: #f5f5f5;
+     width: 363px;
+     float: right;
+     border-radius: 30px;
+}
+ .top-form-control {
+     position: relative;
+}
+ .em-quearys-inner::before {
+     position: absolute;
+     right: 1px;
+     top: -11px;
+     width: 47px;
+     height: 47px;
+     text-align: center;
+     width: 0;
+     height: 0;
+     border-left: 10px solid transparent;
+     border-right: 10px solid transparent;
+     border-bottom: 8px solid #0c5adb;
+     content: " ";
+}
+ .top-form-control input {
+     background: #f4f6f9;
+     color: #555555;
+     font-size: 13px;
+     font-weight: 300;
+     height: 55px;
+     padding: 0 40px 0 25px;
+     width: 100%;
+     border: none;
+     -webkit-transition: 1s;
+     -o-transition: 1s;
+     transition: 1s;
+     border-radius: 30px;
+}
+ .top-form-control button.top-quearys-style {
+     position: absolute;
+     right: 0;
+     top: 50%;
+     background: 0 0;
+     font-size: 16px;
+     border: none;
+     color: #0c5adb;
+     -webkit-transform: translateY(-50%);
+     -ms-transform: translateY(-50%);
+     transform: translateY(-50%);
+     height: 100%;
+     background: #0c5adb;
+     width: 58px;
+     border-radius: 0 30px 30px 0;
+     text-align: center;
+}
+ .top-quearys-style i {
+     font-size: 18px;
+     color: #fff;
+}
+ .em-s-hidden {
+     display: none !important;
+}
+/* address left right icon */
+ .top-right-menu.litop {
+     float: left;
+}
+/* mobile logo */
+ .mobile_menu_logo.text-center {
+     padding: 20px 0;
+}
+ .tr_search .em-quearys-menu i {
+     color: #fff;
+}
+/* Style 7 Top Bar */
+ .top-right-address p {
+     margin-bottom: 0;
+     font-size: 12px;
+     display: inline-block;
+}
+ .top-right-address .social-icons {
+     display: inline-block;
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     position: relative;
+}
+ .top-right-address .social-icons li {
+     display: inline-block;
+     margin-left: 17px;
+     color: #fff;
+     font-size: 14px;
+}
+
+/*======================= toptech HEADING NAV AREA CSS ========================*/
+.toptech-main-menu {
+    position: relative;
+}
+ .mean-container{
+     overflow:hidden;
+}
+ .mean-container .mean-bar {
+     padding: 0;
+}
+.mean-container .mean-nav {
+    background: #0c5adb none repeat scroll 0 0;
+    float: none;
+}
+ .mean-container .mean-nav>ul>li:first-child {
+     border-top: 0px solid #fff;
+}
+ .main_menu_div {
+     position: relative;
+}
+ .toptech_nav_area {
+     background: #fff none repeat scroll 0 0;
+}
+.scroll-to-fixed-fixed .toptech_nav_area {
+    box-shadow: 0 0 3px rgba(0,0,0,0.10);
+}
+ .toptech_menu {
+     text-align: right;
+}
+.toptech-main-menu.main.menu .toptech_menu {
+    text-align: right;
+}
+ .container-fluid .toptech_menu {
+     text-align: center;
+}
+/* LOGO CSS */
+ .logo a {
+     font-size: 23px;
+     font-weight: 600;
+     display: inline-block;
+}
+ .logo a.retina-logo {
+     display: none;
+}
+/* MAIN MENU CSS */
+ .toptech_menu ul {
+     list-style: none;
+     text-align:right;
+     display:inline-block;
+}
+ .transprent-menu .toptech_menu ul {
+     list-style: none;
+     text-align: center;
+}
+.toptech_menu > ul > li {
+    display: inline-block;
+    position: relative;
+    z-index: 9;
+}
+.toptech_menu > ul > li > a {
+    display: block;
+    margin: 35px 16px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    color: #232323;
+    font-weight: 600;
+    font-family: 'Rajdhani';
+    text-transform: uppercase;
+    font-size: 17px;
+}
+ .toptech_menu > ul > li > a:hover {
+    color: #0c5adb;
+}
+
+ .toptech_menu ul li:last-child a {
+     margin-right: 0px;
+}
+ .toptech_menu > ul > li.current > a, .toptech_menu > ul > li:hover > a {
+     color: #0c5adb;
+}
+.transprent-menu .toptech_menu > ul > li > a {
+    color: #fff;
+}
+.transprent-menu .toptech_menu > ul > li > a:hover {
+    color: #0c5adb;
+}
+
+
+.toptech-main-menu.one_page.d-md-none.one_page .toptech_nav_area.trp_nav_area.hbg2 .toptech_menu > ul > li > a {
+    color: #fff;
+}
+
+.toptech-main-menu.one_page.d-md-none.one_page .toptech_nav_area.trp_nav_area.hbg2 .logo a img {
+    filter: brightness(1) invert(0);
+}
+
+/*style two transparent menu*/
+.toptech-main-menu.transprent-menu.style-two .row.header-bg {
+    background: #fff;
+    border-radius: 5px;
+    height: 110px;
+    padding: 0 18px;
+
+    z-index: 1;
+}
+
+.toptech-main-menu.transprent-menu.style-two .toptech_menu>ul>li>a {
+    color: #232323;
+}
+
+.transprent-menu.style-two .hbg2{
+    background: transparent;
+    box-shadow: none;
+}
+
+/* transparent 2 */
+ .trp_nav_area {
+     position: absolute;
+     left: 0;
+     right: 0;
+     top: 0;
+     z-index: 9999;
+     background-color: transparent;
+     padding: 0 100px;
+     -webkit-transition: .5s;
+     -o-transition: .5s;
+     transition: .5s;
+}
+ .hbg2 {
+     background: rgba(0, 0, 0, .7);
+     padding: 0px 50px;
+}
+ .trp_nav_area.full-width {
+     padding: 37px 100px 37px 100px;
+}
+ .trp_nav_area.full-width.hbg2 {
+     padding: 7px 20px 10px;
+}
+/* Sticky MENU CSS */
+ #sticky-header {
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     z-index: 999;
+     transition: .5s;
+     padding: 18px 0 9px;
+}
+/* Skyty Menu */
+ .sticky-nav {
+     left: 0;
+     margin: auto;
+     position: fixed !important;
+     top: 0;
+     width: 100%;
+     box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.07);
+     z-index: 9999;
+     -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+     animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+     -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+     transition: .5s !important;
+}
+/* stycky nav js */
+ .transprent-menu.menu4 {
+     position: relative;
+}
+ .transprent-menu .toptech_nav_area {
+     left: 0;
+     right: 0;
+     top: 0;
+     z-index: 9999;
+     background-color: transparent;
+     -webkit-transition: .5s;
+     -o-transition: .5s;
+     transition: .5s;
+     position: absolute;
+}
+ .toptech_nav_area.postfix {
+     -webkit-transition: .3s;
+     -o-transition: .3s;
+     transition: .3s;
+}
+ .toptech_nav_area.prefix, .hbg2 {
+     -webkit-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
+     box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
+}
+ .heading_style_3.tr_btn .prefix .toptech_menu > ul > li > a:hover, .heading_style_3.tr_btn .hbg2 .toptech_menu > ul > li.current a {
+     color: #0c5adb;
+}
+ .heading_style_3 .prefix .toptech_menu > ul > li > a:hover, .heading_style_3 .hbg2 .toptech_menu > ul > li.current a {
+     color: #0c5adb;
+}
+ .heading_style_3 .toptech_nav_area.prefix .em-quearys-top.msin-menu-search .em-quearys-menu i {
+     color: #fff;
+}
+ .tr_white_btn .hbg2 {
+     background:#0c5adb !important;
+}
+ .tr_white_btn .hbg2 .toptech_menu > ul > li > a {
+     color: #fff !important;
+}
+/* LOGO LEFT RIGHT CSS */
+ .logo-left {
+}
+ .logo-right .logo {
+     text-align: right;
+}
+ .logo-right .toptech_menu > ul {
+     text-align: left;
+}
+ .logo-right .toptech_menu > ul > li:first-child a {
+     padding-left: 0px;
+}
+ .logo-right .toptech_menu > ul > li:last-child a {
+     padding-right: auto;
+}
+ .search_button {
+     text-align: right;
+}
+/* logo top */
+ .logo-top .logo {
+     text-align: center;
+}
+ .logo-top .toptech_menu > ul {
+     text-align: center;
+}
+ .logo-top >.toptech_menu > ul>li:last-child a {
+     padding-right: auto;
+}
+/* sub menu style */
+.toptech_menu ul .sub-menu {
+    position: absolute;
+    left: 0;
+    top: 130%;
+    width: 235px;
+    text-align: left;
+    background: #fff;
+    margin: 0;
+    z-index: 1;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    transition: .5s;
+    visibility: hidden;
+    border-top: 2px solid #0c5adb;
+    opacity: 0;
+}
+ .toptech_menu ul li:hover >.sub-menu {
+    visibility: visible;
+    top: 100%;
+    opacity: 1;
+}
+ .toptech_menu ul .sub-menu li {
+     position: relative;
+}
+.toptech_menu ul .sub-menu li a {
+    display: block;
+    padding: 12px 20px;
+    margin: 0;
+    line-height: 1.3;
+    letter-spacing: normal;
+    font-size: 17px;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-transition: .1s;
+    transition: .1s;
+    visibility: inherit !important;
+    color: #211e3b !important;
+}
+ .toptech_menu ul .sub-menu li:hover>a, .toptech_menu ul .sub-menu .sub-menu li:hover>a, .toptech_menu ul .sub-menu .sub-menu .sub-menu li:hover >a, .toptech_menu ul .sub-menu .sub-menu .sub-menu .sub-menu li:hover>a {
+     color:#0c5adb;
+}
+ .toptech_menu ul .sub-menu li {
+     position: relative;
+     -webkit-transition:.3s;
+     -o-transition:.3s;
+     transition:.3s;
+}
+.toptech_menu ul .sub-menu li:hover>a,
+.toptech_menu ul .sub-menu .sub-menu li:hover>a,
+.toptech_menu ul .sub-menu .sub-menu .sub-menu li:hover>a,
+.toptech_menu ul .sub-menu .sub-menu .sub-menu .sub-menu li:hover>a {
+    background: #0c5adb;
+    color: #fff !important;
+}
+/* sub menu 2 */
+ .toptech_menu ul .sub-menu .sub-menu {
+     left:100%;
+     top: 130%;
+     opacity: 0;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+     visibility: hidden;
+}
+ .toptech_menu ul .sub-menu li:hover>.sub-menu {
+     opacity: 1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+     visibility: visible;
+     top: 0%;
+}
+/* sub menu 3 */
+ .toptech_menu ul .sub-menu .sub-menu li {
+     position: relative;
+}
+ .toptech_menu ul .sub-menu .sub-menu .sub-menu {
+     right: 100%;
+     left: auto;
+     top: 130%;
+     opacity: 0;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+     visibility: hidden;
+}
+ .toptech_menu ul .sub-menu .sub-menu li:hover>.sub-menu {
+     opacity: 1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+     visibility: visible;
+     top: 0%;
+}
+/* sub menu 4 */
+ .toptech_menu ul .sub-menu .sub-menu .sub-menu li {
+     position: relative;
+}
+ .toptech_menu ul .sub-menu .sub-menu .sub-menu .sub-menu {
+}
+ .toptech_menu ul .sub-menu .sub-menu .sub-menu li:hover>.sub-menu {
+     opacity: 1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+     visibility: visible;
+     top: 0%;
+}
+/* user login */
+ .logged-in .transprent-menu .toptech_nav_area.prefix {
+     top: 32px;
+}
+ .logged-in .trp_nav_area.hbg2 {
+     top: 32px;
+}
+/* maing menu search */
+ .top-address.em-quearys-top.text-right {
+     float: right;
+}
+ nav.toptech_menu.main-search-menu {
+     float: right;
+}
+ .toptech_menu.main-search-menu>ul, .em-quearys-top.msin-menu-search {
+     display: inline-block;
+}
+ .em-quearys-top.msin-menu-search .em-quearys-menu i {
+     margin-left: 20px;
+     margin-top: 6px;
+}
+ .em-quearys-top.msin-menu-search .em-quearys-inner {
+     top: 61px;
+     background: #fff;
+     padding: 20px;
+     border-top: 3px solid #0c5adb;
+}
+ nav.toptech_menu.main-search-menu {
+    /* float: right;
+     */
+     text-align: center;
+}
+/* has menu icon */
+ .toptech-main-menu .menu-item-has-children>a:after {
+     margin-left: 5px;
+     content: "\f107";
+     font-family: FontAwesome;
+     opacity: 1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+     font-size: 13px;
+     opacity: .5;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+ .toptech-main-menu .menu-item-has-children .menu-item-has-children>a:after {
+     margin-left: 8px;
+     content: "\f105";
+}
+/* HEADER BUTTON */
+.donate-btn-header {
+    display: inline-block;
+    margin-left: 30px;
+}
+a.dtbtn {
+    padding: 10px 26px;
+    color: #fff;
+    background: #0c5adb;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Rajdhani';
+}
+ a.dtbtn:before {
+     position: absolute;
+     content: "";
+     z-index: -1;
+     left: 0;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     border-radius: 3px;
+     background: #1266f1;
+     transform: scale(0);
+     transition: .5s;
+}
+ a.dtbtn:hover:before {
+     transform: scale(1);
+}
+/*========== toptech BLOG AREA CSS =========*/
+ .toptech-blog-area, .toptech-blog-index {
+     background: #fff;
+     padding: 100px 0 70px;
+}
+.toptech-blog-area.toptech-blog-archive.ptb-100 {
+    padding: 120px 0 120px;
+}
+.toptech-blog-index.blog-area.toptech-blog-area.blog-grid-item {
+    padding: 120px 0 120px;
+}
+ .toptech-single-blog {
+     margin-bottom: 30px;
+     text-align: left;
+     -webkit-transition: all .3s ease-in-out 0s;
+     -o-transition: all .3s ease-in-out 0s;
+     transition: all .3s ease-in-out 0s;
+     text-align: left;
+     border: 1px solid #e6e9f0;
+     border-radius:10px;
+}
+ .toptech-single-blog {
+     text-align: left;
+}
+.toptech-blog-thumb {
+    position: relative;
+}
+.toptech-blog-thumb img {
+    vertical-align: middle;
+    border-radius: 10px;
+}
+.toptech-single-blog.toptech-lt .toptech-blog-thumb img {
+    vertical-align: middle;
+    width: 100%;
+}
+.toptech-blog-content-area {
+    padding: 25px 31px 31px;
+    position: relative;
+}
+ .blog-page-title h2 {
+     font-size: 1.5625rem;
+}
+.blog-page-title h2, .blog-page-title h2 a {
+    font-size: 32px;
+    font-weight: 700;
+    color: initial;
+    text-decoration: none;
+    margin: 9px 0 10px;
+    transition: .3s;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+ .blog-page-title h2:hover, .blog-page-title h2 a:hover{
+     color:#0c5adb;
+}
+ .toptech-blog-meta-top {
+     padding-top: 5px;
+     position: absolute;
+     left: 20px;
+     top: 20px;
+}
+ .toptech-blog-meta-top li {
+     display: inline-block;
+     margin-right: 10px;
+}
+.toptech-blog-index.blog-area.toptech-blog-area.blog-grid-item .toptech-blog-thumb img {
+    vertical-align: middle;
+    width: 100%;
+}
+.toptech-blog-meta-left a, .toptech-blog-meta-left time, .toptech-blog-meta-left span {
+    margin-right: 0;
+    transition: .3s;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #686868;
+    font-weight: 500;
+    background: transparent;
+    display: inline-block;
+    padding: 0;
+    border-radius: 0;
+    margin-right: 14px;
+    font-family: 'Rajdhani';
+}
+.toptech-blog-meta-left a:hover,
+.toptech-blog-meta-left time:hover,
+.toptech-blog-meta-left span:hover {
+    color: #0c5adb;
+}
+
+.toptech-blog-index.blog-area.toptech-blog-area .toptech-blog-meta-left a,
+.toptech-blog-index.blog-area.toptech-blog-area .toptech-blog-meta-left time,
+.toptech-blog-index.blog-area.toptech-blog-area .toptech-blog-meta-left span {
+    margin-right: 0;
+    transition: .3s;
+    color: #495057;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #686868;
+    font-weight: 600;
+    background: transparent;
+    display: inline-block;
+    padding: 0;
+    border-radius: 0;
+    margin-right: 14px;
+}
+ .toptech-blog-meta-left a:last-child:before{
+     display:none;
+}
+.toptech-blog-meta-top li a {
+    display: inline-block;
+    padding: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    padding-top: 2px;
+    background: #0c5adb;
+    padding: 3px 15px;
+    border-radius: 30px;
+    border-radius: 6px;
+}
+ .blog-content-bottom-meta img {
+     width: 30px;
+     border-radius: 100%;
+}
+.blog-readmore a {
+    background: #0c5adb;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-top: 10px;
+    z-index: 1;
+    position: relative;
+}
+ .blog-readmore a:before {
+     position: absolute;
+     content: "";
+     z-index: -1;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background: #10102E;
+     border-radius: 8px;
+     transform: scale(0);
+     transition: .5s;
+}
+ .blog-readmore a:hover:before {
+     transform: scale(1);
+}
+.blog-author {
+    border-top: 1px solid #e6e9f0;
+    padding: 18px 31px 18px;
+}
+.blog-author a {
+    margin-right: 18px;
+    color: #232323;
+}
+.blog-author i {
+    display: inline-block;
+    color: #0c5adb;
+    font-size: 14px;
+    margin-right: 6px;
+}
+
+/* Blog Grid Style */
+ .blog-grid .toptech-blog-meta-left a, .blog-grid.toptech-blog-meta-left time, .blog-grid .toptech-blog-meta-left span {
+     margin-right: 13px;
+}
+ .blog-grid .blog-page-title h2, .blog-grid .blog-page-title h2 a {
+     font-size: 24px;
+}
+ .toptech-blog-meta-left i {
+    margin-right: 5px;
+}
+/* Blog Details Css */
+.toptech-single-blog-details-inner {
+    background: #fff;
+    padding: 39px 45px 49px;
+    border: 1px solid #ddd;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+ .single-blog-title {
+     font-size: 1.5625rem;
+     font-family: montserrat;
+     color: initial;
+     text-decoration: none;
+     color: #333;
+     margin: 0px 0 11px;
+}
+.single-blog-content {
+    overflow: hidden;
+}
+ .toptech-single-blog-details-inner .toptech-blog-meta-left {
+     margin-bottom: 18px;
+     border: 0;
+     padding: 0;
+}
+ .toptech-single-blog-details-inner .toptech-blog-meta-left a {
+    color: inherit;
+}
+ .toptech-blog-social {
+     padding-top: 40px;
+     text-align: left;
+     border-top: 1px solid #e6e6e6;
+     margin-top: 40px;
+}
+ .toptech-single-icon-inner {
+     text-align: left;
+}
+ .toptech-single-icon-inner a i {
+     border: 1px solid #e6e6e6;
+     color: #565872;
+     display: inline-block;
+     font-size: 15px;
+     height: 40px;
+     line-height: 41px;
+     margin: 0 9px 0 0;
+     text-align: center;
+     width: 40px;
+     border-radius: 5px;
+}
+ .toptech-single-icon-inner a i:hover {
+     background: #0c5adb;
+     border-color: #0c5adb;
+     color: #fff;
+}
+ a.detail-link i {
+     margin-left: 0px;
+}
+ .toptech-single-blog--thumb img {
+     vertical-align: middle;
+}
+.toptech-blog-meta-left i {
+    color: #0c5adb;
+    margin-right: 5px;
+    font-size: 15px;
+}
+.toptech-single-blog-details ul {
+    padding-left: 17px;
+}
+.toptech-single-blog-details ol {
+    padding-left: 15px;
+}
+.post-details-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 30px; */
+    /* padding-top: 30px; */
+    /* padding-bottom: 20px; */
+}
+.post-details-category a {
+    font-size: 15px !important;
+    color: var(--conliz-black);
+    color: #6d6d6d;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border: 1px solid #dad7d7;
+    display: inline-block;
+    padding: 0 8px 0 8px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    text-transform: capitalize;
+	border-radius:3px;
+}
+.post-details-category a:hover{
+	color:#0c5adb;
+	border-color:#0c5adb;
+}
+.post-tags .tags a:hover{
+	color:#0c5adb;
+}
+.post-tags .tags,
+.post-details-category .post-categories {
+    list-style: none;
+    display: inline-block;
+}
+.post-tags h4, .post-details-category h4 {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+.post-details-category .post-categories li{
+    display:inline-block;
+}
+/* Next And Prev CSS */
+ .next-prev-post {
+     overflow: hidden;
+     padding: 45px;
+     border: 1px solid #ddd;
+     border-radius: 10px;
+     margin: 30px 0;
+}
+ .nav-previous {
+     display: inline-block;
+     float: left;
+}
+ .nav-next {
+     float: right;
+}
+ .nav-previous a, .nav-next a {
+     display: inline-block;
+     border: 1px solid #ddd;
+     padding: 12px 30px;
+     border-radius: 6px;
+     color: #666;
+     font-weight: 400;
+     transition:.5s;
+}
+ .nav-previous a:hover, .nav-next a:hover {
+     color: #fff;
+     background:#0c5adb;
+     border-color:#0c5adb;
+}
+ .nav-previous a i{
+     margin-right:5px;
+}
+ .nav-next a i{
+     margin-left:5px;
+}
+/* Post Author */
+.author-bio {
+    padding: 28px 45px 21px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-top: 50px;
+}
+.author-img {
+    overflow: hidden;
+    margin-right: 25px;
+}
+ .author-img img {
+     border-radius:100%;
+}
+ .author-text h3 {
+     font-size: 20px;
+     color: #232323;
+     font-weight: 600;
+     text-transform: capitalize;
+     margin-bottom: 10px;
+}
+ .author-text h3 a{
+     color:inherit;
+}
+/*======================== toptech COMMENT AREA CSS =========================*/
+/* POST REPLY CSS */
+ .comments {
+     padding-bottom: 25px;
+}
+ .post_comment {
+     margin: 20px 0 10px 0;
+     padding: 0 10px;
+}
+ .commment_title h3 {
+     margin-bottom: 20px;
+     position: relative;
+     margin-top: 0;
+     font-size: 1.25em;
+     font-size: 24px;
+}
+ .commment_title small{
+     font-size: 60%;
+}
+ .post_replay_inner {
+     word-wrap: break-word;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     margin-bottom: 20px;
+}
+ .mgl-30 {
+     margin-left: 30px;
+}
+ .post_reply_thumb {
+}
+ .post_reply_thumb img {
+     border-radius: 50%;
+}
+ .post_replay {
+     margin-top: 30px;
+}
+ .post_reply {
+     padding-left: 15px;
+     width: 100%;
+     position: relative;
+}
+ .post_reply div.st {
+     font-size: 18px;
+     font-weight: 400;
+}
+ .post_reply div.st a {
+     color: #222;
+     font-size: 15px;
+     display: inline-block;
+     padding-bottom: 7px;
+     text-transform: capitalize;
+     font-weight: 500;
+}
+ .reply_date {
+     overflow: hidden;
+     margin-bottom: 15px;
+}
+ .reply_date span.span_left {
+     font-size: 13px;
+     color: #777;
+     display: block;
+}
+ .reply_date span.span_right {
+     float: none;
+     color: #fff;
+     font-size: 12px;
+     font-weight: 400;
+     letter-spacing: 1px;
+     position: absolute;
+     top: 0;
+     right: 0;
+     background: #0c5adb;
+     padding: 5px 13px;
+     transition: .3s;
+     border-radius: 3px;
+}
+ .reply_date span.span_right:hover{
+     background:#0c5adb;
+}
+ .post_reply p {
+}
+ .comments-area {
+     background: #fff;
+     margin: 30px 0;
+     padding: 50px 45px 55px;
+     border-radius: 10px;
+     border: 1px solid #ddd;
+}
+ .comment-list .comment .comment{
+     margin-left: 85px;
+}
+ .comment-list .comment .comment .post_comment{
+     border-bottom:transparent;
+}
+ .comments-area .children {
+     margin-left: 90px;
+}
+ .post_comment .post_comment {
+     margin-left: 15px;
+}
+/* COMMENT FORM CSS */
+ .comment-form-cookies-toptecht input[type="checkbox"], .comment-form-cookies-toptecht input[type="radio"] {
+     margin: 4px 0 0;
+     margin-top: 1px;
+     line-height: normal;
+     margin-right: 10px;
+}
+ .comment_field input[type="text"] {
+}
+ .comment_field input[type="email"] {
+}
+ .em-theme-main-page .commment_title h3 {
+     margin-top: 0px;
+}
+ .logged-in-as {
+     margin-bottom: 10px;
+     margin-top: 25px;
+}
+ .logged-in-as a {
+     color: #333;
+}
+
+.logged-in-as a:hover{
+	color:#0c5adb;
+}
+ a.comment-edit-link {
+     margin-bottom: 12px;
+     display: inline-block;
+}
+ .em-theme-main-page .comments-area {
+     margin-top: 40px;
+     clear: both;
+}
+.comments-area button {
+    background: #0c5adb;
+    color: #fff;
+    padding: 13px 30px;
+    border-radius: 7px;
+    transition: .5s;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+.comments-area button i {
+    margin-left: 5px;
+    font-size: 11px;
+}
+ .comments-area button:hover {
+     background: #10102E !important;
+     color: #fff;
+}
+/*======================== toptech PAGINATION SECTION =========================*/
+.paginations {
+     text-align: center;
+    margin-top: 20px;
+}
+ .page-numbers li {
+     display: inline-block;
+     text-align: center;
+}
+.paginations a, .page-numbers span.current {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 5px 0 0;
+    color: #6d6d6d;
+    background: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+ .page-numbers li {
+     display: inline-block;
+}
+ .paginations a:hover, .paginations a.current, .page-numbers span.current {
+     background: #0c5adb;
+     border-color: #0c5adb;
+     color: #fff;
+}
+/*======================== toptech BREADCRUMB AREA CSS =========================*/
+.breadcumb-area {
+    padding: 187px 0 96px;
+    background: linear-gradient(rgba(19, 19, 35, 0.4), rgba(0, 0, 0, 0.4)), url(https://wp.ditsolution.net/toptech/wp-content/uploads/2023/12/it-solution-count-bg02.png) no-repeat center/cover;
+    position: relative;
+}
+ .breadcrumb_tran_header .breadcumb-area {
+     padding: 191px 0 110px;
+}
+ .breadcumb-inner h2 {
+     font-size: 50px;
+     color: #fff;
+     margin-bottom: 30px;
+}
+.breadcumb-inner ul {
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.25);
+    padding: 8px 13px 7px;
+    border-left: 3px solid #0c5adb;
+    margin-bottom: 5px;
+}
+.breadcumb-inner li {
+    display: inline-block;
+    margin: 0 6px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+ .breadcumb-inner li:nth-last-child(-n+1) {
+     color: #fff;
+}
+ .breadcumb-inner li a {
+     color: #fff;
+     text-transform: uppercase;
+}
+ .brpt {
+     text-align: left;
+}
+.brpt h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: #fff;
+}
+ .lcase {
+     text-transform: lowercase;
+}
+ .ucase {
+     text-transform: uppercase;
+}
+ .ccase {
+     text-transform: capitalize;
+}
+ .pimgs img {
+     width: 100%;
+}
+/*======================== toptech 404 AREA CSS =========================*/
+ .not-found-area {
+     background-color: #f9f9f9;
+     background-position: center top;
+     background-repeat: repeat;
+     background-size: cover;
+     padding: 0 0 16px;
+}
+ .not-found {
+     display: table;
+     width: 100%;
+     text-align: center;
+     background: #fff;
+     margin: 70px 0;
+     padding: 120px 0;
+     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+ .not-found-inner {
+     display: table-cell;
+     vertical-align: middle;
+}
+ .not-found-inner {
+     font-size: 30px;
+}
+ .not-found-inner h2 {
+     color: #0c5adb;
+     display: inline-block;
+     font-size: 160px;
+     font-weight: 700;
+     line-height: 1.2;
+     padding: 15px 0;
+}
+ .not-found-inner p {
+     font-size: 30px;
+}
+ .not-found-inner a {
+     color: #fff;
+     font-size: 24px;
+     margin-top: 40px;
+     display: inline-block;
+     background: #0c5adb;
+     box-shadow: 0 0 4px rgba(0,0,0,.15);
+     padding: 10px 40px;
+}
+ .not-found-inner a:hover{
+     background:#0c5adb;
+     color:#fff;
+}
+/* search error */
+ .toptech-search-page {
+     padding-bottom: 100px;
+}
+ .search-error .search input {
+     padding: 20px 0;
+}
+ .search-error .search input[type="text"] {
+     padding-left: 10px;
+}
+ .search-error .search button {
+     top: 48%;
+     -webkit-transform: translateY(-50%);
+     -ms-transform: translateY(-50%);
+     transform: translateY(-50%);
+}
+ .search-error > p {
+     font-size: 18px;
+     margin: 14px 0 20px;
+}
+ .search-error > h3 {
+     display: block;
+     font-size: 60px;
+     color: #0c5adb;
+}
+ .search-error .search input {
+     height: 54px;
+     border: 1px solid #ddd;
+}
+ .mobile_menu_logo a {
+     font-size: 23px;
+     font-weight: 600;
+     text-transform: uppercase;
+}
+/*======================== toptech FOOTER WIDGET SECTION =========================*/
+ .footer-middle {
+     padding: 148px 0 5px;
+     position: relative;
+     background: #0c5adb;
+}
+ .footer-middle:before {
+     left: 0;
+     width: 100%;
+     position: absolute;
+     height: 90px;
+     top: 0px;
+     background: url(http://192.168.10.152/wordpress/wp-content/themes/toptech/assets/images/footer-top-shape.svg);
+     content: "";
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+/* Address Widgets */
+ .footer-logo img {
+     margin-bottom: 1rem;
+     width: 120px;
+}
+ .footer-logo p {
+     margin: 0;
+}
+ .footer-sociala-icon {
+     display: inline-block;
+     float: left;
+     font-size: 14px;
+     color: #fff;
+     margin-right: 10px;
+     overflow: hidden;
+}
+ .footer-sociala-info p {
+     margin: 0 0 11px;
+     font-size: 14px;
+     opacity: 0.8;
+}
+/* Custom Menu Widgets */
+ .footer-middle .widget ul li {
+     display: block;
+     margin-bottom: 10px;
+     color: #fff;
+}
+ .footer-middle .widget ul li a {
+     font-size: 14px;
+     line-height: 19px;
+     color: #fff;
+     opacity: 0.8;
+     text-decoration: none;
+}
+ .footer-middle .widget ul li a:before {
+     position: absolute;
+     left: 0;
+     top: 0;
+     font-size: 15px;
+     color: #686868;
+     content: "\e65d";
+     font-family: themify;
+     display:none;
+}
+ .footer-middle #menu-footer-menu li {
+     display:inline-block;
+}
+ .footer-middle #menu-footer-menu li a {
+     margin-right: 10px;
+}
+ .menu-social-menu-container ul li {
+     display: inline-block !important;
+}
+ .menu-social-menu-container ul li a {
+     font-size: 15px;
+     color: #fff;
+     margin-right: 16px;
+}
+ .footer-middle .widget-title {
+     color: #fff;
+}
+ .footer-middle .widget.about_us {
+     margin-bottom: 15px;
+}
+/*======================== toptech FOOTER COPPYRIGHT SECTION =========================*/
+ .footer-bottom {
+     background: #F4F7FA;
+     padding: 23px 0 22px;
+     border-top: 1px solid #ddd;
+    /* border-top: 1px solid rgba(255,255,255,.23);
+     */
+}
+ .copy-right-text p {
+     margin: 0;
+     padding: 0;
+     margin-top: 0;
+     font-size: 14px;
+}
+ .footer-menu ul {
+     list-style: none;
+     margin: 0px;
+     padding: 0px;
+}
+ .footer-menu ul li {
+     display: inline-block;
+}
+ .footer-menu ul .menu-item {
+     margin-left: 10px;
+}
+ .footer-menu ul .menu-item a {
+     color: #686868;
+     padding: 0;
+     display: block;
+     text-transform: capitalize;
+     margin-left: 10px;
+     transition: .3s;
+     font-size: 14px;
+}
+ .footer-menu ul .menu-item a:hover{
+     color:#0c5adb;
+}
+ .footer-menu .social-icon {
+     display: block;
+     margin-left: 26px;
+     -webkit-transition: .3s;
+     -o-transition: .3s;
+     transition: .3s;
+     text-align: center;
+     color: #0c5adb;
+     opacity: 0.8;
+     font-size: 18px;
+}
+ .footer-menu .social-icon:hover {
+     opacity: 1;
+}
+ .footer-menu ul li:last-child a {
+     padding-right: 0px;
+}
+ .footer_style_3 .footer-menu ul li:first-child a {
+     padding-left: 0px;
+}
+ .footer-menu ul ul {
+     display: none;
+}
+ .copy-right-text a {
+     color: #0c5adb;
+}
+ .copyright-social ul li {
+     font-size: 16px;
+     display: inline;
+}
+ .copyright-social ul li a {
+     color: #f8f9fe;
+     font-size: 14px;
+}
+ .copyright-social ul .policy:after {
+     content: "/";
+     color: #f8f9fe;
+     padding-left: 10px;
+     padding-right: 10px;
+}
+ .menu-footer-menu-container {
+     display: none;
+}
+/*======================== toptech SCROLL TOP CSS =========================*/
+#scrollUp {
+    bottom: 60px;
+    color: #fff;
+    font-size: 32px;
+    height: 60px;
+    line-height: 60px;
+    right: 90px;
+    text-align: center;
+    width: 60px;
+    border-radius: 100%;
+    background: #0c5adb;
+    transition: .3s;
+}
+ #scrollUp:hover{
+     background:#0c5adb;
+}
+ #scrollUp i {
+     color: #fff;
+}
+ .mc4wp-alert.mc4wp-success {
+    color: #fff;
+}
+
+.form-area.quote_form {
+    background: #083C92;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.form-area.quote_form .form-control {
+    border: 0;
+    border-radius: 6px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 50px;
+    padding-left: 25px;
+    background: #3a7ae4;
+    border-radius: 5px;
+    color: #fff;
+    border: 0;
+    transition: 0.5s;
+}
+.form-area.quote_form textarea.form-control {
+    height: 122px;
+    padding: 20px;
+}
+
+h2.form-title {
+    color: #fff;
+    margin-bottom: 20px;
+}
+/*contact style nine*/
+
+.seo .mc4wp-form-fields .mailchimp-form input[type="email"] {
+    border-bottom: 2px solid #CCD0D3!important;
+    width: 100%;
+    background-color: transparent;
+    height: 53px;
+    padding: 10px 0px 9px;
+    border-radius: 0;
+    outline: 0;
+    border: none;
+     color: #686868!important;
+}
+.seo .mc4wp-form-fields button {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    border: none;
+    background: transparent;
+    padding: 9px 0 0;
+    border-radius: 5px;
+}
+.seo input[type="email"]::placeholder {
+    color: #686868!important;
+}
+
+
+
+.form-area.contact-form.contact-nine input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.form-control {
+    background: transparent;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: 1px solid rgba(4,20,36,0.1);
+    height: 52px;
+}
+.form-area.contact-form.contact-nine input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.form-control::placeholder {
+    color: #686868!important;
+}
+.form-area.contact-form.contact-nine select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required.from-control {
+    width: 100%;
+    padding: 13px 21px;
+}
+.form-area.contact-form.contact-nine select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required.from-control {
+    border: 1px solid rgba(4,20,36,0.1);
+}
+.form-area.contact-form.contact-nine .input-box h4 {
+    font-size: 16px;
+    line-height: 48px;
+    color: #686868;
+    font-weight: 400;
+    font-family: "Nunito";
+    margin: 2px 0 1px;
+}
+.form-area.contact-form.contact-nine textarea.wpcf7-form-control.wpcf7-textarea {
+    width: 100%;
+    background: transparent;
+    padding-left: 25px;
+    padding-top: 20px;
+    height: 112px;
+    border: 1px solid rgba(35, 35, 35, 0.12);
+    border-radius: 4px;
+    color: #232323;
+    transition: .5s;
+}
+.form-area.contact-form.contact-nine textarea.wpcf7-form-control.wpcf7-textarea.form-control::placeholder {
+    color: #686868!important;
+}
+.form-area.contact-form.contact-nine input[type="checkbox"] {
+    display: inline-block;
+}
+.form-area.contact-form.contact-nine .check_content {
+    display: flex;
+    align-items: center;
+}
+.form-area.contact-form.contact-nine p.description {
+    margin-left: 17px;
+    /* margin: 0 0 44px 15px; */
+}
+.form-area.contact-form.contact-nine ul.single-button li {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.form-area.contact-form.contact-nine ul.single-button li a {
+    display: inline-block;
+    border: 1.5px solid #2222224a;
+    color: #222;
+    padding: 4px 22px;
+    border-radius: 3px;
+    transition: 0.5s;
+    font-size: 16px;
+    color: #686868;
+    font-weight: 400;
+    font-family: "Nunito";
+    border: 1px solid rgba(4,20,36,0.1);
+}
+.form-area.contact-form.contact-nine .buttons input {
+    padding: 12px 49px;
+    background: #0c5adb;
+    display: block;
+    color: #fff;
+    border-radius: 4px;
+    width: inherit;
+    cursor: pointer;
+    text-align: center;
+    transition: .5s;
+    border: 1px solid#0c5adb;
+    margin-top: 14px;
+}
+.form-area.contact-form.contact-nine .buttons input:hover{
+    background:transparent;
+    color:#0c5adb;
+}
+.form-area.contact-form.contact-nine ul.single-button li a:hover{
+    background:#0b59db;
+    color:#fff;
+    border-color: #0b59db;
+}
+
+.elementor-tab-content ul li:before {
+    content: "";
+    width: 22px;
+    height: 30px;
+    position: absolute;
+    left: -26px;
+    top: 6px;
+    background: url(https://wp.ditsolution.net/toptech/wp-content/uploads/2023/12/checkpng.png);
+    z-index: 999;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+/*seo-search*/
+.seo-search .widget {
+    margin-bottom: 40px;
+    overflow: inherit;
+    text-align: left;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    padding: 0 0;
+    background: transparent;
+    width: 88%;
+}
+.seo-search .search input[type="text"] {
+    padding-left: 30px;
+}
+.seo-search .search input {
+    background: #fff none repeat scroll 0 0;
+    height: 54px;
+    position: relative;
+    width: 95%;
+    border: 1px solid #1e1e1e;
+    color: #686868;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    outline: 0;
+    border-radius: 30px;
+}
+.seo-search .search button {
+    background: #0C59DB;
+    border: 0 none;
+    color: #686868;
+    font-size: 18px;
+    padding: 1px 15px;
+    position: absolute;
+    right: -51px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 53px;
+    width: 53px;
+    line-height: 53px;
+    border-radius: 100%;
+}
+.seo-search .search button i {
+    color: #fff;
+    font-size: 17px;
+}
+.about-list-before ul {
+    padding-left: 27px;
+    list-style: none;
+}
+.about-list-before ul li{
+    color: #232323;
+    font-family: rajdhani;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0;
+    position: relative;
+    list-style:none;
+}
+
+.about-list-before ul li:before {
+    content: "";
+    width: 22px;
+    height: 30px;
+    position: absolute;
+    left: -26px;
+    top: 6px;
+    background: url(https://wp.ditsolution.net/toptech/wp-content/uploads/2023/12/checkpng.png);
+    z-index: 999;
+    background-repeat: no-repeat;
+}
+
+
+/* Side bar */
+.sidebar {
+    display: inline-block;
+    position: relative;
+    left: 20px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    line-height: 53px;
+    border-radius: 50%;
+}
+ .sidebar {
+    left: 20px;
+}
+.nav-btn.navSidebar-button {
+    left: 0;
+}
+.nav-btn.navSidebar-button {
+    display: inline-block;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    top: -2px;
+    left: -15px;
+}
+.nav-btn.navSidebar-button i {
+    font-size: 15px;
+    width: 32px;
+    line-height: 35px;
+    height: 32px;
+    border-radius: 50px;
+    text-align: center;
+    background: #efefef;
+    display: inline-block;
+    color: #232323;
+    position: relative;
+    z-index: 1;
+    margin-left: 15px;
+    transition: .5s;
+    cursor: pointer;
+}
+.nav-btn.navSidebar-button i:after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #0c5adb;
+    border-radius: 50%;
+    transition: .5s;
+    transform: scale(0);
+}
+.nav-btn.navSidebar-button:hover i:after{
+   transform: scale(1);
+}
+.nav-btn.navSidebar-button:hover i{
+    color:#fff;
+}
+ .nav-btn.navSidebar-button {
+    display: inline-block;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    position: relative;
+    top: 6px;
+  }
+  span.icon.flaticon-menu-2 i {
+    font-size: 20px;
+    color: #000000;
+  }
+
+.sidebar-title h2 {
+    font-size: 26px;
+    margin-top: 15px;
+    font-weight: 600;
+    margin-bottom: 21px;
+}
+.sidebar-contact-info h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+.sidebar-content-inner {
+	margin-top: 40px;
+}
+.sidebar-contact-info ul li {
+	list-style: none;
+	margin-bottom: 15px;
+	font-weight: 400;
+	font-size: 15px;
+}
+.sidebar-contact-info ul li i {
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: #0c5adb;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.sidebar-social-icon {
+	margin-top: 38px;
+}
+.sidebar-social-icon ul li {
+	list-style: none;
+	display: inline;
+}
+.sidebar-social-icon ul li a {
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background: #0a0a0a;
+	display: inline-block;
+	text-align: center;
+	border-radius: 50%;
+	margin-right: 10px;
+    position: relative;
+    z-index: 1;
+}
+.sidebar-social-icon ul li a:hover {
+    background: #0c5adb;
+    color: #fff;
+}
+  /*start sidebar section*/
+
+.navSidebar-button span {
+    display: block;
+    border-top: 2px solid #0a0a0a;
+    margin: 4px 3px;
+    width: 22px;
+}
+  .navSidebar-button span.line3 {
+    width: 10px;
+    transition: .5s;
+  }
+  .sidebar:hover .navSidebar-button span.line3{
+      width:22px;
+  }
+  .xs-sidebar-group .dt-overlay {
+	/* left: 100%; */
+	top: 0;
+	position: fixed;
+	z-index: 9999;
+	height: 100%;
+	opacity: 0;
+	width: 100%;
+	visibility: hidden;
+	-webkit-transition: all 0.4s ease-in 0.8s;
+	-o-transition: all 0.4s ease-in 0.8s;
+	transition: all 0.4s ease-in 0.8s;
+	right: 0;
+	left: 0;
+}
+  .sidebar-logo .main_sticky_l {
+    display: none;
+  }
+
+.sidebar-info-contents {
+	margin-top: 40px;
+}
+.rpwwt-widget ul li {
+    margin: 0 0 0px !important;
+}
+.xs-sidebar-group .widget-top {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: #fff;
+    opacity: 1;
+    font-size: 20px;
+    background: #0c5adb;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+.widget-top:hover .bar-close {
+	transform: rotate(180deg);
+    color: #181818;
+}
+.xs-sidebar-group .widget-top .bar-close {
+    display: inline-block;
+    transition: .5s;
+    color: #fff;
+}
+  .dt-sidebar-widget {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 360px;
+    z-index: 999999;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    background-color: #272727;
+    -webkit-transition: all 0.5s cubic-bezier(0.9, 0.03, 0, 0.96) 0.6s;
+    -o-transition: all 0.5s cubic-bezier(0.9, 0.03, 0, 0.96) 0.6s;
+    transition: all 0.5s cubic-bezier(0.9, 0.03, 0, 0.96) 0.6s;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .xs-sidebar-group.isActive .dt-overlay {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all 0.8s ease-out 0s;
+    -o-transition: all 0.8s ease-out 0s;
+    transition: all 0.8s ease-out 0s;
+  }
+  .xs-sidebar-group.isActive .dt-sidebar-widget {
+    opacity: 1;
+    visibility: visible;
+    right: 0;
+    -webkit-transition: all 0.7s cubic-bezier(0.9, 0.03, 0, 0.96) 0.4s;
+    -o-transition: all 0.7s cubic-bezier(0.9, 0.03, 0, 0.96) 0.4s;
+    transition: all 0.7s cubic-bezier(0.9, 0.03, 0, 0.96) 0.4s;
+    background: #fff;
+  }
+  .sidebar-textwidget {
+    padding: 40px;
+  }
+  .close-side-widget {
+    color: #edc701;
+    font-size: rem(15px);
+    display: block;
+  }
+  .sidebar-container {
+    position: relative;
+    top: 150px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in 0.3s;
+    -o-transition: all 0.3s ease-in 0.3s;
+    transition: all 0.3s ease-in 0.3s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+  .xs-sidebar-group.isActive .sidebar-container {
+    top: 0px;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all 1s ease-out 1.2s;
+    -o-transition: all 1s ease-out 1.2s;
+    transition: all 1s ease-out 1.2s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .dt-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 0;
+  }
+/* .bt-black {
+    background: rgb(0,0,0,0.5)!important;
+} */
+.close {
+
+}
+/* Sidebar End */
